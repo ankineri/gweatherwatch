@@ -1,0 +1,35 @@
+<layout id="WatchFace">
+    <drawable class="Background" />
+    <label id="TimeLabel" x="center" y="100" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <!-- <label id="Weather" x="center" y="60" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" /> -->
+    <drawable id="temp" class="CurTempDrawable">
+    	<param name="x">"center"</param>
+    	<param name="y">50</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
+    	<param name="font">1</param>
+    	<param name="color">Graphics.COLOR_YELLOW</param>
+    </drawable>
+    <drawable id="city" class="CurCityDrawable">
+    	<param name="x">"center"</param>
+    	<param name="y">35</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
+    	<param name="font">Graphics.FONT_XTINY</param>
+    	<param name="color">Graphics.COLOR_WHITE</param>
+    </drawable>    
+    <drawable id="fcast" class="FcastDrawable">
+    	<param name="x">"center"</param>
+    	<param name="y">75</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
+    	<param name="font">Graphics.FONT_SYSTEM_XTINY </param>
+    	<param name="color">Graphics.COLOR_BLUE</param>
+    </drawable>  
+        
+    <drawable id="date" class="DateDrawable">
+	   	<param name="x">"center"</param>
+	   	<param name="y">140</param>
+	   	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
+	   	<param name="font">Graphics.FONT_SYSTEM_XTINY </param>
+	   	<param name="color">Graphics.COLOR_GREEN</param>
+	</drawable>  
+        
+</layout>

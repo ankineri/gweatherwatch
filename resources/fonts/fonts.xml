@@ -1,0 +1,4 @@
+<fonts>
+	<!-- <font id="Numbers" filename="numbers.fnt" filter="0123456789:"/> -->
+	<font id="Numbers" filename="leco.fnt" filter="0123456789:"/>
+</fonts>
