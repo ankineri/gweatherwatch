@@ -31,5 +31,14 @@
 	   	<param name="font">Graphics.FONT_SYSTEM_XTINY </param>
 	   	<param name="color">Graphics.COLOR_GREEN</param>
 	</drawable>  
+	
+	<drawable id="staleness" class="WeatherStalenessDrawable">
+	   	<param name="x">160</param>
+	   	<param name="y">55</param>
+	   	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
+	   	<param name="colorback">1</param>
+	   	<param name="font">Graphics.FONT_XTINY </param>
+	   	<param name="color">Graphics.COLOR_BLACK</param>
+	</drawable>  
         
 </layout>
