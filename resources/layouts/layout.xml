@@ -40,5 +40,14 @@
 	   	<param name="font">Graphics.FONT_XTINY </param>
 	   	<param name="color">Graphics.COLOR_BLACK</param>
 	</drawable>  
+	
+	<drawable id="hr" class="HeartRateDrawable">
+	   	<param name="x">80</param>
+	   	<param name="y">55</param>
+	   	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
+	   	<param name="colorback">1</param>
+	   	<param name="font">Graphics.FONT_XTINY </param>
+	   	<param name="color">Graphics.COLOR_WHITE</param>
+	</drawable>  
         
 </layout>
