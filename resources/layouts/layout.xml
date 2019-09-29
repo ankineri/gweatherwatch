@@ -36,6 +36,13 @@
     	<param name="autocolor">true</param>
     	<param name="reverse">true</param>
     </drawable>      
+    <drawable id="battext" class="BatteryTextDrawable">
+    	<param name="x">235</param>
+    	<param name="y">110</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
+    	<param name="font">Graphics.FONT_SYSTEM_XTINY </param>
+    	<param name="color">Graphics.COLOR_WHITE</param>
+    </drawable>      
     <drawable id="fcast" class="FcastDrawable">
     	<param name="x">"center"</param>
     	<param name="y">75</param>
