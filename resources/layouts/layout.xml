@@ -33,6 +33,7 @@
     	<param name="to">330</param>
     	<param name="width">10</param>
     	<param name="color">Graphics.COLOR_GREEN</param>
+    	<param name="autocolor">true</param>
     </drawable>      
     <drawable id="fcast" class="FcastDrawable">
     	<param name="x">"center"</param>
