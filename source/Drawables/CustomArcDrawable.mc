@@ -112,6 +112,9 @@ class CustomArcDrawable extends Ui.Drawable {
 		//return;
 		var from = self.angle(self.frontLow);
 		var to = self.angle(self.frontHigh);
+		if (from == to) {
+			return;
+		}
 		//Sys.println("Highlight: from " + from + ", to " + to);
 		dc.setColor(colFront, Graphics.COLOR_BLACK);
 		dc.drawArc(self.x, self.y, self.radius, Graphics.ARC_CLOCKWISE, from, to);

@@ -43,6 +43,22 @@
     	<param name="font">Graphics.FONT_SYSTEM_XTINY </param>
     	<param name="color">Graphics.COLOR_WHITE</param>
     </drawable>      
+    <drawable id="sunrise" class="SunTextDrawable">
+    	<param name="x">60</param>
+    	<param name="y">20</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
+    	<param name="font">Graphics.FONT_SYSTEM_XTINY</param>
+    	<param name="color">Graphics.COLOR_YELLOW</param>
+    	<param name="sunrise">true</param>
+    </drawable>
+    <drawable id="sunset" class="SunTextDrawable">
+    	<param name="x">180</param>
+    	<param name="y">20</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
+    	<param name="font">Graphics.FONT_SYSTEM_XTINY</param>
+    	<param name="color">Graphics.COLOR_ORANGE</param>
+    	<param name="sunrise">false</param>
+    </drawable>    
     <drawable id="fcast" class="FcastDrawable">
     	<param name="x">"center"</param>
     	<param name="y">75</param>
