@@ -3,11 +3,14 @@ using Toybox.System as Sys;
 using Toybox.Math;
 
 class BatteryArcDrawable extends CustomArcDrawable {
-	protected var autoColor = false;
+	protected var autoColor = false, reverse = false;
 	function initialize(params) {
 		CustomArcDrawable.initialize(params);
 		if (params.hasKey(:autocolor)) {
 			self.autoColor = params.get(:autocolor);
+		}
+		if (params.hasKey(:reverse)) {
+			self.reverse = params.get(:reverse);
 		}
 		self.min = 0;
 		self.max = 100;
@@ -31,7 +34,11 @@ class BatteryArcDrawable extends CustomArcDrawable {
 		if (self.autoColor) {
 			self.doAutoColor(charge);
 		}
-		CustomArcDrawable.setFront(100 - charge, 100);
+		if (self.reverse) {
+			CustomArcDrawable.setFront(100 - charge, 100);
+		} else {
+			CustomArcDrawable.setFront(0, charge);
+		}
 	}
 	
 	function draw(dc) {
