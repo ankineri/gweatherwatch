@@ -39,7 +39,7 @@ class gWeatherWatchView extends WatchUi.WatchFace {
             }
         }
         //hours = 11;
-        var timeString = Lang.format(timeFormat, [hours, clockTime.min.format("%02d")]);
+        var timeString = Lang.format(timeFormat, [hours.format("%02d"), clockTime.min.format("%02d")]);
 
         // Update the view
         var view = View.findDrawableById("TimeLabel");

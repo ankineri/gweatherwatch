@@ -7,31 +7,44 @@
     	<param name="x">"center"</param>
     	<param name="y">"center"</param>
     	<param name="r">"full"</param>
-    	<param name="from">135</param>
-    	<param name="to">45</param>
+    	<param name="from">137</param>
+    	<param name="to">42</param>
     	<param name="width">10</param>
     </drawable>
         <drawable class="SunTextDrawable">
-    	<param name="x">60</param>
-    	<param name="y">20</param>
+    	<param name="x">58</param>
+    	<param name="y">15</param>
     	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
-    	<param name="font">Graphics.FONT_SYSTEM_XTINY</param>
+    	<param name="font">Graphics.FONT_TINY</param>
     	<param name="color">Graphics.COLOR_YELLOW</param>
     	<param name="sunrise">true</param>
     </drawable>
     <drawable class="SunTextDrawable">
-    	<param name="x">180</param>
-    	<param name="y">20</param>
+    	<param name="x">182</param>
+    	<param name="y">15</param>
     	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
-    	<param name="font">Graphics.FONT_SYSTEM_XTINY</param>
+    	<param name="font">Graphics.FONT_TINY</param>
     	<param name="color">Graphics.COLOR_ORANGE</param>
     	<param name="sunrise">false</param>
     </drawable>    
     <drawable class="LineDrawable">
     	<param name="x1">0</param>
-	   	<param name="y1">40</param>
-    	<param name="x2">"full"</param>
-	   	<param name="y2">40</param>	   	
+	   	<param name="y1">42</param>
+    	<param name="x2">"max"</param>
+	   	<param name="y2">42</param>	   	
+	   	<param name="color">Graphics.COLOR_YELLOW</param>
+    </drawable>
+    <drawable class="LineDrawable">
+    	<param name="x1">"center"</param>
+	   	<param name="y1">42</param>
+    	<param name="x2">"center"</param>
+	   	<param name="y2">20</param>	   	
+	   	<param name="color">Graphics.COLOR_WHITE</param>
+    </drawable>    
+    <drawable class="BluetoothBitmapDrawable">
+    	<param name="x">"center"</param>
+	   	<param name="y">10</param>
+	   	<param name="xalign">"center"</param>
 	   	<param name="color">Graphics.COLOR_YELLOW</param>
     </drawable>
     <!-- ====================== /SUN =================================== -->

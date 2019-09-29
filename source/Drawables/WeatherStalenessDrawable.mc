@@ -50,7 +50,7 @@ class WeatherStalenessDrawable extends CustomTextDrawable {
     			setBckgnd(min);
     		}
     		var label = min + "m";
-    		if (min > 999) {
+    		if (min > 99) {
     			label = (min / 60) + "h";
     		}
     		setText(label);

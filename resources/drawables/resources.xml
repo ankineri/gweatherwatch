@@ -1,0 +1,7 @@
+<resources>
+
+    <bitmaps>
+        <bitmap id="bton" filename="bluetooth-on.png" />
+        <bitmap id="btoff" filename="bluetooth-off.png" />
+    </bitmaps>
+</resources>

@@ -10,7 +10,7 @@ class LineDrawable extends Ui.Drawable {
 		var x = params.get(val);
 		if ("center".equals(x)) {
     		x = (horiz ? sett.screenWidth : sett.screenHeight) / 2;
-    	} else if ("full".equals(x)) {
+    	} else if ("max".equals(x)) {
     		x = (horiz ? sett.screenWidth : sett.screenHeight);
     	}
     	return x;
