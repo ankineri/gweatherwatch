@@ -16,7 +16,7 @@
     	<param name="font">Graphics.FONT_XTINY</param>
     	<param name="color">Graphics.COLOR_WHITE</param>
     </drawable>    
-    <drawable id="arc" class="CustomArcDrawable">
+    <drawable id="arc" class="SunArcDrawable">
     	<param name="x">"center"</param>
     	<param name="y">"center"</param>
     	<param name="r">"full"</param>
