@@ -48,8 +48,6 @@ class CustomArcDrawable extends Ui.Drawable {
     		self.max = 100;
     	}
     	
-    	self.setValue(self.min);
-    	
     	if (params.hasKey(:width)) {
     		self.width = params.get(:width);
     	} else {
@@ -91,8 +89,11 @@ class CustomArcDrawable extends Ui.Drawable {
     
     function angle(val) {
     	var ratio = (val + 0.0 - self.min) / (self.max - self.min);
-    	var angToEffective = self.angTo;
-		var rv = Math.round(self.angFrom + (ratio * (angToEffective - self.angFrom)));
+    	var angFromEffective = self.angFrom;
+    	if (angFromEffective < self.angTo) {
+    		angFromEffective += 360;
+    	}
+		var rv = Math.round(self.angFrom + (ratio * (self.angTo - angFromEffective)));
 		
 		return self.normalize(rv);
     }
@@ -108,6 +109,7 @@ class CustomArcDrawable extends Ui.Drawable {
     }
 
 	function drawFront(dc) {
+		//return;
 		var from = self.angle(self.frontLow);
 		var to = self.angle(self.frontHigh);
 		//Sys.println("Highlight: from " + from + ", to " + to);

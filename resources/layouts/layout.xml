@@ -16,7 +16,7 @@
     	<param name="font">Graphics.FONT_XTINY</param>
     	<param name="color">Graphics.COLOR_WHITE</param>
     </drawable>    
-    <drawable id="arc" class="SunArcDrawable">
+    <drawable id="sunarc" class="SunArcDrawable">
     	<param name="x">"center"</param>
     	<param name="y">"center"</param>
     	<param name="r">"full"</param>
@@ -25,6 +25,15 @@
     	<param name="width">10</param>
     	<!-- <param name="bgcolor">Graphics.COLOR_WHITE</param>-->
     </drawable>   
+    <drawable id="batteryarc" class="BatteryArcDrawable">
+    	<param name="x">"center"</param>
+    	<param name="y">"center"</param>
+    	<param name="r">"full"</param>
+    	<param name="from">30</param>
+    	<param name="to">330</param>
+    	<param name="width">10</param>
+    	<param name="color">Graphics.COLOR_GREEN</param>
+    </drawable>      
     <drawable id="fcast" class="FcastDrawable">
     	<param name="x">"center"</param>
     	<param name="y">75</param>
