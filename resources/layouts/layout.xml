@@ -1,31 +1,58 @@
 <layout id="WatchFace">
     <drawable class="Background" />
     <label id="TimeLabel" x="center" y="100" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
-    <!-- <label id="Weather" x="center" y="60" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" /> -->
-    <drawable id="temp" class="CurTempDrawable">
-    	<param name="x">"center"</param>
-    	<param name="y">50</param>
-    	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
-    	<param name="font">1</param>
-    	<param name="color">Graphics.COLOR_YELLOW</param>
-    </drawable>
-    <drawable id="city" class="CurCityDrawable">
-    	<param name="x">"center"</param>
-    	<param name="y">35</param>
-    	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
-    	<param name="font">Graphics.FONT_XTINY</param>
-    	<param name="color">Graphics.COLOR_WHITE</param>
-    </drawable>    
-    <drawable id="sunarc" class="SunArcDrawable">
+    
+    <!-- ====================== SUN =================================== -->
+    <drawable class="SunArcDrawable">
     	<param name="x">"center"</param>
     	<param name="y">"center"</param>
     	<param name="r">"full"</param>
     	<param name="from">135</param>
     	<param name="to">45</param>
     	<param name="width">10</param>
-    	<!-- <param name="bgcolor">Graphics.COLOR_WHITE</param>-->
-    </drawable>   
-    <drawable id="batteryarc" class="BatteryArcDrawable">
+    </drawable>
+        <drawable class="SunTextDrawable">
+    	<param name="x">60</param>
+    	<param name="y">20</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
+    	<param name="font">Graphics.FONT_SYSTEM_XTINY</param>
+    	<param name="color">Graphics.COLOR_YELLOW</param>
+    	<param name="sunrise">true</param>
+    </drawable>
+    <drawable class="SunTextDrawable">
+    	<param name="x">180</param>
+    	<param name="y">20</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
+    	<param name="font">Graphics.FONT_SYSTEM_XTINY</param>
+    	<param name="color">Graphics.COLOR_ORANGE</param>
+    	<param name="sunrise">false</param>
+    </drawable>    
+    <drawable class="LineDrawable">
+    	<param name="x1">0</param>
+	   	<param name="y1">40</param>
+    	<param name="x2">"full"</param>
+	   	<param name="y2">40</param>	   	
+	   	<param name="color">Graphics.COLOR_YELLOW</param>
+    </drawable>
+    <!-- ====================== /SUN =================================== -->
+    
+    
+    <drawable class="CurTempDrawable">
+    	<param name="x">"center"</param>
+    	<param name="y">50</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
+    	<param name="font">1</param>
+    	<param name="color">Graphics.COLOR_YELLOW</param>
+    </drawable>
+    <drawable class="CurCityDrawable">
+    	<param name="x">"center"</param>
+    	<param name="y">35</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
+    	<param name="font">Graphics.FONT_XTINY</param>
+    	<param name="color">Graphics.COLOR_WHITE</param>
+    </drawable>    
+   
+    <drawable class="BatteryArcDrawable">
     	<param name="x">"center"</param>
     	<param name="y">"center"</param>
     	<param name="r">"full"</param>
@@ -36,30 +63,15 @@
     	<param name="autocolor">true</param>
     	<param name="reverse">true</param>
     </drawable>      
-    <drawable id="battext" class="BatteryTextDrawable">
+    <drawable class="BatteryTextDrawable">
     	<param name="x">235</param>
     	<param name="y">110</param>
     	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
     	<param name="font">Graphics.FONT_SYSTEM_XTINY </param>
     	<param name="color">Graphics.COLOR_WHITE</param>
     </drawable>      
-    <drawable id="sunrise" class="SunTextDrawable">
-    	<param name="x">60</param>
-    	<param name="y">20</param>
-    	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
-    	<param name="font">Graphics.FONT_SYSTEM_XTINY</param>
-    	<param name="color">Graphics.COLOR_YELLOW</param>
-    	<param name="sunrise">true</param>
-    </drawable>
-    <drawable id="sunset" class="SunTextDrawable">
-    	<param name="x">180</param>
-    	<param name="y">20</param>
-    	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
-    	<param name="font">Graphics.FONT_SYSTEM_XTINY</param>
-    	<param name="color">Graphics.COLOR_ORANGE</param>
-    	<param name="sunrise">false</param>
-    </drawable>    
-    <drawable id="fcast" class="FcastDrawable">
+
+    <drawable class="FcastDrawable">
     	<param name="x">"center"</param>
     	<param name="y">75</param>
     	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
@@ -67,7 +79,7 @@
     	<param name="color">Graphics.COLOR_BLUE</param>
     </drawable>  
         
-    <drawable id="date" class="DateDrawable">
+    <drawable class="DateDrawable">
 	   	<param name="x">"center"</param>
 	   	<param name="y">140</param>
 	   	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
@@ -75,7 +87,7 @@
 	   	<param name="color">Graphics.COLOR_GREEN</param>
 	</drawable>  
 	
-	<drawable id="staleness" class="WeatherStalenessDrawable">
+	<drawable class="WeatherStalenessDrawable">
 	   	<param name="x">160</param>
 	   	<param name="y">55</param>
 	   	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
@@ -84,7 +96,7 @@
 	   	<param name="color">Graphics.COLOR_BLACK</param>
 	</drawable>  
 	
-	<drawable id="hr" class="HeartRateDrawable">
+	<drawable class="HeartRateDrawable">
 	   	<param name="x">80</param>
 	   	<param name="y">55</param>
 	   	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
@@ -92,5 +104,4 @@
 	   	<param name="font">Graphics.FONT_XTINY </param>
 	   	<param name="color">Graphics.COLOR_WHITE</param>
 	</drawable>  
-        
 </layout>

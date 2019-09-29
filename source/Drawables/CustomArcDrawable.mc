@@ -109,7 +109,6 @@ class CustomArcDrawable extends Ui.Drawable {
     }
 
 	function drawFront(dc) {
-		//return;
 		var from = self.angle(self.frontLow);
 		var to = self.angle(self.frontHigh);
 		if (from == to) {
