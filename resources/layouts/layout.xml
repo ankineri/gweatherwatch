@@ -16,6 +16,15 @@
     	<param name="font">Graphics.FONT_XTINY</param>
     	<param name="color">Graphics.COLOR_WHITE</param>
     </drawable>    
+    <drawable id="arc" class="CustomArcDrawable">
+    	<param name="x">"center"</param>
+    	<param name="y">"center"</param>
+    	<param name="r">"full"</param>
+    	<param name="from">135</param>
+    	<param name="to">45</param>
+    	<param name="width">10</param>
+    	<!-- <param name="bgcolor">Graphics.COLOR_WHITE</param>-->
+    </drawable>   
     <drawable id="fcast" class="FcastDrawable">
     	<param name="x">"center"</param>
     	<param name="y">75</param>

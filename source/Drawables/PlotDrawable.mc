@@ -26,19 +26,9 @@ class PlotDrawable extends Ui.Drawable {
     	
     	fillColor = params.fillColor;
     	lineColor = params.lineColor;
-    	
-    	if (params.hasKey(:justification)) {
-    		setJustification(params.get(:justification));
-    	}
-    	if (params.hasKey(:font)) {
-    		setFont(params.get(:font));
-    	}
-    	if (params.hasKey(:color)) {
-    		setColor(params.get(:color));
-    	}
     }
     
-    function addEntry() {
+    function addEntry(val) {
     	
     }
 
