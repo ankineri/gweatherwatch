@@ -20,11 +20,22 @@ class HeartRateDrawable extends CustomTextDrawable {
     function draw(dc) {
 		var sensorIter = getIterator();
 		
-		// Print out the next entry in the iterator
 		if (sensorIter != null) {
-			//System.println(sensorIter.next().data);
-		    setText(sensorIter.next().data + "");
+			var val = null;
+			while (val == null) {
+				var x = sensorIter.next();
+				if (x == null) {
+					break;
+				}
+				val = x.data;
+			}
+			if (val == null) {
+				setText("N/A"); 
+			} else {
+		    	setText(val + "");
+		    }
 		}
+		
     	CustomTextDrawable.draw(dc);
     }
 }

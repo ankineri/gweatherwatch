@@ -44,7 +44,7 @@
     </drawable>    
     <drawable class="BluetoothBitmapDrawable">
     	<param name="x">"center"</param>
-	   	<param name="y">10</param>
+	   	<param name="y">8</param>
 	   	<param name="xalign">"center"</param>
 	   	<param name="color">Graphics.COLOR_YELLOW</param>
     </drawable>
@@ -117,13 +117,13 @@
 	   	<param name="font">Graphics.FONT_XTINY </param>
 	   	<param name="color">Graphics.COLOR_WHITE</param>
 	</drawable>  
-	<drawable class="PlotDrawable">
-	   	<param name="x">"center"</param>
-	   	<param name="y">180</param>
+	<drawable class="HeartRateGraphDrawable">
+	   	<param name="x">70</param>
+	   	<param name="y">160</param>
 	   	<param name="bkcolor">Graphics.COLOR_BLACK</param>
 	   	<param name="linecolor">0xFFFFFF</param>
-	   	<param name="fillcolor">0x00FF00</param>
-	   	<param name="width">50</param>
+	   	<param name="fillcolor">0xFF9988</param>
+	   	<param name="width">100</param>
 	   	<param name="height">20</param>
 	</drawable>  
 </layout>

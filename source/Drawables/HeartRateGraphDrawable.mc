@@ -1,12 +1,13 @@
-/*using Toybox.WatchUi as Ui;
+using Toybox.WatchUi as Ui;
 using Toybox.System as Sys;
-using Toybox.Sensor;
+//using Toybox.SensorHistory;
 
-class HeartRateGraphDrawable extends Drawable {
+class HeartRateGraphDrawable extends PlotDrawable {
+	
+	protected var lastMoment;
 	
     function initialize(params) {
-    	CustomTextDrawable.initialize(params);
-    	setText("?");
+    	PlotDrawable.initialize(params);
     }
     
     function getIterator() {
@@ -16,21 +17,29 @@ class HeartRateGraphDrawable extends Drawable {
 	    }
 	    return null;
 	}
-
-    function draw(dc) {
-		var sensorIter = getIterator();
-		
-		// Print out the next entry in the iterator
-		if (sensorIter != null) {
+	
+	function updateData() {
+		var iter = self.getIterator();
+		var newLast = null;
+		if (iter != null) {
+			var piece = null;
 			while (true) {
-				var piece = sensorIter.next();
-				if (piece == null) {
+				var piece = iter.next();
+				if (piece == null || self.lastMoment == piece.when) {
 					break;
 				}
-				System.println(piece);
+				if (newLast == null) {
+					newLast = piece.when;
+				}
+				self.addEntry(piece.data);
 			}
+			self.lastMoment = newLast;
 		}
-    	CustomTextDrawable.draw(dc);
+	}
+				
+
+    function draw(dc) {
+    	updateData();
+    	PlotDrawable.draw(dc);
     }
 }
-*/

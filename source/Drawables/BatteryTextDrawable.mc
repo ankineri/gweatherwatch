@@ -11,8 +11,12 @@ class BatteryTextDrawable extends CustomTextDrawable {
 
     function draw(dc) {
 		
-		var charge = Math.round(Sys.getSystemStats().battery);
-		setText(charge.toNumber() + "%");
+		var charge = Math.round(Sys.getSystemStats().battery).toNumber();
+		if (charge == 100) {
+			setText("100");
+		} else {
+			setText(charge + "%");
+		}
     	CustomTextDrawable.draw(dc);
     }
 }

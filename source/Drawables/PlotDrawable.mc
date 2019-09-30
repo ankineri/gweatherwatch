@@ -34,12 +34,20 @@ class PlotDrawable extends PositionableDrawable {
     	if (alldata.size() == 0) {
     		return alldata;
     	}
+    	if (min == null) {
+    		min = 0;
+    		max = 1;
+    	}
     	if (min == max) {
     		max = min + 1;
     	}
     	var rv = new [alldata.size()];
     	for (var i = 0; i < rv.size(); ++i) {
-    		rv[i] = (Math.round((alldata[i] + 0.0 - min) / (max - min) * self.height)).toNumber();
+    		if (alldata[i] == null) {
+    			rv[i] = 0;
+    		} else {
+    			rv[i] = (Math.round((alldata[i] + 0.0 - min) / (max - min) * self.height)).toNumber();
+    		}
     	}
     	return rv;
     }
@@ -59,6 +67,6 @@ class PlotDrawable extends PositionableDrawable {
     	for (var i = 0; i < heights.size(); ++i) {
     		dc.drawPoint(i + self.locX, bottom - heights[i]);
     	}
-    	self.plotData.add(Math.rand() % 500);
+    	//self.plotData.add(Math.rand() % 500);
     }
 }

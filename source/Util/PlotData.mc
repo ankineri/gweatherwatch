@@ -15,13 +15,16 @@ class PlotData {
 		if (!self.valid) {
 			self.asArray = self.buffer.asArray();
 			if (self.asArray.size()) {
-				min = self.asArray[0];
-				max = self.asArray[0];
+				min = null;
+				max = null;
 				for (var i = 0; i < self.asArray.size(); ++i) {
-					if (self.asArray[i] < min) {
+					if (self.asArray[i] == null) {
+						continue;
+					}
+					if (min == null || self.asArray[i] < min) {
 						min = self.asArray[i];
 					}
-					if (self.asArray[i] > max) {
+					if (max == null || self.asArray[i] > max) {
 						max = self.asArray[i];
 					}
 				}
