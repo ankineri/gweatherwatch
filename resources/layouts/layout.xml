@@ -23,7 +23,7 @@
     	<param name="x">"center"</param>
     	<param name="y">"center"</param>
     	<param name="r">"full"</param>
-    	<param name="from">137</param>
+    	<param name="from">138</param>
     	<param name="to">42</param>
     	<param name="width">10</param>
     	<param name="arrowcolor">Graphics.COLOR_WHITE</param>
@@ -42,30 +42,18 @@
 	   	<param name="y2">20</param>	   	
 	   	<param name="color">Graphics.COLOR_WHITE</param>
     </drawable>    
+
+    <!-- ====================== /SUN =================================== -->
+
     <drawable class="BluetoothBitmapDrawable">
     	<param name="x">"center"</param>
 	   	<param name="y">8</param>
 	   	<param name="xalign">"center"</param>
 	   	<param name="color">Graphics.COLOR_YELLOW</param>
     </drawable>
-    <!-- ====================== /SUN =================================== -->
+
     
-    
-    <drawable class="CurTempDrawable">
-    	<param name="x">"center"</param>
-    	<param name="y">50</param>
-    	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
-    	<param name="font">1</param>
-    	<param name="color">Graphics.COLOR_YELLOW</param>
-    </drawable>
-    <drawable class="CurCityDrawable">
-    	<param name="x">"center"</param>
-    	<param name="y">35</param>
-    	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
-    	<param name="font">Graphics.FONT_XTINY</param>
-    	<param name="color">Graphics.COLOR_WHITE</param>
-    </drawable>    
-   
+    <!-- ====================== ARCS =================================== -->
     <drawable class="BatteryArcDrawable">
     	<param name="x">"center"</param>
     	<param name="y">"center"</param>
@@ -76,7 +64,35 @@
     	<param name="color">Graphics.COLOR_GREEN</param>
     	<param name="autocolor">true</param>
     	<param name="reverse">true</param>
-    </drawable>      
+    </drawable>    
+    <drawable class="StepsArcDrawable">
+    	<param name="x">"center"</param>
+    	<param name="y">"center"</param>
+    	<param name="r">"full"</param>
+    	<param name="from">318</param>
+    	<param name="to">222</param>
+    	<param name="width">10</param>
+    	<param name="autocolor">true</param>
+    	<param name="reverse">true</param>
+    </drawable>       
+    
+    <drawable class="CurTempDrawable">
+    	<param name="x">"center"</param>
+    	<param name="y">50</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
+    	<param name="font">1</param>
+    	<param name="color">Graphics.COLOR_YELLOW</param>
+    </drawable>
+    <drawable class="CurCityDrawable">
+    	<param name="x">218</param>
+    	<param name="y">40</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
+    	<param name="font">Graphics.FONT_XTINY</param>
+    	<param name="color">Graphics.COLOR_WHITE</param>
+    	<param name="maxlen">10</param>
+    </drawable>    
+   
+      
     <drawable class="BatteryTextDrawable">
     	<param name="x">235</param>
     	<param name="y">110</param>

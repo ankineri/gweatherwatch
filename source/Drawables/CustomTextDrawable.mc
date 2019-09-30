@@ -4,10 +4,11 @@ using Toybox.System as Sys;
 class CustomTextDrawable extends Ui.Text {
 
     //protected var myText, locX, locY;
+    protected var maxLen;
 	
     function initialize(params) {
         Text.initialize(params);
-    	setText("?");
+    	Text.setText("?");
     	var x = 0, y = 0;
     	//Sys.println(params);
     	var sett = Sys.getDeviceSettings();
@@ -32,7 +33,16 @@ class CustomTextDrawable extends Ui.Text {
     	if (params.hasKey(:color)) {
     		setColor(params.get(:color));
     	}
-    	
+    	if (params.hasKey(:maxlen)) {
+    		self.maxLen = params.get(:maxlen);
+    	}
+    }
+    
+    function setText(text) {
+    	if (self.maxLen != null) {
+    		text = text.substring(0, self.maxLen);
+    	}
+    	Text.setText(text);
     }
 
     function draw(dc) {
