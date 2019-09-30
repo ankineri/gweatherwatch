@@ -22,7 +22,9 @@
             <iq:uses-permission id="SensorHistory"/>
             <iq:uses-permission id="UserProfile"/>
         </iq:permissions>
-        <iq:languages/>
+        <iq:languages>
+            <iq:language>eng</iq:language>
+        </iq:languages>
         <iq:barrels/>
     </iq:application>
 </iq:manifest>

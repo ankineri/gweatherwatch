@@ -26,6 +26,7 @@
     	<param name="from">137</param>
     	<param name="to">42</param>
     	<param name="width">10</param>
+    	<param name="arrowcolor">Graphics.COLOR_WHITE</param>
     </drawable>    
     <drawable class="LineDrawable">
     	<param name="x1">0</param>

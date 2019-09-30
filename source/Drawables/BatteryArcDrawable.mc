@@ -18,17 +18,16 @@ class BatteryArcDrawable extends CustomArcDrawable {
 	
 	function doAutoColor(batt) {
 		if (batt < 15) {
-			self.colFront = Graphics.COLOR_RED;
+			self.colFront = Graphics.COLOR_WHITE;
 			self.colBack = Graphics.COLOR_DK_RED;
 		} else if (batt < 30) {
 			self.colFront = Graphics.COLOR_YELLOW;
 			self.colBack = 0x777700;
 		} else {
 			self.colFront = Graphics.COLOR_GREEN;
-			self.colBack = Graphics.COLOR_DK_GREEN;
+			self.colBack = Graphics.COLOR_WHITE;
 		}
 	}
-
 	function updateValue() {
 		var charge = Math.round(Sys.getSystemStats().battery);
 		if (self.autoColor) {

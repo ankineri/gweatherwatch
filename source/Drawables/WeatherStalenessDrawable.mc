@@ -44,16 +44,19 @@ class WeatherStalenessDrawable extends CustomTextDrawable {
     	var weather = Persistent.Load(PersistKeys.Weather);
     	if (weather != null) {
     		var when = weather["weather"]["dt"];
-    		var min = Time.now().value() - when;
-    		min /= 60;
-    		if (shouldColor) {
-    			setBckgnd(min);
+    		if (when != null) {
+  			
+				var min = Time.now().value() - when;
+				min /= 60;
+				if (shouldColor) {
+					setBckgnd(min);
+				}
+				var label = min + "m";
+				if (min > 99) {
+					label = (min / 60) + "h";
+				}
+				setText(label);
     		}
-    		var label = min + "m";
-    		if (min > 99) {
-    			label = (min / 60) + "h";
-    		}
-    		setText(label);
     	}
     	CustomTextDrawable.draw(dc);
     }
