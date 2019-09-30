@@ -63,6 +63,6 @@ class BackgroundServiceDelegate extends Sys.ServiceDelegate
 			Sys.println("get weather error : " + ex.getErrorMessage());
 		}
 		
-		Background.exit(data);
+		Background.exit(null);
     }
 }

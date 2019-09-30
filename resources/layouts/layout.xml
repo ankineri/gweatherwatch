@@ -3,15 +3,7 @@
     <label id="TimeLabel" x="center" y="100" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
     
     <!-- ====================== SUN =================================== -->
-    <drawable class="SunArcDrawable">
-    	<param name="x">"center"</param>
-    	<param name="y">"center"</param>
-    	<param name="r">"full"</param>
-    	<param name="from">137</param>
-    	<param name="to">42</param>
-    	<param name="width">10</param>
-    </drawable>
-        <drawable class="SunTextDrawable">
+    <drawable class="SunTextDrawable">
     	<param name="x">58</param>
     	<param name="y">15</param>
     	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
@@ -26,6 +18,14 @@
     	<param name="font">Graphics.FONT_TINY</param>
     	<param name="color">Graphics.COLOR_ORANGE</param>
     	<param name="sunrise">false</param>
+    </drawable>    
+    <drawable class="SunArcDrawable">
+    	<param name="x">"center"</param>
+    	<param name="y">"center"</param>
+    	<param name="r">"full"</param>
+    	<param name="from">137</param>
+    	<param name="to">42</param>
+    	<param name="width">10</param>
     </drawable>    
     <drawable class="LineDrawable">
     	<param name="x1">0</param>
@@ -104,7 +104,7 @@
 	   	<param name="x">160</param>
 	   	<param name="y">55</param>
 	   	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
-	   	<param name="colorback">1</param>
+	   	<param name="colorback">true</param>
 	   	<param name="font">Graphics.FONT_XTINY </param>
 	   	<param name="color">Graphics.COLOR_BLACK</param>
 	</drawable>  
@@ -113,8 +113,16 @@
 	   	<param name="x">80</param>
 	   	<param name="y">55</param>
 	   	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
-	   	<param name="colorback">1</param>
 	   	<param name="font">Graphics.FONT_XTINY </param>
 	   	<param name="color">Graphics.COLOR_WHITE</param>
+	</drawable>  
+	<drawable class="PlotDrawable">
+	   	<param name="x">"center"</param>
+	   	<param name="y">180</param>
+	   	<param name="bkcolor">Graphics.COLOR_BLACK</param>
+	   	<param name="linecolor">0xFFFFFF</param>
+	   	<param name="fillcolor">0x00FF00</param>
+	   	<param name="width">50</param>
+	   	<param name="height">20</param>
 	</drawable>  
 </layout>
