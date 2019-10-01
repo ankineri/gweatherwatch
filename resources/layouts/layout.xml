@@ -4,18 +4,18 @@
     
     <!-- ====================== SUN =================================== -->
     <drawable class="SunTextDrawable">
-    	<param name="x">58</param>
-    	<param name="y">15</param>
+    	<param name="x">62</param>
+    	<param name="y">20</param>
     	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
-    	<param name="font">Graphics.FONT_TINY</param>
+    	<param name="font">Graphics.FONT_XTINY</param>
     	<param name="color">Graphics.COLOR_YELLOW</param>
     	<param name="sunrise">true</param>
     </drawable>
     <drawable class="SunTextDrawable">
-    	<param name="x">182</param>
-    	<param name="y">15</param>
+    	<param name="x">178</param>
+    	<param name="y">20</param>
     	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
-    	<param name="font">Graphics.FONT_TINY</param>
+    	<param name="font">Graphics.FONT_XTINY</param>
     	<param name="color">Graphics.COLOR_ORANGE</param>
     	<param name="sunrise">false</param>
     </drawable>    

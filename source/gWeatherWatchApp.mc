@@ -36,23 +36,33 @@ class gWeatherWatchApp extends Application.AppBase {
     function InitBackgroundEvents()
     {
     	var HOUR = new Toybox.Time.Duration(60 * 60);
-		var lastTime = Background.getLastTemporalEventTime();
+		var lastTime = null; 
 		if (lastTime == null) {
 			var fromPersist = Persistent.Load(PersistKeys.LastBackgroundEvent);
 			if (fromPersist != null) {
 				lastTime = new Time.Moment(fromPersist);
 			}
 		}
-		//System.println("Last time weather was requested: " + (lastTime == null ? "NULL" : lastTime.value()));
-		if (lastTime != null) 
-		{
-    		var nextTime = lastTime.add(HOUR);
-    		Background.registerForTemporalEvent(nextTime);
-		} 
-		else 
-		{
-    		Background.registerForTemporalEvent(Time.now());
+		
+		var scheduleAt = Time.now();
+		if (lastTime != null) {
+			var wantedAt = lastTime.add(HOUR);
+			if (wantedAt.value() > scheduleAt.value()) {
+				scheduleAt = wantedAt;
+			}
 		}
+		
+		var lastBkgnd = Background.getLastTemporalEventTime();
+		if (lastBkgnd != null) {
+			var allowedAt = lastBkgnd.add(new Toybox.Time.Duration(5 * 60));
+			if (allowedAt.value() > scheduleAt.value()) {
+				scheduleAt = allowedAt;
+			}
+		} 
+		
+		System.println("Last time weather was requested: " + (lastTime == null ? "NULL" : lastTime.value()));
+		System.println("Requesting weather update at " + scheduleAt.value());
+		Background.registerForTemporalEvent(scheduleAt);
     }
     
     function onBackgroundData(data) 

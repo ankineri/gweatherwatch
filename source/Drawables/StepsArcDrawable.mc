@@ -24,9 +24,11 @@ class StepsArcDrawable extends CustomArcDrawable {
 		} else if (ratio < 0.7) {
 			self.colFront = Graphics.COLOR_YELLOW;
 			self.colBack = 0x777700;
-		} else {
+		} else if (ratio < 1) {
 			self.colFront = Graphics.COLOR_GREEN;
 			self.colBack = Graphics.COLOR_WHITE;
+		} else {
+			self.colFront = 0x0099FF;
 		}
 	}
 	
@@ -37,13 +39,14 @@ class StepsArcDrawable extends CustomArcDrawable {
 		}
 		
 		var ratio = activity.steps / activity.stepGoal.toFloat();
-		if (ratio > 1) {
-			ratio = 1;
-		}
+
 		if (self.autoColor) {
 			self.doAutoColor(ratio);
 		}
 		
+		if (ratio > 1) {
+			ratio = 1;
+		}
 		var progress = ratio * self.max;
 		
 		if (self.reverse) {

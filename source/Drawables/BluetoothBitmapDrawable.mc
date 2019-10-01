@@ -18,7 +18,13 @@ class BluetoothBitmapDrawable extends PositionableDrawable {
     }
 
     function draw(dc) {
-    	var value = Sys.getDeviceSettings().phoneConnected;
+    	var conn = Sys.getDeviceSettings().connectionInfo;
+    	var value = false;
+    	if (conn.hasKey(:bluetooth)) {
+    		if (conn.get(:bluetooth).state == Sys.CONNECTION_STATE_CONNECTED) {
+    			value = true;
+    		}
+    	}
 		dc.drawBitmap(locX, locY, value ? self.onBmp : self.offBmp);
     }
 }
