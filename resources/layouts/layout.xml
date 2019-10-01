@@ -78,9 +78,9 @@
     
     <drawable class="StepsTextDrawable">
     	<param name="x">"center"</param>
-    	<param name="y">205</param>
+    	<param name="y">190</param>
     	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
-    	<param name="font">Graphics.FONT_XTINY</param>
+    	<param name="font">Graphics.FONT_TINY</param>
     	<param name="color">Graphics.COLOR_WHITE</param>
     	<param name="maxlen">11</param>
     </drawable>   
@@ -122,7 +122,7 @@
 	   	<param name="x">"center"</param>
 	   	<param name="y">140</param>
 	   	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
-	   	<param name="font">Graphics.FONT_SYSTEM_XTINY </param>
+	   	<param name="font">Graphics.FONT_TINY </param>
 	   	<param name="color">Graphics.COLOR_GREEN</param>
 	</drawable>  
 	
@@ -134,21 +134,44 @@
 	   	<param name="font">Graphics.FONT_XTINY </param>
 	   	<param name="color">Graphics.COLOR_BLACK</param>
 	</drawable>  
-	
-	<drawable class="HeartRateDrawable">
-	   	<param name="x">80</param>
-	   	<param name="y">55</param>
-	   	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
-	   	<param name="font">Graphics.FONT_XTINY </param>
+<!--	<drawable class="LineDrawable">
+    	<param name="x1">20</param>
+	   	<param name="y1">168</param>
+    	<param name="x2">220</param>
+	   	<param name="y2">168</param>	   	
 	   	<param name="color">Graphics.COLOR_WHITE</param>
-	</drawable>  
+    </drawable>
+    <drawable class="LineDrawable">
+    	<param name="x1">00</param>
+	   	<param name="y1">195</param>
+    	<param name="x2">"max"</param>
+	   	<param name="y2">195</param>	   	
+	   	<param name="color">Graphics.COLOR_WHITE</param>
+    </drawable> -->    
+
 	<drawable class="HeartRateGraphDrawable">
-	   	<param name="x">70</param>
-	   	<param name="y">160</param>
+	   	<param name="x">55</param>
+	   	<param name="y">170</param>
 	   	<param name="bkcolor">Graphics.COLOR_BLACK</param>
 	   	<param name="linecolor">0xFFFFFF</param>
 	   	<param name="fillcolor">0xFF9988</param>
-	   	<param name="width">100</param>
+	   	<param name="width">70</param>
 	   	<param name="height">20</param>
 	</drawable>  
+	<drawable class="HeartRateRangeDrawable">
+	   	<param name="x">185</param>
+	   	<param name="y">170</param>
+	   	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
+	   	<param name="font">Graphics.FONT_XTINY </param>
+	   	<param name="color">0xFF9988</param>
+	   	<param name="maxlen">7</param>
+	</drawable>  	
+	<drawable class="HeartRateDrawable">
+	   	<param name="x">105</param>
+	   	<param name="y">170</param>
+	   	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
+	   	<param name="font">Graphics.FONT_XTINY </param>
+	   	<param name="color">0xFFFFFF</param>
+	   	<param name="maxlen">3</param>
+	</drawable>  	
 </layout>

@@ -46,4 +46,7 @@ class PlotData {
 		self.reloadIfNeeded();
 		return self.max;
 	}
+	function capacity() {
+		return self.buffer.capacity();
+	}
 }

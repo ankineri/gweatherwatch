@@ -31,6 +31,10 @@ class CircularBuffer {
  		return old;
  	}
  	
+ 	function capacity() {
+ 		return data.size();
+ 	}
+ 	
  	function top() {
  		if (_size == 0) {
  			return null;

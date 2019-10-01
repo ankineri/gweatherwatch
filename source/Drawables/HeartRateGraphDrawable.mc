@@ -21,19 +21,30 @@ class HeartRateGraphDrawable extends PlotDrawable {
 	function updateData() {
 		var iter = self.getIterator();
 		var newLast = null;
+		var tmpAr = new [self.plotData.capacity()];
+		var count = 0;
 		if (iter != null) {
 			var piece = null;
-			while (true) {
+			while (count < tmpAr.size()) {
 				var piece = iter.next();
-				if (piece == null || self.lastMoment == piece.when) {
+				
+				if (piece == null || (self.lastMoment != null && self.lastMoment.value == piece.when.value)) {
+					//Sys.println("Terminating search: reached end or known");
 					break;
 				}
 				if (newLast == null) {
 					newLast = piece.when;
 				}
-				self.addEntry(piece.data);
+				tmpAr[count] = piece.data;
+				count++;
 			}
-			self.lastMoment = newLast;
+			//Sys.println("Found " + count + " elements out of " + tmpAr.size());
+			if (newLast != null) {
+				self.lastMoment = newLast;
+			}
+			for (var i = count - 1; i >= 0; --i) {
+				self.addEntry(tmpAr[i]);
+			}
 		}
 	}
 				
@@ -41,5 +52,7 @@ class HeartRateGraphDrawable extends PlotDrawable {
     function draw(dc) {
     	updateData();
     	PlotDrawable.draw(dc);
+    	LayoutContext.set("HRMIN", self.min);
+    	LayoutContext.set("HRMAX", self.max);    	
     }
 }

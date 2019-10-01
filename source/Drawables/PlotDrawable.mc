@@ -26,8 +26,8 @@ class PlotDrawable extends PositionableDrawable {
     }
     
     function getHeights() {
-    	var min = self.plotData.getMin();
-    	var max = self.plotData.getMax();
+    	min = self.plotData.getMin();
+    	max = self.plotData.getMax();
     	var alldata = self.plotData.getAll();
     	//Sys.println("Max: " + max + ", min: " + min);
     	//Sys.println(alldata);
