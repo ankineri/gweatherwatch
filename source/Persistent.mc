@@ -4,6 +4,7 @@ using Toybox.Application as App;
 class PersistKeys {
 	public static const Weather = 1;
 	public static const Location = 2;
+	public static const LastBackgroundEvent = 3;
 }
 
 (:background)

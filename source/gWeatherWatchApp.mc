@@ -37,6 +37,13 @@ class gWeatherWatchApp extends Application.AppBase {
     {
     	var HOUR = new Toybox.Time.Duration(60 * 60);
 		var lastTime = Background.getLastTemporalEventTime();
+		if (lastTime == null) {
+			var fromPersist = Persistent.Load(PersistKeys.LastBackgroundEvent);
+			if (fromPersist != null) {
+				lastTime = new Time.Moment(fromPersist);
+			}
+		}
+		//System.println("Last time weather was requested: " + (lastTime == null ? "NULL" : lastTime.value()));
 		if (lastTime != null) 
 		{
     		var nextTime = lastTime.add(HOUR);
@@ -54,6 +61,7 @@ class gWeatherWatchApp extends Application.AppBase {
     	Background.registerForTemporalEvent(new Toybox.Time.Duration(60 * 60));
         if (data != null)
         {
+        	Persistent.Save(PersistKeys.LastBackgroundEvent, Time.now().value());
         	Persistent.Save(PersistKeys.Weather, data);
         	//System.println("Saved bckgnd data");
         	WatchUi.requestUpdate();

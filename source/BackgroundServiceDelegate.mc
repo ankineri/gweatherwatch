@@ -2,6 +2,7 @@ using Toybox.Background;
 using Toybox.System as Sys;
 using Toybox.Communications as Comm;
 using Toybox.Application as App;
+using Toybox.Time;
 
 // The Service Delegate is the main entry point for background processes
 // our onTemporalEvent() method will get run each time our periodic event
