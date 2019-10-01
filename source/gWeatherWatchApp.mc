@@ -35,11 +35,11 @@ class gWeatherWatchApp extends Application.AppBase {
     
     function InitBackgroundEvents()
     {
-    	var FIVE_MINUTES = new Toybox.Time.Duration(5 * 60);
+    	var HOUR = new Toybox.Time.Duration(60 * 60);
 		var lastTime = Background.getLastTemporalEventTime();
 		if (lastTime != null) 
 		{
-    		var nextTime = lastTime.add(FIVE_MINUTES);
+    		var nextTime = lastTime.add(HOUR);
     		Background.registerForTemporalEvent(nextTime);
 		} 
 		else 
@@ -50,15 +50,13 @@ class gWeatherWatchApp extends Application.AppBase {
     
     function onBackgroundData(data) 
     {
-    	System.println("Have bckgnd data: " + data);
+    	//System.println("Have bckgnd data: " + data);
     	Background.registerForTemporalEvent(new Toybox.Time.Duration(60 * 60));
         if (data != null)
         {
         	Persistent.Save(PersistKeys.Weather, data);
-        	System.println("Saved bckgnd data");
+        	//System.println("Saved bckgnd data");
+        	WatchUi.requestUpdate();
         }
-
-        WatchUi.requestUpdate();
     }    
-
 }

@@ -26,7 +26,7 @@ class BackgroundServiceDelegate extends Sys.ServiceDelegate
 			loc[0],
 			loc[1]]);  
 			
-		Sys.println(" :: weather request " + url);
+		//Sys.println(" :: weather request " + url);
 
         var options = {
           :method => Comm.HTTP_REQUEST_METHOD_GET,
@@ -40,7 +40,7 @@ class BackgroundServiceDelegate extends Sys.ServiceDelegate
 	
     function onTemporalEvent() 
     {
-    	System.println("Have temporal event!");
+    	//System.println("Have temporal event!");
     	var loc = locationProvider.getLocation();
     	/*var loc = Persistent.Load(PersistKeys.Location);
     	if (loc == null) {
@@ -50,7 +50,7 @@ class BackgroundServiceDelegate extends Sys.ServiceDelegate
     }
     
     function OnReceiveWeather(responseCode, data) {
-    	Sys.println("Have weather! Code: " + responseCode);
+    	//Sys.println("Have weather! Code: " + responseCode);
     	try
 		{
 			if (responseCode == 200)
