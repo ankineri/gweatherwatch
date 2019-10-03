@@ -12,7 +12,9 @@ class HeartRateDrawable extends CustomTextDrawable {
     function getIterator() {
 	    // Check device for SensorHistory compatibility
 	    if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getHeartRateHistory)) {
-	        return Toybox.SensorHistory.getHeartRateHistory({});
+	    	var param = {};
+	    	param.put(:period, 1);
+	        return Toybox.SensorHistory.getHeartRateHistory(param);
 	    }
 	    return null;
 	}

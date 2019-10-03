@@ -150,26 +150,26 @@
     </drawable> -->    
 
 	<drawable class="HeartRateGraphDrawable">
-	   	<param name="x">55</param>
+	   	<param name="x">70</param>
 	   	<param name="y">170</param>
 	   	<param name="bkcolor">Graphics.COLOR_BLACK</param>
 	   	<param name="linecolor">0xFFFFFF</param>
-	   	<param name="fillcolor">0xFF9988</param>
+	   	<param name="fillcolor">Graphics.COLOR_ORANGE</param>
 	   	<param name="width">70</param>
 	   	<param name="height">20</param>
 	</drawable>  
 	<drawable class="HeartRateRangeDrawable">
-	   	<param name="x">185</param>
+	   	<param name="x">143</param>
 	   	<param name="y">170</param>
-	   	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
+	   	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
 	   	<param name="font">Graphics.FONT_XTINY </param>
-	   	<param name="color">0xFF9988</param>
+	   	<param name="color">Graphics.COLOR_ORANGE</param>
 	   	<param name="maxlen">7</param>
 	</drawable>  	
 	<drawable class="HeartRateDrawable">
-	   	<param name="x">105</param>
+	   	<param name="x">67</param>
 	   	<param name="y">170</param>
-	   	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
+	   	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
 	   	<param name="font">Graphics.FONT_XTINY </param>
 	   	<param name="color">0xFFFFFF</param>
 	   	<param name="maxlen">3</param>

@@ -13,7 +13,9 @@ class HeartRateGraphDrawable extends PlotDrawable {
     function getIterator() {
 	    // Check device for SensorHistory compatibility
 	    if ((Toybox has :SensorHistory) && (Toybox.SensorHistory has :getHeartRateHistory)) {
-	        return Toybox.SensorHistory.getHeartRateHistory({});
+	    	var param = {};
+	    	param.put(:period, self.width);
+	        return Toybox.SensorHistory.getHeartRateHistory(param);
 	    }
 	    return null;
 	}
