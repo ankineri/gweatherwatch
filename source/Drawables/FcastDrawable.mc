@@ -12,6 +12,11 @@ class FcastDrawable extends CustomTextDrawable {
 		var rv = "";
 		var now = Sys.getClockTime();
 		var off = now.timeZoneOffset;
+		//Sys.println(weather);
+		if ("false".equals(weather["fcast"]["success"])) {
+			return "error";
+		}
+			
 		for (var i = 0; i < weather["fcast"]["data"].size(); ++i) {
 			var entry = weather["fcast"]["data"][i];
 			var time = entry["dt"] + off;
