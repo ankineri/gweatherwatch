@@ -1,0 +1,131 @@
+function callWeather(api, param, loc) {
+  const apiKey = "XXXXXXXX";
+  
+  var url = "https://api.openweathermap.org/data/2.5/" + api + "?lat=" + loc.lat + "&lon=" + loc.lon + "&units=metric&appid=" + apiKey + param;
+  
+  var response = UrlFetchApp.fetch(url);
+  var respText = response.getContentText();
+  //Logger.log(respText);
+  resp = JSON.parse(respText);
+  resp.url = url;
+  return resp;  
+}
+
+function makeSign(t) {
+  t = Math.round(t);
+  if (t > 0) return "+" + t;
+  return "" + t;
+}
+
+function convertTemp(t, sys) {
+  if (sys == "metric") return makeSign(t);
+  else return makeSign( t * 9 / 5 + 32 );
+}
+
+function icon2cond(icon) {
+  Logger.log("Parsing icon " + icon);
+  icon = icon.substr(0, 2);
+  var conditions = "unknown";
+  switch (icon) {
+    case '01':
+      conditions = "clear";
+      break;
+    case '02':
+      conditions = "1clouds";
+      break;
+    case '03':
+      conditions = "2clouds";
+      break;
+    case '04':
+      conditions = "3clouds";
+      break;         
+    case '09':
+      conditions = "shower";
+      break;
+    case '10':
+      conditions = "rain";
+      break;
+    case '11':
+      conditions = "thunderstorm";
+      break;
+    case '13':
+      conditions = "snow";
+      break;
+    case '50':
+      conditions = "mist";
+      break;
+  }
+  Logger.log("Icon converted to " + conditions);
+  return conditions;
+}
+
+function getWeather(loc, sys) {
+  resp = callWeather("weather", "", loc);
+  if (resp.cod != 200) {
+    return {"success": "false"};
+  }
+  var result = {"success": "true"};
+  
+  var conditions = "unknown";
+  
+  for (i = 0; i < resp.weather.length; ++i) {
+    Logger.log(resp.weather[i]);
+    var v = resp.weather[i];
+    if (v.icon) {
+      Logger.log("Found an icon: " + v.icon);
+      conditions = icon2cond(v.icon);
+    }
+  }
+  result.weather = {
+    "conditions": conditions,
+    "temp": convertTemp(resp.main.temp, sys),
+    "wind": resp.wind.speed,
+    "city": resp.name,
+    "sunrise": resp.sys.sunrise,
+    "sunset": resp.sys.sunset,
+    "dt": resp.dt,
+    "fcast": getFcast(loc, sys)
+  };
+  return result;
+}
+function cond2symbol(cond) {
+  switch (cond) {
+    case "rain":
+    case "shower":
+      return "!";
+    case "snow":
+      return "*";
+    case "thunderstorm":
+      return "🗲";
+  }
+  return "";
+}
+
+function getFcast(loc, sys) {
+  resp = callWeather("forecast", "&cnt=3", loc);
+  if (resp.cod != 200) {
+    Logger.log("Forecast request failed with code " + resp.code);
+    return {"success": "false", "code": resp.code};
+  }
+  var result = {"success": "true"};
+  var lst = resp.list.map(function (entry) {
+    var conditions = "unknown";
+    for (var i = 0; i < entry.weather.length; ++i) {
+      var v = entry.weather[i];
+      if (v.icon) {
+        conditions = icon2cond(v.icon);
+      }
+    }
+    return {"dt": entry.dt, "conditions": conditions, "symbol": cond2symbol(conditions), "temp": convertTemp(entry.main.temp, sys)};});
+  result.data = lst;
+  return result;
+}
+
+function doGet(e) {
+  if (e === undefined) e = {"parameters": {"lat": "1", "lon": "2", "system": "metric"}};
+  var param = e.parameters;
+
+  data = JSON.stringify(getWeather({"lat": param.lat, "lon": param.lon}, param.system));
+  return ContentService.createTextOutput(data)
+    .setMimeType(ContentService.MimeType.JSON);
+}

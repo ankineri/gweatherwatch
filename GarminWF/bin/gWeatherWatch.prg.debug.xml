@@ -1,0 +1,1708 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<pcToLineNum>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="3" lineNum="6" pc="268436912" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="3" lineNum="7" pc="268436916" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="3" lineNum="8" pc="268436936" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="4" lineNum="11" pc="268436954" symbol="makeFcastLine"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="4" lineNum="12" pc="268436958" symbol="makeFcastLine"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="4" lineNum="13" pc="268436965" symbol="makeFcastLine"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="4" lineNum="14" pc="268436982" symbol="makeFcastLine"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="4" lineNum="16" pc="268436992" symbol="makeFcastLine"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="4" lineNum="17" pc="268437023" symbol="makeFcastLine"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="4" lineNum="20" pc="268437032" symbol="makeFcastLine"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="4" lineNum="21" pc="268437068" symbol="makeFcastLine"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="4" lineNum="22" pc="268437087" symbol="makeFcastLine"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="4" lineNum="23" pc="268437100" symbol="makeFcastLine"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="4" lineNum="24" pc="268437116" symbol="makeFcastLine"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="4" lineNum="25" pc="268437126" symbol="makeFcastLine"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="4" lineNum="26" pc="268437136" symbol="makeFcastLine"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="4" lineNum="28" pc="268437180" symbol="makeFcastLine"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="5" lineNum="31" pc="268437215" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="5" lineNum="32" pc="268437219" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="5" lineNum="33" pc="268437238" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="5" lineNum="34" pc="268437245" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastDrawable.mc" id="5" lineNum="36" pc="268437273" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="14" pc="268437294" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="15" pc="268437298" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="16" pc="268437318" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="17" pc="268437331" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="18" pc="268437344" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="19" pc="268437361" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="20" pc="268437394" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="22" pc="268437419" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="24" pc="268437443" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="25" pc="268437476" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="27" pc="268437501" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="30" pc="268437525" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="31" pc="268437549" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="33" pc="268437573" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="34" pc="268437606" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="36" pc="268437662" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="39" pc="268437686" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="40" pc="268437705" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="42" pc="268437732" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="45" pc="268437745" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="46" pc="268437764" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="48" pc="268437791" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="51" pc="268437804" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="52" pc="268437823" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="54" pc="268437850" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="57" pc="268437863" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="58" pc="268437882" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="60" pc="268437909" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="63" pc="268437929" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="64" pc="268437948" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="66" pc="268437975" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="69" pc="268437995" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="70" pc="268438014" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="7" lineNum="72" pc="268438041" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="8" lineNum="76" pc="268438062" symbol="setColors"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="8" lineNum="77" pc="268438066" symbol="setColors"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="8" lineNum="78" pc="268438076" symbol="setColors"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="9" lineNum="81" pc="268438087" symbol="setValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="9" lineNum="82" pc="268438091" symbol="setValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="10" lineNum="85" pc="268438102" symbol="setFront"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="10" lineNum="86" pc="268438106" symbol="setFront"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="10" lineNum="87" pc="268438116" symbol="setFront"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="11" lineNum="90" pc="268438127" symbol="angle"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="11" lineNum="91" pc="268438131" symbol="angle"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="11" lineNum="92" pc="268438168" symbol="angle"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="11" lineNum="93" pc="268438178" symbol="angle"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="11" lineNum="94" pc="268438192" symbol="angle"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="11" lineNum="96" pc="268438205" symbol="angle"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="11" lineNum="98" pc="268438245" symbol="angle"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="12" lineNum="101" pc="268438260" symbol="normalize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="12" lineNum="102" pc="268438264" symbol="normalize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="12" lineNum="103" pc="268438275" symbol="normalize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="12" lineNum="105" pc="268438288" symbol="normalize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="12" lineNum="106" pc="268438299" symbol="normalize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="12" lineNum="108" pc="268438312" symbol="normalize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="13" lineNum="111" pc="268438316" symbol="drawFront"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="13" lineNum="112" pc="268438320" symbol="drawFront"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="13" lineNum="113" pc="268438341" symbol="drawFront"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="13" lineNum="114" pc="268438362" symbol="drawFront"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="13" lineNum="115" pc="268438370" symbol="drawFront"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="13" lineNum="118" pc="268438374" symbol="drawFront"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="13" lineNum="119" pc="268438406" symbol="drawFront"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="14" lineNum="122" pc="268438459" symbol="drawArrow"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="14" lineNum="123" pc="268438463" symbol="drawArrow"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="14" lineNum="124" pc="268438484" symbol="drawArrow"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="14" lineNum="125" pc="268438516" symbol="drawArrow"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="14" lineNum="126" pc="268438542" symbol="drawArrow"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="15" lineNum="129" pc="268438629" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="15" lineNum="130" pc="268438633" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="15" lineNum="131" pc="268438653" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="15" lineNum="132" pc="268438685" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="15" lineNum="133" pc="268438749" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="15" lineNum="134" pc="268438762" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="15" lineNum="136" pc="268438779" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomArcDrawable.mc" id="15" lineNum="137" pc="268438792" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Persistent.mc" id="19" lineNum="12" pc="268435459" symbol="Save"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Persistent.mc" id="19" lineNum="13" pc="268435463" symbol="Save"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Persistent.mc" id="21" lineNum="15" pc="268435493" symbol="Load"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Persistent.mc" id="21" lineNum="16" pc="268435497" symbol="Load"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Persistent.mc" id="21" lineNum="17" pc="268435497" symbol="Load"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Persistent.mc" id="21" lineNum="19" pc="268435534" symbol="Load"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="23" lineNum="8" pc="268438810" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="23" lineNum="9" pc="268438814" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="23" lineNum="10" pc="268438834" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="23" lineNum="11" pc="268438858" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="23" lineNum="12" pc="268438882" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="24" lineNum="15" pc="268438907" symbol="makeCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="24" lineNum="16" pc="268438911" symbol="makeCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="24" lineNum="17" pc="268438924" symbol="makeCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="24" lineNum="18" pc="268438940" symbol="makeCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="24" lineNum="19" pc="268438950" symbol="makeCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="24" lineNum="20" pc="268438960" symbol="makeCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="25" lineNum="23" pc="268439021" symbol="cellColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="25" lineNum="24" pc="268439025" symbol="cellColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="25" lineNum="26" pc="268439135" symbol="cellColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="25" lineNum="28" pc="268439182" symbol="cellColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="25" lineNum="30" pc="268439229" symbol="cellColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="25" lineNum="33" pc="268439276" symbol="cellColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="37" pc="268439324" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="38" pc="268439328" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="39" pc="268439332" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="40" pc="268439361" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="42" pc="268439390" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="43" pc="268439400" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="44" pc="268439414" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="47" pc="268439427" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="49" pc="268439437" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="51" pc="268439456" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="53" pc="268439494" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="55" pc="268439526" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="57" pc="268439566" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="59" pc="268439613" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="61" pc="268439649" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="62" pc="268439714" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="63" pc="268439733" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="64" pc="268439769" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="65" pc="268439786" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="67" pc="268439809" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="69" pc="268439847" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="70" pc="268439915" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="71" pc="268439951" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="72" pc="268439968" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="26" lineNum="73" pc="268439988" symbol="drawCell"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="27" lineNum="76" pc="268439995" symbol="drawAll"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="27" lineNum="77" pc="268439999" symbol="drawAll"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="27" lineNum="78" pc="268440009" symbol="drawAll"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="27" lineNum="79" pc="268440039" symbol="drawAll"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="28" lineNum="83" pc="268440089" symbol="prepareValues"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="28" lineNum="84" pc="268440093" symbol="prepareValues"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="28" lineNum="85" pc="268440107" symbol="prepareValues"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="28" lineNum="86" pc="268440124" symbol="prepareValues"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="28" lineNum="87" pc="268440134" symbol="prepareValues"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="28" lineNum="88" pc="268440153" symbol="prepareValues"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="28" lineNum="89" pc="268440195" symbol="prepareValues"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="28" lineNum="91" pc="268440199" symbol="prepareValues"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="28" lineNum="92" pc="268440213" symbol="prepareValues"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="28" lineNum="94" pc="268440229" symbol="prepareValues"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="28" lineNum="95" pc="268440253" symbol="prepareValues"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="29" lineNum="99" pc="268440296" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="29" lineNum="100" pc="268440300" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\FcastRectsDrawable.mc" id="29" lineNum="101" pc="268440312" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="31" lineNum="8" pc="268440327" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="31" lineNum="9" pc="268440331" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="31" lineNum="10" pc="268440351" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="31" lineNum="11" pc="268440370" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="31" lineNum="13" pc="268440397" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="31" lineNum="14" pc="268440416" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="31" lineNum="16" pc="268440443" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="31" lineNum="17" pc="268440456" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="32" lineNum="20" pc="268440470" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="32" lineNum="21" pc="268440474" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="32" lineNum="22" pc="268440485" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="32" lineNum="23" pc="268440507" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="32" lineNum="24" pc="268440532" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="32" lineNum="25" pc="268440543" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="32" lineNum="26" pc="268440565" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="32" lineNum="27" pc="268440581" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="32" lineNum="28" pc="268440592" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="32" lineNum="29" pc="268440614" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="32" lineNum="31" pc="268440639" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="33" lineNum="35" pc="268440653" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="33" lineNum="36" pc="268440657" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="33" lineNum="37" pc="268440674" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="33" lineNum="38" pc="268440681" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="33" lineNum="41" pc="268440685" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="33" lineNum="43" pc="268440713" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="33" lineNum="44" pc="268440724" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="33" lineNum="47" pc="268440741" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="33" lineNum="48" pc="268440752" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="33" lineNum="50" pc="268440762" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="33" lineNum="52" pc="268440775" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="33" lineNum="53" pc="268440786" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="33" lineNum="55" pc="268440826" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="34" lineNum="59" pc="268440852" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="34" lineNum="60" pc="268440856" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsArcDrawable.mc" id="34" lineNum="61" pc="268440868" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryTextDrawable.mc" id="36" lineNum="6" pc="268440889" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryTextDrawable.mc" id="36" lineNum="7" pc="268440893" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryTextDrawable.mc" id="36" lineNum="8" pc="268440913" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryTextDrawable.mc" id="37" lineNum="12" pc="268440931" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryTextDrawable.mc" id="37" lineNum="14" pc="268440935" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryTextDrawable.mc" id="37" lineNum="15" pc="268440984" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryTextDrawable.mc" id="37" lineNum="16" pc="268440995" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryTextDrawable.mc" id="37" lineNum="18" pc="268441015" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryTextDrawable.mc" id="37" lineNum="20" pc="268441035" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateRangeDrawable.mc" id="39" lineNum="6" pc="268441056" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateRangeDrawable.mc" id="39" lineNum="7" pc="268441060" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateRangeDrawable.mc" id="39" lineNum="8" pc="268441080" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateRangeDrawable.mc" id="40" lineNum="12" pc="268441098" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateRangeDrawable.mc" id="40" lineNum="14" pc="268441102" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateRangeDrawable.mc" id="40" lineNum="15" pc="268441126" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateRangeDrawable.mc" id="40" lineNum="16" pc="268441150" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateRangeDrawable.mc" id="40" lineNum="17" pc="268441167" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateRangeDrawable.mc" id="40" lineNum="18" pc="268441174" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateRangeDrawable.mc" id="40" lineNum="20" pc="268441184" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateRangeDrawable.mc" id="40" lineNum="22" pc="268441207" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LocationProvider.mc" id="42" lineNum="8" pc="268435552" symbol="getLocation"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LocationProvider.mc" id="42" lineNum="9" pc="268435556" symbol="getLocation"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LocationProvider.mc" id="42" lineNum="10" pc="268435579" symbol="getLocation"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LocationProvider.mc" id="42" lineNum="11" pc="268435586" symbol="getLocation"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LocationProvider.mc" id="42" lineNum="12" pc="268435607" symbol="getLocation"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LocationProvider.mc" id="42" lineNum="14" pc="268435643" symbol="getLocation"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LocationProvider.mc" id="42" lineNum="15" pc="268435667" symbol="getLocation"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\BackgroundServiceDelegate.mc" id="44" lineNum="19" pc="268435683" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\BackgroundServiceDelegate.mc" id="44" lineNum="21" pc="268435687" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\BackgroundServiceDelegate.mc" id="44" lineNum="22" pc="268435709" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\BackgroundServiceDelegate.mc" id="45" lineNum="25" pc="268435740" symbol="loadGoogleData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\BackgroundServiceDelegate.mc" id="45" lineNum="26" pc="268435744" symbol="loadGoogleData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\BackgroundServiceDelegate.mc" id="45" lineNum="32" pc="268435806" symbol="loadGoogleData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\BackgroundServiceDelegate.mc" id="45" lineNum="37" pc="268435854" symbol="loadGoogleData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\BackgroundServiceDelegate.mc" id="45" lineNum="38" pc="268435876" symbol="loadGoogleData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\BackgroundServiceDelegate.mc" id="46" lineNum="42" pc="268435919" symbol="onTemporalEvent"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\BackgroundServiceDelegate.mc" id="46" lineNum="45" pc="268435923" symbol="onTemporalEvent"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\BackgroundServiceDelegate.mc" id="46" lineNum="50" pc="268435942" symbol="onTemporalEvent"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\BackgroundServiceDelegate.mc" id="47" lineNum="53" pc="268435957" symbol="OnReceiveWeather"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\BackgroundServiceDelegate.mc" id="47" lineNum="55" pc="268435961" symbol="OnReceiveWeather"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\BackgroundServiceDelegate.mc" id="47" lineNum="57" pc="268435961" symbol="OnReceiveWeather"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\BackgroundServiceDelegate.mc" id="47" lineNum="59" pc="268435972" symbol="OnReceiveWeather"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\BackgroundServiceDelegate.mc" id="47" lineNum="64" pc="268436003" symbol="OnReceiveWeather"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\BackgroundServiceDelegate.mc" id="47" lineNum="67" pc="268436048" symbol="OnReceiveWeather"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="9" pc="268441228" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="10" pc="268441232" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="11" pc="268441252" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="12" pc="268441275" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="14" pc="268441289" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="15" pc="268441306" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="16" pc="268441339" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="18" pc="268441358" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="20" pc="268441376" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="21" pc="268441409" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="23" pc="268441428" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="25" pc="268441446" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="27" pc="268441462" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="28" pc="268441481" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="30" pc="268441512" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="31" pc="268441531" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="33" pc="268441562" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="34" pc="268441581" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="36" pc="268441612" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="49" lineNum="37" pc="268441631" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="50" lineNum="41" pc="268441659" symbol="setText"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="50" lineNum="42" pc="268441663" symbol="setText"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="50" lineNum="43" pc="268441676" symbol="setText"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="50" lineNum="45" pc="268441705" symbol="setText"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="51" lineNum="48" pc="268441726" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CustomTextDrawable.mc" id="51" lineNum="49" pc="268441730" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="53" lineNum="8" pc="268436066" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="53" lineNum="9" pc="268436070" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="54" lineNum="13" pc="268436089" symbol="onStart"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="55" lineNum="17" pc="268436094" symbol="onStop"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="56" lineNum="21" pc="268436099" symbol="getInitialView"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="56" lineNum="22" pc="268436103" symbol="getInitialView"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="56" lineNum="23" pc="268436115" symbol="getInitialView"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="57" lineNum="27" pc="268436153" symbol="onSettingsChanged"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="57" lineNum="28" pc="268436157" symbol="onSettingsChanged"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="58" lineNum="31" pc="268436174" symbol="getServiceDelegate"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="58" lineNum="33" pc="268436178" symbol="getServiceDelegate"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="36" pc="268436216" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="38" pc="268436220" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="39" pc="268436261" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="40" pc="268436264" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="41" pc="268436271" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="42" pc="268436304" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="43" pc="268436311" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="47" pc="268436347" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="48" pc="268436364" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="49" pc="268436371" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="50" pc="268436386" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="51" pc="268436412" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="55" pc="268436422" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="56" pc="268436439" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="57" pc="268436446" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="58" pc="268436498" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="59" pc="268436524" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="63" pc="268436534" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="64" pc="268436584" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="59" lineNum="65" pc="268436619" symbol="InitBackgroundEvents"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="60" lineNum="68" pc="268436638" symbol="onBackgroundData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="60" lineNum="71" pc="268436642" symbol="onBackgroundData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="60" lineNum="72" pc="268436697" symbol="onBackgroundData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="60" lineNum="74" pc="268436704" symbol="onBackgroundData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="60" lineNum="75" pc="268436760" symbol="onBackgroundData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchApp.mc" id="60" lineNum="77" pc="268436794" symbol="onBackgroundData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="62" lineNum="9" pc="268441751" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="62" lineNum="10" pc="268441755" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="63" lineNum="13" pc="268441776" symbol="getIterator"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="63" lineNum="15" pc="268441780" symbol="getIterator"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="63" lineNum="16" pc="268441823" symbol="getIterator"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="63" lineNum="17" pc="268441831" symbol="getIterator"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="63" lineNum="18" pc="268441856" symbol="getIterator"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="63" lineNum="20" pc="268441885" symbol="getIterator"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="23" pc="268441888" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="24" pc="268441892" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="25" pc="268441905" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="26" pc="268441908" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="27" pc="268441928" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="28" pc="268441935" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="29" pc="268441942" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="30" pc="268441945" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="31" pc="268441962" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="33" pc="268441975" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="35" pc="268442033" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="37" pc="268442039" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="38" pc="268442046" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="40" pc="268442059" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="41" pc="268442072" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="44" pc="268442085" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="45" pc="268442092" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="47" pc="268442105" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="64" lineNum="48" pc="268442126" symbol="updateData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="65" lineNum="54" pc="268442160" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="65" lineNum="55" pc="268442164" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="65" lineNum="56" pc="268442176" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="65" lineNum="57" pc="268442196" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateGraphDrawable.mc" id="65" lineNum="58" pc="268442227" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BluetoothBitmapDrawable.mc" id="67" lineNum="8" pc="268442259" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BluetoothBitmapDrawable.mc" id="67" lineNum="9" pc="268442263" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BluetoothBitmapDrawable.mc" id="67" lineNum="10" pc="268442283" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BluetoothBitmapDrawable.mc" id="67" lineNum="11" pc="268442326" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BluetoothBitmapDrawable.mc" id="67" lineNum="12" pc="268442369" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BluetoothBitmapDrawable.mc" id="67" lineNum="13" pc="268442388" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BluetoothBitmapDrawable.mc" id="67" lineNum="15" pc="268442415" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BluetoothBitmapDrawable.mc" id="67" lineNum="16" pc="268442440" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BluetoothBitmapDrawable.mc" id="68" lineNum="20" pc="268442481" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BluetoothBitmapDrawable.mc" id="68" lineNum="21" pc="268442485" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BluetoothBitmapDrawable.mc" id="68" lineNum="22" pc="268442508" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BluetoothBitmapDrawable.mc" id="68" lineNum="23" pc="268442512" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BluetoothBitmapDrawable.mc" id="68" lineNum="24" pc="268442531" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BluetoothBitmapDrawable.mc" id="68" lineNum="25" pc="268442569" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BluetoothBitmapDrawable.mc" id="68" lineNum="28" pc="268442579" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="70" lineNum="8" pc="268442632" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="70" lineNum="9" pc="268442636" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="70" lineNum="10" pc="268442656" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="70" lineNum="11" pc="268442675" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="70" lineNum="13" pc="268442702" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="71" lineNum="16" pc="268442720" symbol="getIterator"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="71" lineNum="18" pc="268442724" symbol="getIterator"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="71" lineNum="19" pc="268442767" symbol="getIterator"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="71" lineNum="21" pc="268442800" symbol="getIterator"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="72" lineNum="24" pc="268442803" symbol="setVal"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="72" lineNum="25" pc="268442807" symbol="setVal"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="72" lineNum="26" pc="268442872" symbol="setVal"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="72" lineNum="27" pc="268442925" symbol="setVal"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="73" lineNum="30" pc="268442940" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="73" lineNum="31" pc="268442944" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="73" lineNum="32" pc="268442977" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="73" lineNum="33" pc="268442984" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="73" lineNum="34" pc="268442994" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunTextDrawable.mc" id="73" lineNum="36" pc="268443039" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CurCityDrawable.mc" id="75" lineNum="6" pc="268443060" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CurCityDrawable.mc" id="75" lineNum="7" pc="268443064" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CurCityDrawable.mc" id="75" lineNum="8" pc="268443084" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CurCityDrawable.mc" id="76" lineNum="11" pc="268443102" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CurCityDrawable.mc" id="76" lineNum="12" pc="268443106" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CurCityDrawable.mc" id="76" lineNum="13" pc="268443125" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CurCityDrawable.mc" id="76" lineNum="14" pc="268443132" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CurCityDrawable.mc" id="76" lineNum="16" pc="268443155" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CurTempDrawable.mc" id="78" lineNum="6" pc="268443176" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CurTempDrawable.mc" id="78" lineNum="7" pc="268443180" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CurTempDrawable.mc" id="78" lineNum="8" pc="268443200" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CurTempDrawable.mc" id="79" lineNum="11" pc="268443218" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CurTempDrawable.mc" id="79" lineNum="12" pc="268443222" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CurTempDrawable.mc" id="79" lineNum="13" pc="268443241" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CurTempDrawable.mc" id="79" lineNum="14" pc="268443248" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\CurTempDrawable.mc" id="79" lineNum="16" pc="268443271" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="81" lineNum="7" pc="268443292" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="81" lineNum="8" pc="268443296" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="81" lineNum="9" pc="268443316" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="82" lineNum="12" pc="268443334" symbol="getIterator"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="82" lineNum="14" pc="268443338" symbol="getIterator"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="82" lineNum="15" pc="268443381" symbol="getIterator"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="82" lineNum="16" pc="268443389" symbol="getIterator"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="82" lineNum="17" pc="268443411" symbol="getIterator"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="82" lineNum="19" pc="268443440" symbol="getIterator"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="83" lineNum="22" pc="268443443" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="83" lineNum="23" pc="268443447" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="83" lineNum="25" pc="268443460" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="83" lineNum="26" pc="268443467" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="83" lineNum="27" pc="268443470" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="83" lineNum="28" pc="268443477" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="83" lineNum="29" pc="268443490" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="83" lineNum="30" pc="268443497" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="83" lineNum="32" pc="268443503" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="83" lineNum="34" pc="268443516" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="83" lineNum="35" pc="268443523" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="83" lineNum="37" pc="268443543" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\HeartRateDrawable.mc" id="83" lineNum="41" pc="268443566" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="85" lineNum="7" pc="268443587" symbol="setSunData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="85" lineNum="8" pc="268443591" symbol="setSunData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="85" lineNum="9" pc="268443627" symbol="setSunData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="85" lineNum="10" pc="268443663" symbol="setSunData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="85" lineNum="11" pc="268443678" symbol="setSunData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="85" lineNum="12" pc="268443693" symbol="setSunData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="86" lineNum="14" pc="268443710" symbol="loadSunData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="86" lineNum="15" pc="268443714" symbol="loadSunData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="86" lineNum="16" pc="268443747" symbol="loadSunData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="86" lineNum="17" pc="268443754" symbol="loadSunData"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="87" lineNum="20" pc="268443778" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="87" lineNum="21" pc="268443782" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="87" lineNum="22" pc="268443802" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="87" lineNum="23" pc="268443815" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="88" lineNum="25" pc="268443829" symbol="minutesInDay"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="88" lineNum="26" pc="268443833" symbol="minutesInDay"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="88" lineNum="27" pc="268443872" symbol="minutesInDay"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="88" lineNum="28" pc="268443897" symbol="minutesInDay"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="89" lineNum="30" pc="268443901" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="89" lineNum="31" pc="268443905" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="89" lineNum="32" pc="268443933" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="90" lineNum="35" pc="268443954" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="90" lineNum="36" pc="268443958" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="90" lineNum="37" pc="268443970" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\SunArcDrawable.mc" id="90" lineNum="38" pc="268443982" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="92" lineNum="6" pc="268444003" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="92" lineNum="7" pc="268444007" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="92" lineNum="8" pc="268444027" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="92" lineNum="9" pc="268444046" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="92" lineNum="10" pc="268444056" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="92" lineNum="12" pc="268444076" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="93" lineNum="15" pc="268444094" symbol="setBckgnd"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="93" lineNum="16" pc="268444098" symbol="setBckgnd"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="93" lineNum="17" pc="268444105" symbol="setBckgnd"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="93" lineNum="18" pc="268444116" symbol="setBckgnd"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="93" lineNum="19" pc="268444126" symbol="setBckgnd"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="93" lineNum="20" pc="268444137" symbol="setBckgnd"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="93" lineNum="22" pc="268444147" symbol="setBckgnd"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="93" lineNum="24" pc="268444154" symbol="setBckgnd"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="94" lineNum="28" pc="268444169" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="94" lineNum="29" pc="268444173" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="94" lineNum="30" pc="268444192" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="94" lineNum="31" pc="268444199" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="94" lineNum="32" pc="268444209" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="94" lineNum="34" pc="268444216" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="94" lineNum="35" pc="268444245" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="94" lineNum="36" pc="268444255" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="94" lineNum="37" pc="268444266" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="94" lineNum="39" pc="268444283" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="94" lineNum="40" pc="268444293" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="94" lineNum="41" pc="268444304" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="94" lineNum="43" pc="268444323" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\WeatherStalenessDrawable.mc" id="94" lineNum="46" pc="268444343" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsTextDrawable.mc" id="96" lineNum="8" pc="268444364" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsTextDrawable.mc" id="96" lineNum="9" pc="268444368" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsTextDrawable.mc" id="96" lineNum="10" pc="268444388" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsTextDrawable.mc" id="97" lineNum="13" pc="268444406" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsTextDrawable.mc" id="97" lineNum="14" pc="268444410" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsTextDrawable.mc" id="97" lineNum="15" pc="268444429" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsTextDrawable.mc" id="97" lineNum="16" pc="268444436" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsTextDrawable.mc" id="97" lineNum="18" pc="268444440" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\StepsTextDrawable.mc" id="97" lineNum="19" pc="268444475" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchBackground.mc" id="99" lineNum="7" pc="268444496" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchBackground.mc" id="99" lineNum="8" pc="268444500" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchBackground.mc" id="99" lineNum="12" pc="268444521" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchBackground.mc" id="100" lineNum="15" pc="268444542" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchBackground.mc" id="100" lineNum="17" pc="268444546" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\LayoutContextExt.mc" id="102" lineNum="2" pc="268444600" symbol="loadAndSetWeather"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\LayoutContextExt.mc" id="102" lineNum="3" pc="268444604" symbol="loadAndSetWeather"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\LayoutContextExt.mc" id="102" lineNum="4" pc="268444637" symbol="loadAndSetWeather"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\LayoutContextExt.mc" id="102" lineNum="5" pc="268444644" symbol="loadAndSetWeather"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\LayoutContextExt.mc" id="102" lineNum="6" pc="268444675" symbol="loadAndSetWeather"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\LayoutContextExt.mc" id="102" lineNum="8" pc="268444687" symbol="loadAndSetWeather"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\LayoutContextExt.mc" id="104" lineNum="11" pc="268444690" symbol="getWeather"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\LayoutContextExt.mc" id="104" lineNum="12" pc="268444694" symbol="getWeather"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\LayoutContextExt.mc" id="104" lineNum="13" pc="268444718" symbol="getWeather"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\LayoutContextExt.mc" id="104" lineNum="14" pc="268444743" symbol="getWeather"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="106" lineNum="10" pc="268444750" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="106" lineNum="11" pc="268444754" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="107" lineNum="15" pc="268444773" symbol="onLayout"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="107" lineNum="16" pc="268444777" symbol="onLayout"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="108" lineNum="22" pc="268444815" symbol="onShow"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="109" lineNum="26" pc="268444820" symbol="onUpdate"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="109" lineNum="28" pc="268444824" symbol="onUpdate"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="109" lineNum="29" pc="268444831" symbol="onUpdate"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="109" lineNum="30" pc="268444848" symbol="onUpdate"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="109" lineNum="31" pc="268444858" symbol="onUpdate"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="109" lineNum="32" pc="268444883" symbol="onUpdate"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="109" lineNum="33" pc="268444894" symbol="onUpdate"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="109" lineNum="36" pc="268444910" symbol="onUpdate"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="109" lineNum="37" pc="268444942" symbol="onUpdate"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="109" lineNum="38" pc="268444949" symbol="onUpdate"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="109" lineNum="42" pc="268444970" symbol="onUpdate"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="109" lineNum="45" pc="268445049" symbol="onUpdate"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="109" lineNum="46" pc="268445073" symbol="onUpdate"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="109" lineNum="47" pc="268445110" symbol="onUpdate"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="109" lineNum="49" pc="268445124" symbol="onUpdate"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="109" lineNum="51" pc="268445138" symbol="onUpdate"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="110" lineNum="57" pc="268445159" symbol="onHide"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="111" lineNum="61" pc="268445164" symbol="onExitSleep"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\gWeatherWatchView.mc" id="112" lineNum="65" pc="268445169" symbol="onEnterSleep"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\DateDrawable.mc" id="114" lineNum="8" pc="268445174" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\DateDrawable.mc" id="114" lineNum="9" pc="268445178" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\DateDrawable.mc" id="114" lineNum="10" pc="268445198" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\DateDrawable.mc" id="115" lineNum="13" pc="268445216" symbol="dow"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\DateDrawable.mc" id="115" lineNum="14" pc="268445220" symbol="dow"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\DateDrawable.mc" id="115" lineNum="16" pc="268445368" symbol="dow"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\DateDrawable.mc" id="115" lineNum="18" pc="268445374" symbol="dow"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\DateDrawable.mc" id="115" lineNum="20" pc="268445380" symbol="dow"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\DateDrawable.mc" id="115" lineNum="22" pc="268445386" symbol="dow"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\DateDrawable.mc" id="115" lineNum="24" pc="268445392" symbol="dow"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\DateDrawable.mc" id="115" lineNum="26" pc="268445398" symbol="dow"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\DateDrawable.mc" id="115" lineNum="28" pc="268445404" symbol="dow"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\DateDrawable.mc" id="115" lineNum="30" pc="268445410" symbol="dow"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\DateDrawable.mc" id="116" lineNum="33" pc="268445417" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\DateDrawable.mc" id="116" lineNum="34" pc="268445421" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\DateDrawable.mc" id="116" lineNum="35" pc="268445465" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\DateDrawable.mc" id="116" lineNum="41" pc="268445596" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\DateDrawable.mc" id="116" lineNum="42" pc="268445610" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LayoutContext.mc" id="118" lineNum="4" pc="268445631" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LayoutContext.mc" id="118" lineNum="5" pc="268445635" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LayoutContext.mc" id="119" lineNum="8" pc="268445648" symbol="reset"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LayoutContext.mc" id="119" lineNum="9" pc="268445652" symbol="reset"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LayoutContext.mc" id="120" lineNum="12" pc="268445667" symbol="get"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LayoutContext.mc" id="120" lineNum="13" pc="268445671" symbol="get"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LayoutContext.mc" id="120" lineNum="14" pc="268445684" symbol="get"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LayoutContext.mc" id="120" lineNum="15" pc="268445707" symbol="get"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LayoutContext.mc" id="120" lineNum="17" pc="268445712" symbol="get"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LayoutContext.mc" id="122" lineNum="20" pc="268445734" symbol="set"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LayoutContext.mc" id="122" lineNum="21" pc="268445738" symbol="set"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LayoutContext.mc" id="122" lineNum="23" pc="268445751" symbol="set"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LayoutContext.mc" id="123" lineNum="27" pc="268445774" symbol="getInstance"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LayoutContext.mc" id="123" lineNum="28" pc="268445778" symbol="getInstance"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LayoutContext.mc" id="123" lineNum="29" pc="268445791" symbol="getInstance"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\LayoutContext.mc" id="123" lineNum="31" pc="268445824" symbol="getInstance"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="125" lineNum="7" pc="268445834" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="125" lineNum="8" pc="268445838" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="125" lineNum="9" pc="268445858" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="125" lineNum="10" pc="268445877" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="125" lineNum="12" pc="268445904" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="125" lineNum="13" pc="268445923" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="125" lineNum="15" pc="268445950" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="125" lineNum="16" pc="268445963" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="126" lineNum="19" pc="268445977" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="126" lineNum="20" pc="268445981" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="126" lineNum="21" pc="268445992" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="126" lineNum="22" pc="268446014" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="126" lineNum="23" pc="268446039" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="126" lineNum="24" pc="268446050" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="126" lineNum="25" pc="268446072" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="126" lineNum="27" pc="268446088" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="126" lineNum="28" pc="268446110" symbol="doAutoColor"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="127" lineNum="31" pc="268446133" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="127" lineNum="32" pc="268446137" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="127" lineNum="33" pc="268446175" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="127" lineNum="34" pc="268446186" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="127" lineNum="36" pc="268446203" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="127" lineNum="37" pc="268446214" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="127" lineNum="39" pc="268446248" symbol="updateValue"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="128" lineNum="43" pc="268446274" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="128" lineNum="44" pc="268446278" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\BatteryArcDrawable.mc" id="128" lineNum="45" pc="268446290" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="130" lineNum="12" pc="268446311" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="130" lineNum="13" pc="268446315" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="130" lineNum="15" pc="268446335" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="130" lineNum="16" pc="268446359" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="130" lineNum="17" pc="268446383" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="130" lineNum="18" pc="268446407" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="130" lineNum="19" pc="268446431" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="130" lineNum="20" pc="268446455" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="130" lineNum="21" pc="268446473" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="131" lineNum="24" pc="268446506" symbol="addEntry"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="131" lineNum="25" pc="268446510" symbol="addEntry"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="132" lineNum="28" pc="268446531" symbol="getHeights"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="132" lineNum="29" pc="268446535" symbol="getHeights"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="132" lineNum="30" pc="268446560" symbol="getHeights"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="132" lineNum="31" pc="268446585" symbol="getHeights"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="132" lineNum="34" pc="268446604" symbol="getHeights"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="132" lineNum="35" pc="268446624" symbol="getHeights"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="132" lineNum="37" pc="268446630" symbol="getHeights"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="132" lineNum="38" pc="268446643" symbol="getHeights"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="132" lineNum="39" pc="268446656" symbol="getHeights"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="132" lineNum="41" pc="268446672" symbol="getHeights"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="132" lineNum="42" pc="268446692" symbol="getHeights"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="132" lineNum="44" pc="268446717" symbol="getHeights"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="132" lineNum="45" pc="268446731" symbol="getHeights"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="132" lineNum="46" pc="268446755" symbol="getHeights"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="132" lineNum="47" pc="268446765" symbol="getHeights"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="132" lineNum="49" pc="268446778" symbol="getHeights"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="132" lineNum="52" pc="268446867" symbol="getHeights"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="133" lineNum="55" pc="268446871" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="133" lineNum="56" pc="268446875" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="133" lineNum="58" pc="268446909" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="133" lineNum="59" pc="268446922" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="133" lineNum="60" pc="268446941" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="133" lineNum="61" pc="268446975" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="133" lineNum="63" pc="268446992" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="133" lineNum="64" pc="268447016" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="133" lineNum="66" pc="268447073" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="133" lineNum="67" pc="268447107" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PlotDrawable.mc" id="133" lineNum="68" pc="268447131" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="135" lineNum="9" pc="268447176" symbol="getCoord"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="135" lineNum="10" pc="268447180" symbol="getCoord"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="135" lineNum="11" pc="268447195" symbol="getCoord"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="135" lineNum="12" pc="268447214" symbol="getCoord"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="135" lineNum="13" pc="268447249" symbol="getCoord"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="135" lineNum="14" pc="268447268" symbol="getCoord"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="135" lineNum="16" pc="268447297" symbol="getCoord"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="136" lineNum="19" pc="268447301" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="136" lineNum="20" pc="268447305" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="136" lineNum="21" pc="268447325" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="136" lineNum="22" pc="268447342" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="136" lineNum="23" pc="268447372" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="136" lineNum="24" pc="268447402" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="136" lineNum="25" pc="268447432" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="136" lineNum="27" pc="268447462" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="136" lineNum="28" pc="268447481" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="136" lineNum="30" pc="268447508" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="136" lineNum="32" pc="268447530" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="136" lineNum="33" pc="268447549" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="136" lineNum="35" pc="268447576" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="137" lineNum="39" pc="268447590" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="137" lineNum="40" pc="268447594" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="137" lineNum="41" pc="268447628" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\LineDrawable.mc" id="137" lineNum="42" pc="268447648" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PositionableDrawable.mc" id="139" lineNum="8" pc="268447693" symbol="getCoord"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PositionableDrawable.mc" id="139" lineNum="9" pc="268447697" symbol="getCoord"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PositionableDrawable.mc" id="139" lineNum="10" pc="268447712" symbol="getCoord"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PositionableDrawable.mc" id="139" lineNum="11" pc="268447731" symbol="getCoord"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PositionableDrawable.mc" id="139" lineNum="12" pc="268447766" symbol="getCoord"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PositionableDrawable.mc" id="139" lineNum="13" pc="268447785" symbol="getCoord"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PositionableDrawable.mc" id="139" lineNum="16" pc="268447814" symbol="getCoord"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PositionableDrawable.mc" id="140" lineNum="19" pc="268447818" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PositionableDrawable.mc" id="140" lineNum="20" pc="268447822" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PositionableDrawable.mc" id="140" lineNum="21" pc="268447842" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PositionableDrawable.mc" id="140" lineNum="22" pc="268447859" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PositionableDrawable.mc" id="140" lineNum="23" pc="268447889" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PositionableDrawable.mc" id="141" lineNum="26" pc="268447920" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Drawables\\PositionableDrawable.mc" id="141" lineNum="27" pc="268447924" symbol="draw"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="143" lineNum="4" pc="268447945" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="143" lineNum="5" pc="268447949" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="143" lineNum="6" pc="268447981" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="143" lineNum="7" pc="268447995" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="144" lineNum="9" pc="268448006" symbol="add"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="144" lineNum="10" pc="268448010" symbol="add"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="144" lineNum="11" pc="268448030" symbol="add"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="145" lineNum="14" pc="268448041" symbol="reloadIfNeeded"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="145" lineNum="15" pc="268448045" symbol="reloadIfNeeded"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="145" lineNum="16" pc="268448057" symbol="reloadIfNeeded"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="145" lineNum="17" pc="268448082" symbol="reloadIfNeeded"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="145" lineNum="18" pc="268448102" symbol="reloadIfNeeded"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="145" lineNum="19" pc="268448111" symbol="reloadIfNeeded"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="145" lineNum="20" pc="268448120" symbol="reloadIfNeeded"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="145" lineNum="21" pc="268448150" symbol="reloadIfNeeded"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="145" lineNum="22" pc="268448166" symbol="reloadIfNeeded"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="145" lineNum="24" pc="268448172" symbol="reloadIfNeeded"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="145" lineNum="25" pc="268448211" symbol="reloadIfNeeded"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="145" lineNum="27" pc="268448233" symbol="reloadIfNeeded"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="145" lineNum="28" pc="268448272" symbol="reloadIfNeeded"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="145" lineNum="32" pc="268448310" symbol="reloadIfNeeded"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="146" lineNum="36" pc="268448324" symbol="getAll"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="146" lineNum="37" pc="268448328" symbol="getAll"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="146" lineNum="38" pc="268448340" symbol="getAll"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="147" lineNum="41" pc="268448350" symbol="getMin"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="147" lineNum="42" pc="268448354" symbol="getMin"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="147" lineNum="43" pc="268448366" symbol="getMin"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="148" lineNum="45" pc="268448376" symbol="getMax"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="148" lineNum="46" pc="268448380" symbol="getMax"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="148" lineNum="47" pc="268448392" symbol="getMax"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="149" lineNum="49" pc="268448402" symbol="capacity"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\PlotData.mc" id="149" lineNum="50" pc="268448406" symbol="capacity"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="151" lineNum="7" pc="268448425" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="151" lineNum="8" pc="268448429" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="151" lineNum="9" pc="268448442" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="151" lineNum="10" pc="268448455" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="151" lineNum="11" pc="268448468" symbol="initialize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="152" lineNum="14" pc="268448480" symbol="normalize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="152" lineNum="15" pc="268448484" symbol="normalize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="152" lineNum="16" pc="268448513" symbol="normalize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="152" lineNum="18" pc="268448529" symbol="normalize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="152" lineNum="19" pc="268448558" symbol="normalize"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="153" lineNum="23" pc="268448575" symbol="pop"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="153" lineNum="24" pc="268448579" symbol="pop"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="153" lineNum="25" pc="268448596" symbol="pop"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="153" lineNum="27" pc="268448601" symbol="pop"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="153" lineNum="28" pc="268448620" symbol="pop"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="153" lineNum="29" pc="268448639" symbol="pop"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="153" lineNum="30" pc="268448658" symbol="pop"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="153" lineNum="31" pc="268448670" symbol="pop"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="154" lineNum="34" pc="268448674" symbol="capacity"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="154" lineNum="35" pc="268448678" symbol="capacity"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="155" lineNum="38" pc="268448697" symbol="top"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="155" lineNum="39" pc="268448701" symbol="top"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="155" lineNum="40" pc="268448718" symbol="top"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="155" lineNum="42" pc="268448723" symbol="top"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="156" lineNum="45" pc="268448742" symbol="size"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="156" lineNum="46" pc="268448746" symbol="size"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="157" lineNum="49" pc="268448756" symbol="push"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="157" lineNum="50" pc="268448760" symbol="push"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="157" lineNum="51" pc="268448789" symbol="push"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="157" lineNum="53" pc="268448804" symbol="push"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="157" lineNum="54" pc="268448823" symbol="push"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="157" lineNum="55" pc="268448842" symbol="push"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="157" lineNum="56" pc="268448861" symbol="push"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="158" lineNum="58" pc="268448874" symbol="asArray"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="158" lineNum="59" pc="268448878" symbol="asArray"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="158" lineNum="60" pc="268448889" symbol="asArray"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="158" lineNum="61" pc="268448896" symbol="asArray"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="158" lineNum="62" pc="268448920" symbol="asArray"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="158" lineNum="63" pc="268448943" symbol="asArray"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="158" lineNum="65" pc="268448953" symbol="asArray"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="158" lineNum="66" pc="268448969" symbol="asArray"/>
+<entry filename="C:\\src\\garmin\\gweatherwatch\\source\\Util\\CircularBuffer.mc" id="158" lineNum="68" pc="268448992" symbol="asArray"/>
+<entry filename="Rez" id="164" lineNum="18" pc="268448996" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="20" pc="268449008" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="21" pc="268449032" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="22" pc="268449165" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="23" pc="268449291" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="24" pc="268449417" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="25" pc="268449545" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="26" pc="268449647" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="27" pc="268449749" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="28" pc="268449838" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="29" pc="268449986" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="30" pc="268450114" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="31" pc="268450243" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="32" pc="268450352" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="33" pc="268450481" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="34" pc="268450597" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="35" pc="268450699" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="36" pc="268450825" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="37" pc="268450941" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="38" pc="268451076" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="39" pc="268451205" symbol="WatchFace"/>
+<entry filename="Rez" id="164" lineNum="41" pc="268451327" symbol="WatchFace"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="103" method="true" symbol="loadSunData"/>
+<entry id="8388639" module="true" symbol="Graphics"/>
+<entry id="104" method="true" symbol="minutesInDay"/>
+<entry field="true" id="60" symbol="bton"/>
+<entry id="25" object="true" symbol="HeartRateGraphDrawable"/>
+<entry id="52" method="true" symbol="OnReceiveWeather"/>
+<entry id="144" method="true" symbol="cellColor"/>
+<entry field="true" id="123" symbol="&lt;globals/CircularBuffer/&lt;&gt;front&gt;"/>
+<entry id="41" object="true" symbol="PositionableDrawable"/>
+<entry field="true" id="133" symbol="lineColor"/>
+<entry id="16" object="true" symbol="Persistent"/>
+<entry id="20" object="true" symbol="HeartRateRangeDrawable"/>
+<entry field="true" id="127" symbol="&lt;globals/CircularBuffer/&lt;&gt;max&gt;"/>
+<entry id="140" method="true" symbol="setBckgnd"/>
+<entry field="true" id="53" symbol="&lt;globals/LocationProvider/&lt;&gt;lastLat&gt;"/>
+<entry id="131" method="true" symbol="asArray"/>
+<entry id="96" method="true" symbol="normalize"/>
+<entry id="8389683" method="true" symbol="onSettingsChanged"/>
+<entry field="true" id="90" symbol="colBack"/>
+<entry field="true" id="8389759" symbol="radius"/>
+<entry field="true" id="66" symbol="ColorRed"/>
+<entry field="true" id="142" symbol="tWidth"/>
+<entry id="8389702" method="true" symbol="getHeartRateHistory"/>
+<entry id="152" symbol="arrowcolor"/>
+<entry id="98" method="true" symbol="drawArrow"/>
+<entry id="24" object="true" symbol="gWeatherWatchApp"/>
+<entry field="true" id="89" symbol="frontHigh"/>
+<entry field="true" id="125" symbol="&lt;globals/CircularBuffer/&lt;&gt;_size&gt;"/>
+<entry id="18" object="true" symbol="StepsArcDrawable"/>
+<entry id="95" method="true" symbol="angle"/>
+<entry field="true" id="70" symbol="MilitaryFormatTitle"/>
+<entry field="true" id="139" symbol="&lt;globals/WeatherStalenessDrawable/&lt;&gt;shouldColor&gt;"/>
+<entry id="8388924" module="true" symbol="Gregorian"/>
+<entry field="true" id="132" symbol="fillColor"/>
+<entry id="28" object="true" symbol="CurCityDrawable"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry id="102" method="true" symbol="setSunData"/>
+<entry field="true" id="77" symbol="&lt;globals/PlotData/&lt;&gt;buffer&gt;"/>
+<entry field="true" id="100" symbol="offBmp"/>
+<entry id="46" method="true" symbol="InitBackgroundEvents"/>
+<entry id="30" object="true" symbol="HeartRateDrawable"/>
+<entry id="51" method="true" symbol="loadGoogleData"/>
+<entry field="true" id="99" symbol="onBmp"/>
+<entry id="8388649" module="true" object="true" symbol="Test"/>
+<entry id="36" object="true" symbol="DateDrawable"/>
+<entry field="true" id="65" symbol="ColorBlue"/>
+<entry field="true" id="8388782" method="true" symbol="size"/>
+<entry id="115" method="true" symbol="reset"/>
+<entry field="true" id="135" symbol="history"/>
+<entry field="true" id="87" symbol="arrowVal"/>
+<entry id="23" object="true" symbol="CustomTextDrawable"/>
+<entry id="138" method="true" symbol="getHeights"/>
+<entry id="8390575" method="true" symbol="getLocation"/>
+<entry field="true" id="73" symbol="AppName"/>
+<entry id="8388633" module="true" symbol="ActivityMonitor"/>
+<entry id="159" symbol="linecolor"/>
+<entry id="112" method="true" symbol="getCoord"/>
+<entry field="true" id="8389807" symbol="data"/>
+<entry id="75" method="true" symbol="getIterator"/>
+<entry id="129" method="true" symbol="top"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="43" object="true" symbol="CircularBuffer"/>
+<entry id="76" method="true" symbol="updateData"/>
+<entry field="true" id="85" symbol="angTo"/>
+<entry id="27" object="true" symbol="SunTextDrawable"/>
+<entry id="8388631" module="true" symbol="Activity"/>
+<entry id="8388942" method="true" symbol="add"/>
+<entry id="13" object="true" symbol="FcastDrawable"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry field="true" id="117" symbol="_instance"/>
+<entry id="82" method="true" symbol="reloadIfNeeded"/>
+<entry id="145" method="true" symbol="drawCell"/>
+<entry id="154" symbol="twidth"/>
+<entry id="8390148" method="true" symbol="onTemporalEvent"/>
+<entry field="true" id="88" symbol="frontLow"/>
+<entry id="8388789" method="true" symbol="get"/>
+<entry id="15" object="true" symbol="PersistKeys"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+<entry field="true" id="8389065" symbol="locY"/>
+<entry field="true" id="122" symbol="&lt;globals/CircularBuffer/&lt;&gt;data&gt;"/>
+<entry field="true" id="8389064" symbol="locX"/>
+<entry field="true" id="111" symbol="y2"/>
+<entry field="true" id="109" symbol="y1"/>
+<entry field="true" id="55" symbol="Weather"/>
+<entry field="true" id="110" symbol="x2"/>
+<entry field="true" id="108" symbol="x1"/>
+<entry id="157" symbol="colorback"/>
+<entry id="149" symbol="to"/>
+<entry field="true" id="8388721" symbol="min"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry field="true" id="8389348" symbol="font"/>
+<entry field="true" id="8389067" symbol="height"/>
+<entry field="true" id="8389825" method="true" symbol="reverse"/>
+<entry id="146" method="true" symbol="drawAll"/>
+<entry id="37" object="true" symbol="LayoutContext"/>
+<entry id="8390169" method="true" symbol="getServiceDelegate"/>
+<entry id="59" module="true" symbol="Menus"/>
+<entry id="158" symbol="fillcolor"/>
+<entry field="true" id="69" symbol="ColorDarkGray"/>
+<entry id="143" method="true" symbol="makeCell"/>
+<entry field="true" id="8389066" symbol="width"/>
+<entry id="83" method="true" symbol="getAll"/>
+<entry field="true" id="86" symbol="max"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="107" method="true" symbol="doAutoColor"/>
+<entry id="8389376" method="true" symbol="onEnterSleep"/>
+<entry id="38" object="true" symbol="BatteryArcDrawable"/>
+<entry field="true" id="8389063" symbol="identifier"/>
+<entry id="93" method="true" symbol="setColors"/>
+<entry id="8389349" symbol="justification"/>
+<entry id="116" method="true" symbol="set"/>
+<entry id="19" object="true" symbol="BatteryTextDrawable"/>
+<entry id="22" object="true" symbol="BackgroundServiceDelegate"/>
+<entry field="true" id="79" symbol="&lt;globals/PlotData/&lt;&gt;valid&gt;"/>
+<entry field="true" id="48" symbol="_syncCounter"/>
+<entry id="151" symbol="bgcolor"/>
+<entry id="94" method="true" symbol="setFront"/>
+<entry id="39" object="true" symbol="PlotDrawable"/>
+<entry field="true" id="113" symbol="sunrise"/>
+<entry field="true" id="72" symbol="ColorWhite"/>
+<entry field="true" id="61" symbol="btoff"/>
+<entry field="true" id="71" symbol="ColorBlack"/>
+<entry id="33" object="true" symbol="StepsTextDrawable"/>
+<entry id="32" object="true" symbol="WeatherStalenessDrawable"/>
+<entry field="true" id="141" symbol="hWidth"/>
+<entry id="8389134" method="true" symbol="setText"/>
+<entry id="8390170" method="true" symbol="onBackgroundData"/>
+<entry id="31" object="true" symbol="SunArcDrawable"/>
+<entry id="45" method="true" symbol="Load"/>
+<entry id="29" object="true" symbol="CurTempDrawable"/>
+<entry id="8389844" symbol="responseType"/>
+<entry id="8389707" method="true" symbol="getMin"/>
+<entry field="true" id="91" symbol="colFront"/>
+<entry id="26" object="true" symbol="BluetoothBitmapDrawable"/>
+<entry field="true" id="80" symbol="&lt;globals/PlotData/&lt;&gt;min&gt;"/>
+<entry id="40" object="true" symbol="LineDrawable"/>
+<entry id="8389706" method="true" symbol="getMax"/>
+<entry id="8388786" method="true" symbol="method"/>
+<entry id="8389377" method="true" symbol="onExitSleep"/>
+<entry id="147" method="true" symbol="prepareValues"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry id="8388645" module="true" symbol="Time"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="14" object="true" symbol="CustomArcDrawable"/>
+<entry field="true" id="124" symbol="&lt;globals/CircularBuffer/&lt;&gt;back&gt;"/>
+<entry field="true" id="101" symbol="xalign"/>
+<entry id="160" symbol="bkcolor"/>
+<entry id="8388640" module="true" symbol="Lang"/>
+<entry field="true" id="47" symbol="_weatherInfo"/>
+<entry id="35" object="true" symbol="gWeatherWatchView"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry id="44" method="true" symbol="Save"/>
+<entry id="8389068" method="true" symbol="draw"/>
+<entry field="true" id="8390366" method="true" symbol="capacity"/>
+<entry field="true" id="62" symbol="LauncherIcon"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry field="true" id="8388794" method="true" symbol="values"/>
+<entry field="true" id="106" symbol="autoColor"/>
+<entry id="8389889" method="true" symbol="getInstance"/>
+<entry id="8388643" module="true" symbol="Sensor"/>
+<entry id="8390485" symbol="bluetooth"/>
+<entry field="true" id="63" symbol="Numbers"/>
+<entry id="42" object="true" symbol="PlotData"/>
+<entry field="true" id="68" symbol="BackgroundColorTitle"/>
+<entry id="153" symbol="hwidth"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8390146" module="true" object="true" symbol="Background"/>
+<entry field="true" id="8389298" object="true" symbol="Location"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry id="119" method="true" symbol="dow"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="21" object="true" symbol="LocationProvider"/>
+<entry field="true" id="92" symbol="colArrow"/>
+<entry field="true" id="81" symbol="&lt;globals/PlotData/&lt;&gt;max&gt;"/>
+<entry id="114" method="true" symbol="setVal"/>
+<entry id="118" method="true" symbol="makeFcastLine"/>
+<entry id="8389808" symbol="period"/>
+<entry id="8388641" module="true" symbol="Math"/>
+<entry field="true" id="64" symbol="ColorLightGray"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry field="true" id="8389347" symbol="color"/>
+<entry field="true" id="49" symbol="_location"/>
+<entry id="121" method="true" symbol="getWeather"/>
+<entry id="8389781" module="true" symbol="SensorHistory"/>
+<entry field="true" id="84" symbol="angFrom"/>
+<entry field="true" id="134" symbol="backColor"/>
+<entry field="true" id="126" symbol="&lt;globals/CircularBuffer/&lt;&gt;min&gt;"/>
+<entry field="true" id="67" symbol="ForegroundColorTitle"/>
+<entry id="120" method="true" symbol="loadAndSetWeather"/>
+<entry id="58" module="true" symbol="Layouts"/>
+<entry id="128" method="true" symbol="pop"/>
+<entry field="true" id="78" symbol="&lt;globals/PlotData/&lt;&gt;asArray&gt;"/>
+<entry field="true" id="56" symbol="LastBackgroundEvent"/>
+<entry id="8388642" module="true" symbol="Position"/>
+<entry id="97" method="true" symbol="drawFront"/>
+<entry id="155" symbol="autocolor"/>
+<entry id="148" symbol="from"/>
+<entry field="true" id="54" symbol="&lt;globals/LocationProvider/&lt;&gt;lastLon&gt;"/>
+<entry id="105" method="true" symbol="updateValue"/>
+<entry field="true" id="74" symbol="lastMoment"/>
+<entry id="34" object="true" symbol="LayoutContextExt"/>
+<entry id="130" method="true" symbol="push"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry field="true" id="136" symbol="plotData"/>
+<entry field="true" id="50" symbol="&lt;globals/BackgroundServiceDelegate/&lt;&gt;locationProvider&gt;"/>
+<entry id="8390426" method="true" symbol="setValue"/>
+<entry id="137" method="true" symbol="addEntry"/>
+<entry id="17" object="true" symbol="FcastRectsDrawable"/>
+<entry id="8388635" module="true" symbol="Application"/>
+<entry field="true" id="8390079" symbol="y"/>
+<entry field="true" id="8390078" symbol="x"/>
+<entry id="150" symbol="r"/>
+<entry id="156" symbol="maxlen"/>
+<entry field="true" id="57" symbol="maxLen"/>
+</symbolTable>
+<localVars>
+<entry endPc="268436954" name="params" stackId="1" startPc="268436912"/>
+<entry endPc="268437167" name="temp" stackId="8" startPc="268437068"/>
+<entry endPc="268437167" name="entry" stackId="6" startPc="268437068"/>
+<entry endPc="268437167" name="time" stackId="7" startPc="268437068"/>
+<entry endPc="268437180" name="i" stackId="5" startPc="268437068"/>
+<entry endPc="268437214" name="now" stackId="3" startPc="268436958"/>
+<entry endPc="268437214" name="off" stackId="4" startPc="268436958"/>
+<entry endPc="268437214" name="rv" stackId="2" startPc="268436958"/>
+<entry endPc="268437215" name="weather" stackId="1" startPc="268436954"/>
+<entry endPc="268437293" name="weather" stackId="2" startPc="268437219"/>
+<entry endPc="268437294" name="dc" stackId="1" startPc="268437215"/>
+<entry endPc="268438061" name="sett" stackId="2" startPc="268437298"/>
+<entry endPc="268438062" name="params" stackId="1" startPc="268437294"/>
+<entry endPc="268438087" name="back" stackId="2" startPc="268438062"/>
+<entry endPc="268438087" name="front" stackId="1" startPc="268438062"/>
+<entry endPc="268438102" name="val" stackId="1" startPc="268438087"/>
+<entry endPc="268438127" name="to" stackId="2" startPc="268438102"/>
+<entry endPc="268438127" name="from" stackId="1" startPc="268438102"/>
+<entry endPc="268438259" name="ratio" stackId="2" startPc="268438131"/>
+<entry endPc="268438259" name="angFromEffective" stackId="3" startPc="268438131"/>
+<entry endPc="268438259" name="rv" stackId="4" startPc="268438131"/>
+<entry endPc="268438260" name="val" stackId="1" startPc="268438127"/>
+<entry endPc="268438316" name="ang" stackId="1" startPc="268438260"/>
+<entry endPc="268438458" name="to" stackId="3" startPc="268438320"/>
+<entry endPc="268438458" name="from" stackId="2" startPc="268438320"/>
+<entry endPc="268438459" name="dc" stackId="1" startPc="268438316"/>
+<entry endPc="268438628" name="pos" stackId="2" startPc="268438463"/>
+<entry endPc="268438629" name="dc" stackId="1" startPc="268438459"/>
+<entry endPc="268438810" name="dc" stackId="1" startPc="268438629"/>
+<entry endPc="268435493" name="key" stackId="1" startPc="268435459"/>
+<entry endPc="268435493" name="value" stackId="2" startPc="268435459"/>
+<entry endPc="268435549" name="key" stackId="1" startPc="268435493"/>
+<entry endPc="268438907" name="param" stackId="1" startPc="268438810"/>
+<entry endPc="268439020" name="temp" stackId="4" startPc="268438911"/>
+<entry endPc="268439020" name="time" stackId="3" startPc="268438911"/>
+<entry endPc="268439021" name="entry" stackId="1" startPc="268438907"/>
+<entry endPc="268439021" name="offset" stackId="2" startPc="268438907"/>
+<entry endPc="268439324" name="symbol" stackId="1" startPc="268439021"/>
+<entry endPc="268439994" name="height" stackId="8" startPc="268439328"/>
+<entry endPc="268439994" name="curX" stackId="5" startPc="268439328"/>
+<entry endPc="268439994" name="tempSize" stackId="7" startPc="268439328"/>
+<entry endPc="268439994" name="hourSize" stackId="6" startPc="268439328"/>
+<entry endPc="268439994" name="fullWidth" stackId="9" startPc="268439328"/>
+<entry endPc="268439995" name="cell" stackId="1" startPc="268439324"/>
+<entry endPc="268439995" name="dc" stackId="4" startPc="268439324"/>
+<entry endPc="268439995" name="posY" stackId="3" startPc="268439324"/>
+<entry endPc="268439995" name="posX" stackId="2" startPc="268439324"/>
+<entry endPc="268440088" name="i" stackId="3" startPc="268440039"/>
+<entry endPc="268440088" name="posX" stackId="2" startPc="268439999"/>
+<entry endPc="268440089" name="dc" stackId="1" startPc="268439995"/>
+<entry endPc="268440295" name="i" stackId="5" startPc="268440253"/>
+<entry endPc="268440295" name="now" stackId="1" startPc="268440093"/>
+<entry endPc="268440295" name="fcast" stackId="4" startPc="268440093"/>
+<entry endPc="268440295" name="off" stackId="2" startPc="268440093"/>
+<entry endPc="268440295" name="weather" stackId="3" startPc="268440093"/>
+<entry endPc="268440327" name="dc" stackId="1" startPc="268440296"/>
+<entry endPc="268440470" name="params" stackId="1" startPc="268440327"/>
+<entry endPc="268440653" name="ratio" stackId="1" startPc="268440470"/>
+<entry endPc="268440851" name="progress" stackId="3" startPc="268440657"/>
+<entry endPc="268440851" name="ratio" stackId="2" startPc="268440657"/>
+<entry endPc="268440851" name="activity" stackId="1" startPc="268440657"/>
+<entry endPc="268440889" name="dc" stackId="1" startPc="268440852"/>
+<entry endPc="268440931" name="params" stackId="1" startPc="268440889"/>
+<entry endPc="268441055" name="charge" stackId="2" startPc="268440935"/>
+<entry endPc="268441056" name="dc" stackId="1" startPc="268440931"/>
+<entry endPc="268441098" name="params" stackId="1" startPc="268441056"/>
+<entry endPc="268441227" name="max" stackId="3" startPc="268441102"/>
+<entry endPc="268441227" name="min" stackId="2" startPc="268441102"/>
+<entry endPc="268441228" name="dc" stackId="1" startPc="268441098"/>
+<entry endPc="268435679" name="activityLocation" stackId="1" startPc="268435556"/>
+<entry endPc="268435918" name="options" stackId="3" startPc="268435744"/>
+<entry endPc="268435918" name="url" stackId="2" startPc="268435744"/>
+<entry endPc="268435919" name="loc" stackId="1" startPc="268435740"/>
+<entry endPc="268435956" name="loc" stackId="1" startPc="268435923"/>
+<entry endPc="268436066" name="responseCode" stackId="1" startPc="268435957"/>
+<entry endPc="268436066" name="data" stackId="2" startPc="268435957"/>
+<entry endPc="268441658" name="x" stackId="2" startPc="268441232"/>
+<entry endPc="268441658" name="sett" stackId="4" startPc="268441232"/>
+<entry endPc="268441658" name="y" stackId="3" startPc="268441232"/>
+<entry endPc="268441659" name="params" stackId="1" startPc="268441228"/>
+<entry endPc="268441726" name="text" stackId="1" startPc="268441659"/>
+<entry endPc="268441751" name="dc" stackId="1" startPc="268441726"/>
+<entry endPc="268436094" name="state" stackId="1" startPc="268436089"/>
+<entry endPc="268436099" name="state" stackId="1" startPc="268436094"/>
+<entry endPc="268436344" name="fromPersist" stackId="3" startPc="268436271"/>
+<entry endPc="268436419" name="wantedAt" stackId="5" startPc="268436371"/>
+<entry endPc="268436531" name="allowedAt" stackId="7" startPc="268436446"/>
+<entry endPc="268436637" name="lastBkgnd" stackId="6" startPc="268436220"/>
+<entry endPc="268436637" name="HOUR" stackId="1" startPc="268436220"/>
+<entry endPc="268436637" name="scheduleAt" stackId="4" startPc="268436220"/>
+<entry endPc="268436637" name="lastTime" stackId="2" startPc="268436220"/>
+<entry endPc="268436814" name="data" stackId="1" startPc="268436638"/>
+<entry endPc="268441776" name="params" stackId="1" startPc="268441751"/>
+<entry endPc="268441882" name="param" stackId="1" startPc="268441823"/>
+<entry endPc="268442082" name="piece" stackId="6" startPc="268441962"/>
+<entry endPc="268442156" name="i" stackId="7" startPc="268442126"/>
+<entry endPc="268442156" name="piece" stackId="5" startPc="268441942"/>
+<entry endPc="268442159" name="iter" stackId="1" startPc="268441892"/>
+<entry endPc="268442159" name="tmpAr" stackId="3" startPc="268441892"/>
+<entry endPc="268442159" name="newLast" stackId="2" startPc="268441892"/>
+<entry endPc="268442159" name="count" stackId="4" startPc="268441892"/>
+<entry endPc="268442259" name="dc" stackId="1" startPc="268442160"/>
+<entry endPc="268442481" name="params" stackId="1" startPc="268442259"/>
+<entry endPc="268442631" name="conn" stackId="2" startPc="268442485"/>
+<entry endPc="268442631" name="value" stackId="3" startPc="268442485"/>
+<entry endPc="268442632" name="dc" stackId="1" startPc="268442481"/>
+<entry endPc="268442720" name="params" stackId="1" startPc="268442632"/>
+<entry endPc="268442939" name="info" stackId="2" startPc="268442807"/>
+<entry endPc="268442939" name="str" stackId="3" startPc="268442807"/>
+<entry endPc="268442940" name="val" stackId="1" startPc="268442803"/>
+<entry endPc="268443036" name="data" stackId="3" startPc="268442984"/>
+<entry endPc="268443059" name="weather" stackId="2" startPc="268442944"/>
+<entry endPc="268443060" name="dc" stackId="1" startPc="268442940"/>
+<entry endPc="268443102" name="params" stackId="1" startPc="268443060"/>
+<entry endPc="268443175" name="weather" stackId="2" startPc="268443106"/>
+<entry endPc="268443176" name="dc" stackId="1" startPc="268443102"/>
+<entry endPc="268443218" name="params" stackId="1" startPc="268443176"/>
+<entry endPc="268443291" name="weather" stackId="2" startPc="268443222"/>
+<entry endPc="268443292" name="dc" stackId="1" startPc="268443218"/>
+<entry endPc="268443334" name="params" stackId="1" startPc="268443292"/>
+<entry endPc="268443437" name="param" stackId="1" startPc="268443381"/>
+<entry endPc="268443513" name="x" stackId="4" startPc="268443477"/>
+<entry endPc="268443563" name="val" stackId="3" startPc="268443467"/>
+<entry endPc="268443586" name="sensorIter" stackId="2" startPc="268443447"/>
+<entry endPc="268443587" name="dc" stackId="1" startPc="268443443"/>
+<entry endPc="268443709" name="low" stackId="4" startPc="268443591"/>
+<entry endPc="268443709" name="sunset" stackId="3" startPc="268443591"/>
+<entry endPc="268443709" name="sunrise" stackId="2" startPc="268443591"/>
+<entry endPc="268443709" name="high" stackId="5" startPc="268443591"/>
+<entry endPc="268443710" name="data" stackId="1" startPc="268443587"/>
+<entry endPc="268443777" name="weather" stackId="1" startPc="268443714"/>
+<entry endPc="268443829" name="params" stackId="1" startPc="268443778"/>
+<entry endPc="268443900" name="info" stackId="2" startPc="268443833"/>
+<entry endPc="268443900" name="intoDay" stackId="3" startPc="268443833"/>
+<entry endPc="268443901" name="moment" stackId="1" startPc="268443829"/>
+<entry endPc="268443953" name="intoDay" stackId="1" startPc="268443905"/>
+<entry endPc="268444003" name="dc" stackId="1" startPc="268443954"/>
+<entry endPc="268444094" name="params" stackId="1" startPc="268444003"/>
+<entry endPc="268444168" name="color" stackId="2" startPc="268444098"/>
+<entry endPc="268444169" name="minutes" stackId="1" startPc="268444094"/>
+<entry endPc="268444337" name="label" stackId="5" startPc="268444216"/>
+<entry endPc="268444337" name="min" stackId="4" startPc="268444216"/>
+<entry endPc="268444340" name="when" stackId="3" startPc="268444199"/>
+<entry endPc="268444363" name="weather" stackId="2" startPc="268444173"/>
+<entry endPc="268444364" name="dc" stackId="1" startPc="268444169"/>
+<entry endPc="268444406" name="params" stackId="1" startPc="268444364"/>
+<entry endPc="268444495" name="activity" stackId="2" startPc="268444410"/>
+<entry endPc="268444496" name="dc" stackId="1" startPc="268444406"/>
+<entry endPc="268444541" name="dictionary" stackId="1" startPc="268444500"/>
+<entry endPc="268444600" name="dc" stackId="1" startPc="268444542"/>
+<entry endPc="268444689" name="weather" stackId="1" startPc="268444604"/>
+<entry endPc="268444746" name="rv" stackId="1" startPc="268444694"/>
+<entry endPc="268444815" name="dc" stackId="1" startPc="268444773"/>
+<entry endPc="268445158" name="view" stackId="6" startPc="268444824"/>
+<entry endPc="268445158" name="hours" stackId="4" startPc="268444824"/>
+<entry endPc="268445158" name="fnt" stackId="7" startPc="268444824"/>
+<entry endPc="268445158" name="timeString" stackId="5" startPc="268444824"/>
+<entry endPc="268445158" name="clockTime" stackId="3" startPc="268444824"/>
+<entry endPc="268445158" name="timeFormat" stackId="2" startPc="268444824"/>
+<entry endPc="268445159" name="dc" stackId="1" startPc="268444820"/>
+<entry endPc="268445216" name="params" stackId="1" startPc="268445174"/>
+<entry endPc="268445417" name="value" stackId="1" startPc="268445216"/>
+<entry endPc="268445630" name="date" stackId="2" startPc="268445421"/>
+<entry endPc="268445630" name="str" stackId="3" startPc="268445421"/>
+<entry endPc="268445631" name="dc" stackId="1" startPc="268445417"/>
+<entry endPc="268445733" name="instance" stackId="2" startPc="268445671"/>
+<entry endPc="268445734" name="key" stackId="1" startPc="268445667"/>
+<entry endPc="268445773" name="instance" stackId="3" startPc="268445738"/>
+<entry endPc="268445774" name="key" stackId="1" startPc="268445734"/>
+<entry endPc="268445774" name="value" stackId="2" startPc="268445734"/>
+<entry endPc="268445977" name="params" stackId="1" startPc="268445834"/>
+<entry endPc="268446133" name="batt" stackId="1" startPc="268445977"/>
+<entry endPc="268446273" name="charge" stackId="1" startPc="268446137"/>
+<entry endPc="268446311" name="dc" stackId="1" startPc="268446274"/>
+<entry endPc="268446505" name="numEntries" stackId="2" startPc="268446315"/>
+<entry endPc="268446506" name="params" stackId="1" startPc="268446311"/>
+<entry endPc="268446531" name="val" stackId="1" startPc="268446506"/>
+<entry endPc="268446867" name="i" stackId="3" startPc="268446755"/>
+<entry endPc="268446870" name="alldata" stackId="1" startPc="268446535"/>
+<entry endPc="268446870" name="rv" stackId="2" startPc="268446535"/>
+<entry endPc="268447073" name="i" stackId="4" startPc="268447016"/>
+<entry endPc="268447175" name="i" stackId="5" startPc="268447131"/>
+<entry endPc="268447175" name="bottom" stackId="3" startPc="268446875"/>
+<entry endPc="268447175" name="heights" stackId="2" startPc="268446875"/>
+<entry endPc="268447176" name="dc" stackId="1" startPc="268446871"/>
+<entry endPc="268447300" name="x" stackId="5" startPc="268447180"/>
+<entry endPc="268447301" name="sett" stackId="4" startPc="268447176"/>
+<entry endPc="268447301" name="val" stackId="2" startPc="268447176"/>
+<entry endPc="268447301" name="params" stackId="1" startPc="268447176"/>
+<entry endPc="268447301" name="horiz" stackId="3" startPc="268447176"/>
+<entry endPc="268447589" name="sett" stackId="2" startPc="268447305"/>
+<entry endPc="268447590" name="params" stackId="1" startPc="268447301"/>
+<entry endPc="268447693" name="dc" stackId="1" startPc="268447590"/>
+<entry endPc="268447817" name="x" stackId="5" startPc="268447697"/>
+<entry endPc="268447818" name="sett" stackId="4" startPc="268447693"/>
+<entry endPc="268447818" name="val" stackId="2" startPc="268447693"/>
+<entry endPc="268447818" name="params" stackId="1" startPc="268447693"/>
+<entry endPc="268447818" name="horiz" stackId="3" startPc="268447693"/>
+<entry endPc="268447919" name="sett" stackId="2" startPc="268447822"/>
+<entry endPc="268447920" name="params" stackId="1" startPc="268447818"/>
+<entry endPc="268447945" name="dc" stackId="1" startPc="268447920"/>
+<entry endPc="268448006" name="size" stackId="1" startPc="268447945"/>
+<entry endPc="268448041" name="val" stackId="1" startPc="268448006"/>
+<entry endPc="268448307" name="i" stackId="1" startPc="268448150"/>
+<entry endPc="268448480" name="bufsize" stackId="1" startPc="268448425"/>
+<entry endPc="268448673" name="old" stackId="1" startPc="268448579"/>
+<entry endPc="268448874" name="val" stackId="1" startPc="268448756"/>
+<entry endPc="268448992" name="i" stackId="3" startPc="268448920"/>
+<entry endPc="268448995" name="idx" stackId="2" startPc="268448878"/>
+<entry endPc="268448995" name="rv" stackId="1" startPc="268448878"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_29057199107014238576" stackId="10" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_13814453032086555347" stackId="18" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_10401995868031660121" stackId="9" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_65755181521066304021" stackId="8" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_55244806111601817161" stackId="15" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_14699527807468598909" stackId="16" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_10268438932106395211" stackId="21" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_14414083462791266991" stackId="2" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_95847838820886849711" stackId="19" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_87562868885628419310" stackId="11" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_15486571651109022031" stackId="7" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_18970164281525813567" stackId="4" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_50657488213904433937" stackId="12" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_16588363044534326791" stackId="20" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_18614606523418082191" stackId="17" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_19995144292436389711" stackId="6" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_95900853392622245012" stackId="14" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_64190065217322679391" stackId="13" startPc="268449008"/>
+<entry endPc="268451534" name="rez_cmp_local_custom_drawable_13644708341165603004" stackId="5" startPc="268449008"/>
+<entry endPc="268451535" name="dc" stackId="1" startPc="268448996"/>
+</localVars>
+<annotations/>
+<dataEntryOffsetMappings>
+<dataEntry offset="119" parentId="" symbolId="globals" type="module"/>
+<dataEntry offset="678" parentId="globals" symbolId="Persistent" type="class"/>
+<dataEntry offset="772" parentId="globals" symbolId="gWeatherWatchApp" type="class"/>
+<dataEntry offset="875" parentId="globals" symbolId="BackgroundServiceDelegate" type="class"/>
+<dataEntry offset="978" parentId="globals" symbolId="LocationProvider" type="class"/>
+<dataEntry offset="1049" parentId="globals" symbolId="PersistKeys" type="class"/>
+<dataEntry offset="1895" parentId="globals" symbolId="CustomTextDrawable" type="class"/>
+<dataEntry offset="1966" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry offset="2045" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry offset="2100" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="2131" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="2170" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="2209" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="2240" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry offset="2351" parentId="globals" symbolId="Background" type="class"/>
+<dataEntry offset="2406" parentId="globals" symbolId="HeartRateGraphDrawable" type="class"/>
+<dataEntry offset="2485" parentId="globals" symbolId="PlotData" type="class"/>
+<dataEntry offset="2620" parentId="globals" symbolId="BatteryTextDrawable" type="class"/>
+<dataEntry offset="2675" parentId="globals" symbolId="CustomArcDrawable" type="class"/>
+<dataEntry offset="2898" parentId="globals" symbolId="gWeatherWatchView" type="class"/>
+<dataEntry offset="2993" parentId="globals" symbolId="BluetoothBitmapDrawable" type="class"/>
+<dataEntry offset="3072" parentId="globals" symbolId="HeartRateDrawable" type="class"/>
+<dataEntry offset="3135" parentId="globals" symbolId="CurCityDrawable" type="class"/>
+<dataEntry offset="3190" parentId="globals" symbolId="SunArcDrawable" type="class"/>
+<dataEntry offset="3277" parentId="globals" symbolId="StepsArcDrawable" type="class"/>
+<dataEntry offset="3364" parentId="globals" symbolId="LineDrawable" type="class"/>
+<dataEntry offset="3467" parentId="globals" symbolId="SunTextDrawable" type="class"/>
+<dataEntry offset="3546" parentId="globals" symbolId="LayoutContext" type="class"/>
+<dataEntry offset="3672" parentId="globals" symbolId="HeartRateRangeDrawable" type="class"/>
+<dataEntry offset="3727" parentId="globals" symbolId="FcastDrawable" type="class"/>
+<dataEntry offset="3790" parentId="globals" symbolId="DateDrawable" type="class"/>
+<dataEntry offset="3853" parentId="globals" symbolId="BatteryArcDrawable" type="class"/>
+<dataEntry offset="3940" parentId="globals" symbolId="LayoutContextExt" type="class"/>
+<dataEntry offset="4034" parentId="globals" symbolId="PositionableDrawable" type="class"/>
+<dataEntry offset="4113" parentId="globals" symbolId="CircularBuffer" type="class"/>
+<dataEntry offset="4264" parentId="globals" symbolId="PlotDrawable" type="class"/>
+<dataEntry offset="4407" parentId="globals" symbolId="WeatherStalenessDrawable" type="class"/>
+<dataEntry offset="4478" parentId="globals" symbolId="CurTempDrawable" type="class"/>
+<dataEntry offset="4533" parentId="globals" symbolId="StepsTextDrawable" type="class"/>
+<dataEntry offset="4588" parentId="globals" symbolId="FcastRectsDrawable" type="class"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" name="initialize" parent="FcastDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="makeFcastLine" parent="FcastDrawable">
+<param id="weather"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="FcastDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="CustomArcDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="setColors" parent="CustomArcDrawable">
+<param id="front"/>
+<param id="back"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="setValue" parent="CustomArcDrawable">
+<param id="val"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="setFront" parent="CustomArcDrawable">
+<param id="from"/>
+<param id="to"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="angle" parent="CustomArcDrawable">
+<param id="val"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="normalize" parent="CustomArcDrawable">
+<param id="ang"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="drawFront" parent="CustomArcDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="drawArrow" parent="CustomArcDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="CustomArcDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="Save" parent="Persistent">
+<param id="key"/>
+<param id="value"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="Load" parent="Persistent">
+<param id="key"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="FcastRectsDrawable">
+<param id="param"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="makeCell" parent="FcastRectsDrawable">
+<param id="entry"/>
+<param id="offset"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="cellColor" parent="FcastRectsDrawable">
+<param id="symbol"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="drawCell" parent="FcastRectsDrawable">
+<param id="cell"/>
+<param id="posX"/>
+<param id="posY"/>
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="drawAll" parent="FcastRectsDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="prepareValues" parent="FcastRectsDrawable">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="FcastRectsDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="StepsArcDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="doAutoColor" parent="StepsArcDrawable">
+<param id="ratio"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="updateValue" parent="StepsArcDrawable">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="StepsArcDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="BatteryTextDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="BatteryTextDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="HeartRateRangeDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="HeartRateRangeDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getLocation" parent="LocationProvider">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="BackgroundServiceDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="loadGoogleData" parent="BackgroundServiceDelegate">
+<param id="loc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onTemporalEvent" parent="BackgroundServiceDelegate">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="OnReceiveWeather" parent="BackgroundServiceDelegate">
+<param id="responseCode"/>
+<param id="data"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="CustomTextDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="setText" parent="CustomTextDrawable">
+<param id="text"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="CustomTextDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="gWeatherWatchApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onStart" parent="gWeatherWatchApp">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onStop" parent="gWeatherWatchApp">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getInitialView" parent="gWeatherWatchApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onSettingsChanged" parent="gWeatherWatchApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getServiceDelegate" parent="gWeatherWatchApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="InitBackgroundEvents" parent="gWeatherWatchApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onBackgroundData" parent="gWeatherWatchApp">
+<param id="data"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="HeartRateGraphDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getIterator" parent="HeartRateGraphDrawable">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="updateData" parent="HeartRateGraphDrawable">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="HeartRateGraphDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="BluetoothBitmapDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="BluetoothBitmapDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="SunTextDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getIterator" parent="SunTextDrawable">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="setVal" parent="SunTextDrawable">
+<param id="val"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="SunTextDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="CurCityDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="CurCityDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="CurTempDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="CurTempDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="HeartRateDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getIterator" parent="HeartRateDrawable">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="HeartRateDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="setSunData" parent="SunArcDrawable">
+<param id="data"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="loadSunData" parent="SunArcDrawable">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="SunArcDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="minutesInDay" parent="SunArcDrawable">
+<param id="moment"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="updateValue" parent="SunArcDrawable">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="SunArcDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="WeatherStalenessDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="setBckgnd" parent="WeatherStalenessDrawable">
+<param id="minutes"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="WeatherStalenessDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="StepsTextDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="StepsTextDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="Background">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="Background">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="loadAndSetWeather" parent="LayoutContextExt">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getWeather" parent="LayoutContextExt">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="gWeatherWatchView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onLayout" parent="gWeatherWatchView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onShow" parent="gWeatherWatchView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onUpdate" parent="gWeatherWatchView">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onHide" parent="gWeatherWatchView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onExitSleep" parent="gWeatherWatchView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onEnterSleep" parent="gWeatherWatchView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="DateDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="dow" parent="DateDrawable">
+<param id="value"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="DateDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="LayoutContext">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="reset" parent="LayoutContext">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="get" parent="LayoutContext">
+<param id="key"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="set" parent="LayoutContext">
+<param id="key"/>
+<param id="value"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getInstance" parent="LayoutContext">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="BatteryArcDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="doAutoColor" parent="BatteryArcDrawable">
+<param id="batt"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="updateValue" parent="BatteryArcDrawable">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="BatteryArcDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="PlotDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="addEntry" parent="PlotDrawable">
+<param id="val"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getHeights" parent="PlotDrawable">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="PlotDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getCoord" parent="LineDrawable">
+<param id="params"/>
+<param id="val"/>
+<param id="horiz"/>
+<param id="sett"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="LineDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="LineDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getCoord" parent="PositionableDrawable">
+<param id="params"/>
+<param id="val"/>
+<param id="horiz"/>
+<param id="sett"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="PositionableDrawable">
+<param id="params"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="draw" parent="PositionableDrawable">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="PlotData">
+<param id="size"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="add" parent="PlotData">
+<param id="val"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="reloadIfNeeded" parent="PlotData">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getAll" parent="PlotData">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getMin" parent="PlotData">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getMax" parent="PlotData">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="capacity" parent="PlotData">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="CircularBuffer">
+<param id="bufsize"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="normalize" parent="CircularBuffer">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="pop" parent="CircularBuffer">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="capacity" parent="CircularBuffer">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="top" parent="CircularBuffer">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="size" parent="CircularBuffer">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="push" parent="CircularBuffer">
+<param id="val"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="asArray" parent="CircularBuffer">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="WatchFace" parent="Layouts">
+<param id="dc"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>
