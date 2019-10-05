@@ -9,11 +9,9 @@ class CurTempDrawable extends CustomTextDrawable {
     }
 
     function draw(dc) {
-    	//Sys.println("Drawing temperature");
-    	var weather = Persistent.Load(PersistKeys.Weather);
+    	var weather = LayoutContextExt.getWeather();
     	if (weather != null) {
-    		setText(weather["weather"]["temp"]);
-    		//Sys.println("Have temp: " + weather["weather"]["temp"]);
+    		setText(weather["temp"]);
     	}
     	CustomTextDrawable.draw(dc);
     }

@@ -25,25 +25,10 @@ class WeatherStalenessDrawable extends CustomTextDrawable {
 	}
 		
 
-	function makeFcastLine(weather) {
-		var rv = "";
-		var now = Sys.getClockTime();
-		var off = now.timeZoneOffset;
-		for (var i = 0; i < weather["fcast"]["data"].size(); ++i) {
-			var entry = weather["fcast"]["data"][i];
-			var time = entry["dt"] + off;
-			time = time / 60 / 60;
-			time = time % 24;
-			var temp = entry["temp"];
-			rv += time + ": " + temp + entry["symbol"] + ", ";
-		}
-		return rv.substring(0, rv.length() - 2);
-	}
-
     function draw(dc) {
-    	var weather = Persistent.Load(PersistKeys.Weather);
+    	var weather = LayoutContextExt.getWeather();
     	if (weather != null) {
-    		var when = weather["weather"]["dt"];
+    		var when = weather["dt"];
     		if (when != null) {
   			
 				var min = Time.now().value() - when;

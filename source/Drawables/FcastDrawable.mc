@@ -29,9 +29,9 @@ class FcastDrawable extends CustomTextDrawable {
 	}
 
     function draw(dc) {
-    	var weather = Persistent.Load(PersistKeys.Weather);
+    	var weather = LayoutContextExt.getWeather();
     	if (weather != null) {
-    		setText(makeFcastLine(weather["weather"]));
+    		setText(makeFcastLine(weather));
     	}
     	CustomTextDrawable.draw(dc);
     }
