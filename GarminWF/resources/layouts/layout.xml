@@ -112,6 +112,11 @@
 	   	<param name="color">Graphics.COLOR_WHITE</param>
     </drawable> 
     
+    <drawable class="CurrentIconDrawable">
+	   	<param name="x">77</param>
+	   	<param name="y">45</param>
+	</drawable>      
+    
     <drawable class="CurTempDrawable">
     	<param name="x">"center"</param>
     	<param name="y">40</param>
@@ -138,14 +143,14 @@
     </drawable>      
 
     <drawable class="FcastRectsDrawable">
-    	<param name="x">25</param>
+    	<param name="x">20</param>
     	<param name="y">70</param>
     	<param name="font">Graphics.FONT_SYSTEM_XTINY </param>
     	<param name="hwidth">20</param>
     	<param name="twidth">35</param>
     </drawable>  
 	<drawable class="WeatherStalenessDrawable">
-	   	<param name="x">192</param>
+	   	<param name="x">187</param>
 	   	<param name="y">70</param>
 	   	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
 	   	<param name="colorback">true</param>

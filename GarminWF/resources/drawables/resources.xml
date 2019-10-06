@@ -1,7 +1,41 @@
 <resources>
-
     <bitmaps>
         <bitmap id="bton" filename="bluetooth-on.png" />
         <bitmap id="btoff" filename="bluetooth-off.png" />
+        <bitmap id="cloudy" filename="cloudy.png">
+        	<palette disableTransparency="false">
+	            <color>FFFFFF</color>
+        	</palette>
+        </bitmap>
+        <bitmap id="partly" filename="partly.png" >
+        	<palette disableTransparency="false">
+	            <color>FFFFFF</color>
+        	</palette>
+        </bitmap>        
+        <bitmap id="rain" filename="rain.png" >
+        	<palette disableTransparency="false">
+	            <color>0055FF</color>
+        	</palette>
+        </bitmap>        
+        <bitmap id="snow" filename="snow.png" >
+        	<palette disableTransparency="false">
+	            <color>FFFFFF</color>
+        	</palette>
+        </bitmap>        
+        <bitmap id="sunny" filename="sunny.png" >
+        	<palette disableTransparency="false">
+	            <color>FFFF00</color>
+        	</palette>
+        </bitmap>        
+        <bitmap id="thunder" filename="thunder.png" >
+        	<palette disableTransparency="false">
+	            <color>FF0000</color>
+        	</palette>
+        </bitmap>        
+        <bitmap id="unknown" filename="unknown.png">
+        	<palette disableTransparency="false">
+	            <color>AAAAAA</color>
+        	</palette>
+        </bitmap>        
     </bitmaps>
 </resources>
