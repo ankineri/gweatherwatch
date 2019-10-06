@@ -85,6 +85,33 @@
     	<param name="maxlen">11</param>
     </drawable>   
     
+    <drawable class="FloorsArcDrawable">
+    	<param name="x">"center"</param>
+    	<param name="y">"center"</param>
+    	<param name="r">"full"</param>
+    	<param name="from">210</param>
+    	<param name="to">150</param>
+    	<param name="width">10</param>
+    	<param name="autocolor">true</param>
+    	<param name="reverse">true</param>
+    </drawable>       
+    
+    <drawable class="FloorsTextDrawable">
+    	<param name="x">20</param>
+    	<param name="y">96</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
+    	<param name="font">Graphics.FONT_XTINY</param>
+    	<param name="color">Graphics.COLOR_WHITE</param>
+    	<param name="maxlen">11</param>
+    </drawable>   
+	<drawable class="LineDrawable">
+    	<param name="x1">10</param>
+	   	<param name="y1">"center"</param>
+    	<param name="x2">30</param>
+	   	<param name="y2">"center"</param>	   	
+	   	<param name="color">Graphics.COLOR_WHITE</param>
+    </drawable> 
+    
     <drawable class="CurTempDrawable">
     	<param name="x">"center"</param>
     	<param name="y">40</param>
@@ -93,7 +120,7 @@
     	<param name="color">Graphics.COLOR_YELLOW</param>
     </drawable>
     <drawable class="CurCityDrawable">
-    	<param name="x">210</param>
+    	<param name="x">205</param>
     	<param name="y">45</param>
     	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
     	<param name="font">Graphics.FONT_XTINY</param>
@@ -115,10 +142,10 @@
     	<param name="y">70</param>
     	<param name="font">Graphics.FONT_SYSTEM_XTINY </param>
     	<param name="hwidth">20</param>
-    	<param name="twidth">30</param>
+    	<param name="twidth">35</param>
     </drawable>  
 	<drawable class="WeatherStalenessDrawable">
-	   	<param name="x">182</param>
+	   	<param name="x">197</param>
 	   	<param name="y">70</param>
 	   	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
 	   	<param name="colorback">true</param>
