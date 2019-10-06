@@ -138,14 +138,14 @@
     </drawable>      
 
     <drawable class="FcastRectsDrawable">
-    	<param name="x">30</param>
+    	<param name="x">25</param>
     	<param name="y">70</param>
     	<param name="font">Graphics.FONT_SYSTEM_XTINY </param>
     	<param name="hwidth">20</param>
     	<param name="twidth">35</param>
     </drawable>  
 	<drawable class="WeatherStalenessDrawable">
-	   	<param name="x">197</param>
+	   	<param name="x">192</param>
 	   	<param name="y">70</param>
 	   	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
 	   	<param name="colorback">true</param>
