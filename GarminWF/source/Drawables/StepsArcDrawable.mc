@@ -18,7 +18,7 @@ class StepsArcDrawable extends CustomArcDrawable {
 	}
 	
 	function doAutoColor(ratio) {
-		if (ratio < 0.1) {
+		if (ratio < 0.4) {
 			self.colFront = Graphics.COLOR_WHITE;
 			self.colBack = Graphics.COLOR_DK_RED;
 		} else if (ratio < 0.7) {

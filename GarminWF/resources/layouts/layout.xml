@@ -93,7 +93,7 @@
     	<param name="to">150</param>
     	<param name="width">10</param>
     	<param name="autocolor">true</param>
-    	<param name="reverse">true</param>
+    	<param name="reverse">false</param>
     </drawable>       
     
     <drawable class="FloorsTextDrawable">
@@ -113,7 +113,7 @@
     </drawable> 
     
     <drawable class="CurrentIconDrawable">
-	   	<param name="x">77</param>
+	   	<param name="x">70</param>
 	   	<param name="y">45</param>
 	</drawable>      
     
@@ -125,7 +125,7 @@
     	<param name="color">Graphics.COLOR_YELLOW</param>
     </drawable>
     <drawable class="CurCityDrawable">
-    	<param name="x">205</param>
+    	<param name="x">210</param>
     	<param name="y">45</param>
     	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
     	<param name="font">Graphics.FONT_XTINY</param>

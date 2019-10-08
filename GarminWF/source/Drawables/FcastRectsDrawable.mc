@@ -54,7 +54,7 @@ class FcastRectsDrawable extends PositionableDrawable {
 		
 		dc.setColor(cell[2][1], cell[2][1]);
 		
-		dc.fillRectangle(posX + self.hWidth + 1, posY, self.hWidth - 1, height);
+		dc.fillRectangle(posX + self.hWidth + 1, posY, self.tWidth - 1, height);
 				
 		dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
 		

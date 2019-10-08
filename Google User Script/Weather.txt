@@ -5,9 +5,11 @@ function callWeather(api, param, loc) {
   
   var response = UrlFetchApp.fetch(url);
   var respText = response.getContentText();
+  
   //Logger.log(respText);
+  
   resp = JSON.parse(respText);
-  resp.url = url;
+  resp.responseCode = response.getResponseCode();
   return resp;  
 }
 
@@ -61,7 +63,7 @@ function icon2cond(icon) {
 
 function getWeather(loc, sys) {
   resp = callWeather("weather", "", loc);
-  if (resp.cod != 200) {
+  if (String(resp.responseCode)[0] != '2') {
     return {"success": "false"};
   }
   var result = {"success": "true"};
@@ -103,9 +105,9 @@ function cond2symbol(cond) {
 
 function getFcast(loc, sys) {
   resp = callWeather("forecast", "&cnt=3", loc);
-  if (resp.cod != 200) {
+  if (String(resp.responseCode)[0] != '2') {
     Logger.log("Forecast request failed with code " + resp.code);
-    return {"success": "false", "code": resp.code};
+    return {"success": "false", "code": resp.responseCode};
   }
   var result = {"success": "true"};
   var lst = resp.list.map(function (entry) {
@@ -122,7 +124,7 @@ function getFcast(loc, sys) {
 }
 
 function doGet(e) {
-  if (e === undefined) e = {"parameters": {"lat": "1", "lon": "2", "system": "metric"}};
+  if (e === undefined) e = {"parameters": {"lat": "50.063507", "lon": "14.445937", "system": "metric"}};
   var param = e.parameters;
 
   data = JSON.stringify(getWeather({"lat": param.lat, "lon": param.lon}, param.system));
