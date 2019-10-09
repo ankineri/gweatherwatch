@@ -205,6 +205,16 @@
 	   	<param name="color">Graphics.COLOR_WHITE</param>
 	   	<param name="maxlen">3</param>
 	</drawable>  
+	<drawable class="StaticIconDrawable">
+	   	<param name="x">209</param>
+	   	<param name="y">148</param>
+	   	<param name="resource">Rez.Drawables.battery</param>
+	</drawable>  	
+	<drawable class="StaticIconDrawable">
+	   	<param name="x">18</param>
+	   	<param name="y">157</param>
+	   	<param name="resource">Rez.Drawables.stairs</param>
+	</drawable>  		
 
 	<drawable class="HeartRateGraphDrawable">
 	   	<param name="x">70</param>

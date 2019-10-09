@@ -37,5 +37,10 @@
 	            <color>AAAAAA</color>
         	</palette>
         </bitmap>        
+        <bitmap id="battery" filename="battery.png">
+        </bitmap>
+		<bitmap id="stairs" filename="stairs.png">
+        </bitmap>          
+                  
     </bitmaps>
 </resources>
