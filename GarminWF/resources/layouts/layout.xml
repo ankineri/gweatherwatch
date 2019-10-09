@@ -187,6 +187,16 @@
 	   	<param name="color">Graphics.COLOR_WHITE</param>
     </drawable> -->    
 
+	<drawable class="PressureGraphDrawable">
+	   	<param name="x">30</param>
+	   	<param name="y">45</param>
+	   	<param name="bkcolor">Graphics.COLOR_BLACK</param>
+	   	<param name="linecolor">0xFFFFFF</param>
+	   	<param name="fillcolor">Graphics.COLOR_BLUE</param>
+	   	<param name="width">40</param>
+	   	<param name="height">20</param>
+	</drawable>  
+
 	<drawable class="HeartRateGraphDrawable">
 	   	<param name="x">70</param>
 	   	<param name="y">170</param>
