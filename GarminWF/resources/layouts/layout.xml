@@ -113,9 +113,9 @@
     </drawable> 
     
     <drawable class="CurrentIconDrawable">
-	   	<param name="x">70</param>
-	   	<param name="y">45</param>
-	</drawable>      
+	   	<param name="x">200</param>
+	   	<param name="y">100</param>
+	</drawable>
     
     <drawable class="CurTempDrawable">
     	<param name="x">"center"</param>
@@ -135,8 +135,8 @@
    
       
     <drawable class="BatteryTextDrawable">
-    	<param name="x">235</param>
-    	<param name="y">110</param>
+    	<param name="x">230</param>
+    	<param name="y">126</param>
     	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
     	<param name="font">Graphics.FONT_SYSTEM_XTINY </param>
     	<param name="color">Graphics.COLOR_WHITE</param>
@@ -195,6 +195,15 @@
 	   	<param name="fillcolor">Graphics.COLOR_BLUE</param>
 	   	<param name="width">40</param>
 	   	<param name="height">20</param>
+	</drawable>  
+	
+	<drawable class="PressureDrawable">
+	   	<param name="x">70</param>
+	   	<param name="y">45</param>
+	   	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
+	   	<param name="font">Graphics.FONT_XTINY</param>
+	   	<param name="color">Graphics.COLOR_WHITE</param>
+	   	<param name="maxlen">3</param>
 	</drawable>  
 
 	<drawable class="HeartRateGraphDrawable">
