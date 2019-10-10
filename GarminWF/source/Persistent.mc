@@ -5,6 +5,7 @@ class PersistKeys {
 	public static const Weather = 1;
 	public static const Location = 2;
 	public static const LastBackgroundEvent = 3;
+	public static const LastPhoneLocation = 4;
 }
 
 (:background)

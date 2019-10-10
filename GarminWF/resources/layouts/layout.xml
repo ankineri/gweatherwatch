@@ -130,6 +130,7 @@
     	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
     	<param name="font">Graphics.FONT_XTINY</param>
     	<param name="color">Graphics.COLOR_WHITE</param>
+    	<param name="phoneLocColor">Graphics.COLOR_GREEN</param>
     	<param name="maxlen">10</param>
     </drawable>    
    

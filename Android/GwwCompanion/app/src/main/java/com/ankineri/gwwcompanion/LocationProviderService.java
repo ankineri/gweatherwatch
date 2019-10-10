@@ -24,6 +24,8 @@ import com.garmin.android.connectiq.IQDevice;
 import com.garmin.android.connectiq.exception.InvalidStateException;
 import com.garmin.android.connectiq.exception.ServiceUnavailableException;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class LocationProviderService extends Service {
@@ -42,13 +44,25 @@ public class LocationProviderService extends Service {
 
         void onMessageFromPhone(final IQDevice device, final IQApp app, final ConnectIQ connectIQ) {
             Thread t = new Thread(new Runnable() {
-                @SuppressLint("MissingPermission")
                 @Override
                 public void run() {
+                    if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                        // TODO: Consider calling
+                        //    ActivityCompat#requestPermissions
+                        // here to request the missing permissions, and then overriding
+                        //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                        //                                          int[] grantResults)
+                        // to handle the case where the user grants the permission. See the documentation
+                        // for ActivityCompat#requestPermissions for more details.
+                        Toast.makeText(context, "No location permissions!", Toast.LENGTH_SHORT).show();
+                        new PermissionsGranter().getPermissions(context);
+                        return;
+                    }
                     Location location = locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER);
-                    String toSend = location.toString();
+                    Log.d("GWW", "Got location: " + location.toString());
+                    List<Float> toSend = Arrays.asList((float) location.getLatitude(), (float) location.getLongitude());
                     try {
-
+                        Log.d("GWW", "Sending " + toSend);
                         connectIQ.sendMessage(device, app, toSend, new ConnectIQ.IQSendMessageListener() {
                             @Override
                             public void onMessageStatus(IQDevice iqDevice, IQApp iqApp, ConnectIQ.IQMessageStatus iqMessageStatus) {
@@ -70,7 +84,7 @@ public class LocationProviderService extends Service {
         public void run() {
             Looper.prepare();
             Log.d("GWW", "Creating ConnectIq connection");
-            final ConnectIQ connectIQ = ConnectIQ.getInstance(context, IQConnectType.TETHERED);
+            final ConnectIQ connectIQ = ConnectIQ.getInstance(context, IQConnectType.WIRELESS);
             connectIQ.initialize(context, true, new ConnectIQ.ConnectIQListener() {
                 @Override
                 public void onSdkReady() {
@@ -190,6 +204,9 @@ public class LocationProviderService extends Service {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             this.startForeground(startId, new Notification());
         }
+
+        new PermissionsGranter().getPermissions(this.getApplicationContext());
+
         if (runningThread != null && runningThread.isAlive()) {
             Log.d("GWW", "Thread is already running, doing nothing");
         } else {

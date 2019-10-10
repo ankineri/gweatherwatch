@@ -29,7 +29,7 @@ class BackgroundServiceDelegate extends Sys.ServiceDelegate
 			loc[0],
 			loc[1]]);  
 			
-		//Sys.println(" :: weather request " + url);
+		Sys.println(" :: weather request " + url);
 
         var options = {
           :method => Comm.HTTP_REQUEST_METHOD_GET,
@@ -60,11 +60,14 @@ class BackgroundServiceDelegate extends Sys.ServiceDelegate
     
     function OnReceiveWeather(responseCode, data) {
     	//Sys.println("Have weather! Code: " + responseCode);
+    	var rv = {};
+    	rv["loc"] = [self.comm.lastLat, self.comm.lastLng, self.comm.when.value()];
     	try
 		{
 			if (responseCode == 200)
 			{
-				Background.exit(data);
+				rv["weather"] = data;
+				Background.exit(rv);
 			}
 		}
 		catch(ex)
@@ -72,6 +75,6 @@ class BackgroundServiceDelegate extends Sys.ServiceDelegate
 			Sys.println("get weather error : " + ex.getErrorMessage());
 		}
 		
-		Background.exit(null);
+		Background.exit(rv);
     }
 }
