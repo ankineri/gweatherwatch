@@ -15,6 +15,7 @@ class BackgroundServiceDelegate extends Sys.ServiceDelegate
 	hidden var _syncCounter = 0;
 	hidden var _location;
 	private var locationProvider;
+	private var comm;
 	 
 	function initialize() 
 	{
@@ -23,6 +24,7 @@ class BackgroundServiceDelegate extends Sys.ServiceDelegate
 	}
 	
 	function loadGoogleData(loc) {
+	
 		var url = Lang.format("https://script.google.com/macros/s/AKfycbz8bWDUyTwvfKGar7P2YPEXznjC2G9vGo1XFQXyj46ocF_qGbQv/exec?lat=$1$&lon=$2$&system=metric", [
 			loc[0],
 			loc[1]]);  
@@ -41,13 +43,19 @@ class BackgroundServiceDelegate extends Sys.ServiceDelegate
 	
     function onTemporalEvent() 
     {
-    	//System.println("Have temporal event!");
+    	System.println("Have temporal event!");
+		if (comm == null) {
+			self.comm = new PhoneConnectivity();
+    		self.comm.init();
+    	}    	
+    	self.comm.request();
     	var loc = locationProvider.getLocation();
     	/*var loc = Persistent.Load(PersistKeys.Location);
     	if (loc == null) {
     		loc = [55.676470, 37.445434];
     	}*/
     	loadGoogleData(loc);
+    	
     }
     
     function OnReceiveWeather(responseCode, data) {
