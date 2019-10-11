@@ -67,9 +67,11 @@ class gWeatherWatchApp extends Application.AppBase {
     
     function onBackgroundData(data) 
     {
-    	//System.println("Have bckgnd data: " + data);
+    	System.println("Have bckgnd data: " + data);
     	Background.registerForTemporalEvent(new Toybox.Time.Duration(60 * 60));
-    	Persistent.Save(PersistKeys.LastPhoneLocation, data["loc"]);
+    	if (data["loc"] != null) {
+    		Persistent.Save(PersistKeys.LastPhoneLocation, data["loc"]);
+    	}
         if (data["weather"] != null)
         {
         	Persistent.Save(PersistKeys.LastBackgroundEvent, Time.now().value());

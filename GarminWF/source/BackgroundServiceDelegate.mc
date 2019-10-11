@@ -59,9 +59,13 @@ class BackgroundServiceDelegate extends Sys.ServiceDelegate
     }
     
     function OnReceiveWeather(responseCode, data) {
-    	//Sys.println("Have weather! Code: " + responseCode);
+    	Sys.println("Have weather! Code: " + responseCode);
     	var rv = {};
-    	rv["loc"] = [self.comm.lastLat, self.comm.lastLng, self.comm.when.value()];
+    	if (self.comm.lastLat != null) {
+    		rv["loc"] = [self.comm.lastLat, self.comm.lastLng, self.comm.when.value()];
+    	} else {
+    		rv["loc"] = null;
+    	}
     	try
 		{
 			if (responseCode == 200)

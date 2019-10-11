@@ -5,6 +5,10 @@ using Toybox.Time;
 (:background)
 class PhoneConnectivity {
 	var lastLat, lastLng, when;
+	function initialize() {
+		self.when = new Time.Moment(0);
+	}
+	
 	class Listener extends Communications.ConnectionListener {
 		function onComplete() {
 		}
