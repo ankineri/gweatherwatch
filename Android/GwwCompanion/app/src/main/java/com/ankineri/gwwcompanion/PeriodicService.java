@@ -18,7 +18,7 @@ public class PeriodicService extends JobService {
     public boolean onStartJob(JobParameters jobParameters) {
         Log.d("GWW", "In the scheduled job - running send message");
         new ConnectIqHelper(this.getApplicationContext()).connectAndSend();
-        return true;
+        return false;
     }
 
     @Override
