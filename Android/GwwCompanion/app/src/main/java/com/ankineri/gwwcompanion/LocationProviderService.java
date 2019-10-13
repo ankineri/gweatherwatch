@@ -1,18 +1,20 @@
 package com.ankineri.gwwcompanion;
 
 import android.Manifest;
-import android.annotation.SuppressLint;
 import android.app.Notification;
 import android.app.Service;
+import android.app.job.JobInfo;
+import android.app.job.JobScheduler;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Build;
-import android.os.Bundle;
 import android.os.IBinder;
 import android.os.Looper;
+import android.os.Parcel;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.widget.Toast;
@@ -24,12 +26,17 @@ import com.garmin.android.connectiq.IQDevice;
 import com.garmin.android.connectiq.exception.InvalidStateException;
 import com.garmin.android.connectiq.exception.ServiceUnavailableException;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class LocationProviderService extends Service {
     final String garminAppId = "0d79495d-c7f0-4040-b897-ecc61b3b5a6d";
+    private static final int HOUR = 1000 * 60 * 60;
+    private static final int MINUTE = 1000 * 60;
+
+    interface ICIQRunner {
+        void onGotData(final ConnectIQ connectIQ, final IQDevice device, final IQApp app);
+    }
 
     class Runner implements Runnable {
         private final Context context;
@@ -42,7 +49,7 @@ public class LocationProviderService extends Service {
 
         }
 
-        void onMessageFromPhone(final IQDevice device, final IQApp app, final ConnectIQ connectIQ) {
+        void sendLocation(final IQDevice device, final IQApp app, final ConnectIQ connectIQ) {
             Thread t = new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -78,6 +85,43 @@ public class LocationProviderService extends Service {
                 }
             });
             t.start();
+        }
+
+        void getDataAndRun(final ICIQRunner callback) {
+            Looper.prepare();
+            Log.d("GWW", "Creating ConnectIq connection");
+            final ConnectIQ connectIQ = ConnectIQ.getInstance(context, IQConnectType.WIRELESS);
+            connectIQ.initialize(context, true, new ConnectIQ.ConnectIQListener() {
+                @Override
+                public void onSdkReady() {
+                    Log.d("GWW", "SDK ready");
+                    List<IQDevice> paired = null;
+                    try {
+                        paired = connectIQ.getKnownDevices();
+                        if (paired != null && paired.size() > 0) {
+                            for (final IQDevice device : paired) {
+                                IQApp app = new IQApp(garminAppId);
+                                callback.onGotData(connectIQ, device, app);
+                            }
+                        }
+                    } catch (InvalidStateException e) {
+                        e.printStackTrace();
+                    } catch (ServiceUnavailableException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+                @Override
+                public void onInitializeError(ConnectIQ.IQSdkErrorStatus iqSdkErrorStatus) {
+                    Log.d("GWW", "Init error: " + iqSdkErrorStatus.toString());
+                    Toast.makeText(context, "ConnectIQ initialization failed", Toast.LENGTH_SHORT).show();
+                }
+
+                @Override
+                public void onSdkShutDown() {
+                    Log.d("GWW", "SDK shutdown");
+                }
+            });
         }
 
         @Override
@@ -123,7 +167,7 @@ public class LocationProviderService extends Service {
                                                                 @Override
                                                                 public void onMessageReceived(IQDevice iqDevice, IQApp iqApp, List<Object> list, ConnectIQ.IQMessageStatus iqMessageStatus) {
                                                                     Log.d("GWW", "Have message: " + list.get(0).toString());
-                                                                    onMessageFromPhone(iqDevice, iqApp, connectIQ);
+                                                                    sendLocation(iqDevice, iqApp, connectIQ);
                                                                 }
                                                             });
                                                         } catch (InvalidStateException e) {
@@ -162,7 +206,7 @@ public class LocationProviderService extends Service {
                                     @Override
                                     public void onMessageReceived(IQDevice iqDevice, IQApp iqApp, List<Object> list, ConnectIQ.IQMessageStatus iqMessageStatus) {
                                         Log.d("GWW", "Have message: " + list.get(0).toString());
-                                        onMessageFromPhone(iqDevice, iqApp, connectIQ);
+                                        sendLocation(iqDevice, iqApp, connectIQ);
                                     }
                                 });
                             } catch (InvalidStateException e) {
@@ -207,15 +251,28 @@ public class LocationProviderService extends Service {
 
         new PermissionsGranter().getPermissions(this.getApplicationContext());
 
-        if (runningThread != null && runningThread.isAlive()) {
-            Log.d("GWW", "Thread is already running, doing nothing");
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+            Log.d("GWW", "Scheduling the work");
+            JobScheduler sched = (JobScheduler) this.getApplicationContext().getSystemService(Context.JOB_SCHEDULER_SERVICE);
+            JobInfo.Builder builder = new JobInfo.Builder(0,
+                    new ComponentName(this.getApplicationContext().getPackageName(), PeriodicService.class.getName()))
+                    .setBackoffCriteria(15 * MINUTE, JobInfo.BACKOFF_POLICY_LINEAR)
+//                    .setMinimumLatency(0)
+                    .setPeriodic((long) (15 * MINUTE))
+                    .setPersisted(true);
+            sched.schedule(builder.build());
         } else {
-            Log.d("GWW", "Starting service thread");
 
-            Thread t = new Thread(new Runner(this.getApplicationContext()));
-            t.start();
+
+            if (runningThread != null && runningThread.isAlive()) {
+                Log.d("GWW", "Thread is already running, doing nothing");
+            } else {
+                Log.d("GWW", "Starting service thread");
+
+                Thread t = new Thread(new Runner(this.getApplicationContext()));
+                t.start();
+            }
         }
-
         if (intent != null) {
             BootNotificationReceiver.completeWakefulIntent(intent);
         }

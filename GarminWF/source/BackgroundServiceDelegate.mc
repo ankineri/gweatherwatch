@@ -44,7 +44,7 @@ class BackgroundServiceDelegate extends Sys.ServiceDelegate
     function onTemporalEvent() 
     {
     	System.println("Have temporal event!");
-		if (comm == null) {
+		if (self.comm == null) {
 			self.comm = new PhoneConnectivity();
     		self.comm.init();
     	}    	

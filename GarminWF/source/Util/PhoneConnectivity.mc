@@ -33,6 +33,7 @@ class PhoneConnectivity {
 	}
 	
 	function init() {
+		Sys.println("Registering for phone messages...");
 		Communications.registerForPhoneAppMessages(method(:phoneMessageCallback));
 	}
 }
