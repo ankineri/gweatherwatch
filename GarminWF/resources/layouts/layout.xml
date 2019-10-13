@@ -206,10 +206,9 @@
 	   	<param name="color">Graphics.COLOR_WHITE</param>
 	   	<param name="maxlen">3</param>
 	</drawable>  
-	<drawable class="StaticIconDrawable">
+	<drawable class="BatteryImageDrawable">
 	   	<param name="x">209</param>
 	   	<param name="y">148</param>
-	   	<param name="resource">Rez.Drawables.battery</param>
 	</drawable>  	
 	<drawable class="StaticIconDrawable">
 	   	<param name="x">18</param>
