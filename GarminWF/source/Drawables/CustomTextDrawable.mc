@@ -5,7 +5,9 @@ class CustomTextDrawable extends Ui.Text {
 
     //protected var myText, locX, locY;
     protected var maxLen, color;
-	
+	protected var maxWidth;
+	protected var maxWidthSatFor;
+	protected var font, text;
     function initialize(params) {
         Text.initialize(params);
     	Text.setText("?");
@@ -27,9 +29,9 @@ class CustomTextDrawable extends Ui.Text {
     	if (params.hasKey(:justification)) {
     		setJustification(params.get(:justification));
     	}
-    	if (params.hasKey(:font)) {
-    		setFont(params.get(:font));
-    	}
+		setFont(params.get(:font));
+		self.font = params.get(:font);
+		
     	if (params.hasKey(:color)) {
     		self.color = params.get(:color);
     		setColor(self.color);
@@ -37,16 +39,38 @@ class CustomTextDrawable extends Ui.Text {
     	if (params.hasKey(:maxlen)) {
     		self.maxLen = params.get(:maxlen);
     	}
+    	if (params.hasKey(:maxwidth)) {
+    		self.maxWidth = params.get(:maxwidth);
+    		self.maxWidthSatFor = "";
+    	}
     }
     
-    function setText(text) {
+    function setText(txt) {
     	if (self.maxLen != null) {
-    		text = text.substring(0, self.maxLen);
+    		txt = txt.substring(0, self.maxLen);
     	}
-    	Text.setText(text);
+    	Text.setText(txt);
+    	self.text = txt;
+    }
+    
+    function isMaxWidthSatisfied() {
+    	if (self.maxWidth == null) {
+    		return true;
+    	}
+    	if (self.maxWidthSatFor == null) {
+    		return false;
+    	}
+    	return self.text.substring(0, self.maxWidthSatFor.length()) == self.maxWidthSatFor;
     }
 
     function draw(dc) {
+    	if (!isMaxWidthSatisfied()) {
+    		while (self.text.length() > 0 && dc.getTextWidthInPixels(self.text, self.font) > self.maxWidth) {
+    			self.text = self.text.substring(0, self.text.length() - 1);
+    		}
+    		self.maxWidthSatFor = self.text;
+    		Text.setText(self.text);
+    	}
     	Text.draw(dc);
     }
 }
