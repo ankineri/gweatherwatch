@@ -10,6 +10,9 @@ class PhoneConnectivity {
 	}
 	
 	class Listener extends Communications.ConnectionListener {
+		function initialize() {
+			Communications.ConnectionListener.initialize();
+		}
 		function onComplete() {
 		}
 		

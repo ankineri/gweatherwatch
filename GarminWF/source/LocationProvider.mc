@@ -36,6 +36,8 @@ class LocationProvider {
 			Sys.println("Returning phone location: " + phoneLocation);
 			return [phoneLocation[0], phoneLocation[1]];
 		}
-			
+		// Make compiler happy
+		Sys.println("Returning default location!");
+		return [50.063506, 14.445937];
 	}
 }

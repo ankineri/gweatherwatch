@@ -32,6 +32,7 @@ class FcastRectsDrawable extends PositionableDrawable {
 			case "!*":
 				return [Graphics.COLOR_WHITE, Graphics.COLOR_PURPLE];
 		}
+		return [Graphics.COLOR_WHITE, Graphics.COLOR_BLACK];
 	}
 	
 	function drawCell(cell, posX, posY, dc) {

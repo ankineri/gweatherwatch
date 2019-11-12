@@ -1,9 +1,9 @@
 using Toybox.Math;
 class PlotData {
-	private var buffer, asArray, valid, min, max;
+	private var buffer, asArrayBuf, valid, min, max;
 	function initialize(size) {
 		self.buffer = new CircularBuffer(size);
-		self.asArray = [];
+		self.asArrayBuf = [];
 		self.valid = true;
 	}
 	function add(val) {
@@ -13,19 +13,19 @@ class PlotData {
 	
 	function reloadIfNeeded() {
 		if (!self.valid) {
-			self.asArray = self.buffer.asArray();
-			if (self.asArray.size()) {
+			self.asArrayBuf = self.buffer.asArray();
+			if (self.asArrayBuf.size()) {
 				min = null;
 				max = null;
-				for (var i = 0; i < self.asArray.size(); ++i) {
-					if (self.asArray[i] == null) {
+				for (var i = 0; i < self.asArrayBuf.size(); ++i) {
+					if (self.asArrayBuf[i] == null) {
 						continue;
 					}
-					if (min == null || self.asArray[i] < min) {
-						min = self.asArray[i];
+					if (min == null || self.asArrayBuf[i] < min) {
+						min = self.asArrayBuf[i];
 					}
-					if (max == null || self.asArray[i] > max) {
-						max = self.asArray[i];
+					if (max == null || self.asArrayBuf[i] > max) {
+						max = self.asArrayBuf[i];
 					}
 				}
 			}
@@ -35,7 +35,7 @@ class PlotData {
 	
 	function getAll() {
 		self.reloadIfNeeded();
-		return self.asArray;
+		return self.asArrayBuf;
 	}
 	
 	function getMin() {
