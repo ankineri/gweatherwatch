@@ -125,7 +125,7 @@
     	<param name="color">Graphics.COLOR_YELLOW</param>
     </drawable>
     <drawable class="CurCityDrawable">
-    	<param name="x">140</param>
+    	<param name="x">145</param>
     	<param name="y">45</param>
     	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
     	<param name="font">Graphics.FONT_XTINY</param>

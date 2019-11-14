@@ -246,12 +246,12 @@ public class LocationProviderService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            this.startForeground(startId, new Notification());
+            this.startForeground(startId, new Notification(R.drawable.ic_launcher_foreground, "gWeatherWatch companion", Notification.PRIORITY_LOW));
         }
 
         new PermissionsGranter().getPermissions(this.getApplicationContext());
-
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+
             Log.d("GWW", "Scheduling the work");
             JobScheduler sched = (JobScheduler) this.getApplicationContext().getSystemService(Context.JOB_SCHEDULER_SERVICE);
             JobInfo.Builder builder = new JobInfo.Builder(0,
@@ -262,8 +262,6 @@ public class LocationProviderService extends Service {
                     .setPersisted(true);
             sched.schedule(builder.build());
         } else {
-
-
             if (runningThread != null && runningThread.isAlive()) {
                 Log.d("GWW", "Thread is already running, doing nothing");
             } else {
@@ -277,7 +275,6 @@ public class LocationProviderService extends Service {
             BootNotificationReceiver.completeWakefulIntent(intent);
         }
 
-        this.stopForeground(true);
         return Service.START_STICKY;
     }
 }

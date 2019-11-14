@@ -42,7 +42,7 @@ public class ConnectIqHelper {
                     //                                          int[] grantResults)
                     // to handle the case where the user grants the permission. See the documentation
                     // for ActivityCompat#requestPermissions for more details.
-                    Toast.makeText(context, "No location permissions!", Toast.LENGTH_SHORT).show();
+                    Log.w("GWW", "No location permissions!");
                     new PermissionsGranter().getPermissions(context);
                     return;
                 }
