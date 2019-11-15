@@ -29,7 +29,7 @@ class BackgroundServiceDelegate extends Sys.ServiceDelegate
 			loc[0],
 			loc[1]]);  
 			
-		Sys.println(" :: weather request " + url);
+		//Sys.println(" :: weather request " + url);
 
         var options = {
           :method => Comm.HTTP_REQUEST_METHOD_GET,
