@@ -13,6 +13,10 @@ class LayoutContextExt {
     	rv = rv != null ? rv : self.loadAndSetWeather();
 		return rv;
 	}
+	
+	static function reset() {
+		LayoutContext.getInstance().reset();
+	}
 }
     	
     

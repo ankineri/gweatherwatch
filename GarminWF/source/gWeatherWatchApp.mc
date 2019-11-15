@@ -72,7 +72,7 @@ class gWeatherWatchApp extends Application.AppBase {
     	if (data["loc"] != null) {
     		Persistent.Save(PersistKeys.LastPhoneLocation, data["loc"]);
     	}
-        if (data["weather"] != null && data["weather"]["success"] == true)
+        if (data["weather"] != null && "true".equals(data["weather"]["success"]))
         {
         	//System.println("UI got weather: " + data["weather"]);
         	Background.registerForTemporalEvent(new Toybox.Time.Duration(60 * 60));
@@ -82,6 +82,7 @@ class gWeatherWatchApp extends Application.AppBase {
         	WatchUi.requestUpdate();
         } else {
         	// Request an update sooner if there is no weather data
+        	System.println("Got no weather - scheduling in 10 minutes");
         	Background.registerForTemporalEvent(new Toybox.Time.Duration(10 * 60));
         }
     }    
