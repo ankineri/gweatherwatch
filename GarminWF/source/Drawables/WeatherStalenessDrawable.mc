@@ -14,14 +14,17 @@ class WeatherStalenessDrawable extends CustomTextDrawable {
 
 	function setBckgnd(minutes) {
 		var color = 0x0;
+		var fg = 0x0;
 		if (minutes <= 60) {
 			color = 0x00AA00;
 		} else if (minutes < 120) {
 			color = 0xAAAA00;
 		} else {
 			color = 0xAA0000;
+			fg = 0xFFFFFF;
 		}
 		setBackgroundColor(color);
+		setColor(fg);
 	}
 		
 
