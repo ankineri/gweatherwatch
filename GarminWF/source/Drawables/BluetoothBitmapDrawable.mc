@@ -21,7 +21,7 @@ class BluetoothBitmapDrawable extends PositionableDrawable {
     	var sett = Sys.getDeviceSettings();
     	var conn = false;
     	if (sett has :connectionInfo) {
-    		conn = Sys.getDeviceSettings().connectionInfo.get(:bluetooth) == Sys.CONNECTION_STATE_CONNECTED;
+    		conn = Sys.getDeviceSettings().connectionInfo.get(:bluetooth).state == Sys.CONNECTION_STATE_CONNECTED;
     	}
     	else {
     		conn = Sys.getDeviceSettings().phoneConnected;
