@@ -29,9 +29,13 @@ class CustomTextDrawable extends Ui.Text {
     	if (params.hasKey(:justification)) {
     		setJustification(params.get(:justification));
     	}
-		setFont(params.get(:font));
-		self.font = params.get(:font);
-		
+		if (params.get(:customFont)) {
+			var fontId = params.get(:font);
+			self.font = Ui.loadResource(fontId);
+		} else {
+			self.font = params.get(:font);
+		}
+		setFont(self.font);
     	if (params.hasKey(:color)) {
     		self.color = params.get(:color);
     		setColor(self.color);

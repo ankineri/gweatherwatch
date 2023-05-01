@@ -13,7 +13,14 @@ class gWeatherWatchView extends WatchUi.WatchFace {
 
     // Load your resources here
     function onLayout(dc) {
-        setLayout(Rez.Layouts.WatchFace(dc));
+        if (dc.getWidth() == 260) {
+            setLayout(Rez.Layouts.WatchFace260x260(dc));
+        }
+        else if (dc.getWidth() == 280) {
+            setLayout(Rez.Layouts.WatchFace280x280(dc));
+        } else {
+            setLayout(Rez.Layouts.WatchFace(dc));
+        }
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -44,9 +51,9 @@ class gWeatherWatchView extends WatchUi.WatchFace {
         var timeString = Lang.format(timeFormat, [hours.format("%02d"), clockTime.min.format("%02d")]);
 
         // Update the view
-        var view = View.findDrawableById("TimeLabel");
-        var fnt = Ui.loadResource(Rez.Fonts.Numbers);
-        view.setFont(fnt);
+        var view = View.findDrawableById("TimeLabel") as Toybox.WatchUi.Text;
+        var fnt = Ui.loadResource(Rez.Fonts.NumbersLarge);
+        // view.setFont(fnt);
         //view.setColor(Application.getApp().getProperty("ForegroundColor"));
         view.setText(timeString);
         // Call the parent onUpdate function to redraw the layout

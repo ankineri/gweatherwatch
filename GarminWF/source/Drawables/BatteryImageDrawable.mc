@@ -17,7 +17,8 @@ class BatteryImageDrawable extends PositionableDrawable {
 			self.xalign = params.get(:xalign);
 		}
 		if ("center".equals(self.xalign)) {
-			locX -= self.onBmp.getWidth() / 2;
+			locX -= width / 2;
+			// locX -= self.getWidth() / 2;
 		}
     }
     

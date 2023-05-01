@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">GwwCompanion</string>
+    <string name="app_name">GWeatherWatch Companion</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Status</string>
+    <string name="tab_text_2">Setup</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="btnWhenHavePermissions">Permissions granted</string>
+    <string name="btnWhenNoPermissions">Grant permissions</string>
+    <string name="lbl_location">Location permissions are required for weather updates. Please grant permissions by pressing the button below.</string>
+    <string name="lbl_location_given">Location permissions are required for weather updates. Permissions are granted.</string>
+    <string name="lbl_bkgnd_location">This app requests location in the background to update the watchface. Please grant background location permission (after granting location access above).</string>
+    <string name="lbl_bkgnd_location_given">This app requests location in the background to update the watchface. Background location is given.</string>
+    <string name="lbl_error">It appears there was an error setting up permissions. Android does not allow requesting permissions multiple times. To grant permissions please either:\n- Go to app settings and grant location permissions \"all the time\"\n- Uninstall and install the app again and try pressing buttons above again.</string>
 </resources>

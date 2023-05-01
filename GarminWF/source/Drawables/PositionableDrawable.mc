@@ -12,7 +12,6 @@ class PositionableDrawable extends Ui.Drawable {
     	} else if ("max".equals(x)) {
     		x = (horiz ? sett.screenWidth : sett.screenHeight);
     	}
-    	
     	return x;
     }
 	

@@ -2,6 +2,7 @@ using Toybox.Background;
 using Toybox.Time;
 using Toybox.Application;
 using Toybox.WatchUi;
+using Toybox.Lang;
 
 class gWeatherWatchApp extends Application.AppBase {
 
@@ -36,6 +37,7 @@ class gWeatherWatchApp extends Application.AppBase {
     function InitBackgroundEvents()
     {
     	var HOUR = new Toybox.Time.Duration(60 * 60);
+		var MINUTE = new Toybox.Time.Duration(60);
 		var lastTime = null; 
 		if (lastTime == null) {
 			var fromPersist = Persistent.Load(PersistKeys.LastBackgroundEvent);
@@ -65,7 +67,7 @@ class gWeatherWatchApp extends Application.AppBase {
 		Background.registerForTemporalEvent(scheduleAt);
     }
     
-    function onBackgroundData(data) 
+    function onBackgroundData(data as Lang.Dictionary<Lang.String, Lang.String>) 
     {
     	//System.println("Have bckgnd data: " + data);
     	

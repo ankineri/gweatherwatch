@@ -1,0 +1,224 @@
+<layout id="WatchFace260x260">
+    <drawable class="Background" />
+
+    <label id="TimeLabel" x="center" y="107" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" font="@Fonts.Numbers" />
+    
+    <!-- ====================== SUN =================================== -->
+    <drawable class="SunTextDrawable">
+    	<param name="x">72</param>
+    	<param name="y">20</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
+    	<param name="font">Graphics.FONT_XTINY</param>
+    	<param name="color">Graphics.COLOR_YELLOW</param>
+    	<param name="sunrise">true</param>
+    </drawable>
+    <drawable class="SunTextDrawable">
+    	<param name="x">188</param>
+    	<param name="y">20</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
+    	<param name="font">Graphics.FONT_XTINY</param>
+    	<param name="color">Graphics.COLOR_ORANGE</param>
+    	<param name="sunrise">false</param>
+    </drawable>    
+    <drawable class="SunArcDrawable">
+    	<param name="x">"center"</param>
+    	<param name="y">"center"</param>
+    	<param name="r">"full"</param>
+    	<param name="from">137</param>
+    	<param name="to">42</param>
+    	<param name="width">10</param>
+    	<param name="arrowcolor">Graphics.COLOR_WHITE</param>
+    </drawable>    
+    <drawable class="LineDrawable">
+    	<param name="x1">0</param>
+	   	<param name="y1">46</param>
+    	<param name="x2">"max"</param>
+	   	<param name="y2">46</param>	   	
+	   	<param name="color">Graphics.COLOR_YELLOW</param>
+    </drawable>
+    <drawable class="LineDrawable">
+    	<param name="x1">"center"</param>
+	   	<param name="y1">45</param>
+    	<param name="x2">"center"</param>
+	   	<param name="y2">20</param>	   	
+	   	<param name="color">Graphics.COLOR_WHITE</param>
+    </drawable>    
+
+    <!-- ====================== /SUN =================================== -->
+
+    <drawable class="BluetoothBitmapDrawable">
+    	<param name="x">"center"</param>
+	   	<param name="y">8</param>
+	   	<param name="xalign">"center"</param>
+	   	<param name="color">Graphics.COLOR_YELLOW</param>
+    </drawable>
+
+    
+    <!-- ====================== ARCS =================================== -->
+    <drawable class="BatteryArcDrawable">
+    	<param name="x">"center"</param>
+    	<param name="y">"center"</param>
+    	<param name="r">"full"</param>
+    	<param name="from">30</param>
+    	<param name="to">330</param>
+    	<param name="width">10</param>
+    	<param name="color">Graphics.COLOR_GREEN</param>
+    	<param name="autocolor">true</param>
+    	<param name="reverse">true</param>
+    </drawable>    
+    <drawable class="StepsArcDrawable">
+    	<param name="x">"center"</param>
+    	<param name="y">"center"</param>
+    	<param name="r">"full"</param>
+    	<param name="from">318</param>
+    	<param name="to">222</param>
+    	<param name="width">10</param>
+    	<param name="autocolor">true</param>
+    	<param name="reverse">true</param>
+    </drawable>       
+    
+    <drawable class="StepsTextDrawable">
+    	<param name="x">"center"</param>
+    	<param name="y">210</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
+    	<param name="font">Graphics.FONT_SMALL</param>
+    	<param name="color">Graphics.COLOR_WHITE</param>
+    	<param name="maxlen">11</param>
+    </drawable>   
+    
+    <drawable class="FloorsArcDrawable">
+    	<param name="x">"center"</param>
+    	<param name="y">"center"</param>
+    	<param name="r">"full"</param>
+    	<param name="from">210</param>
+    	<param name="to">150</param>
+    	<param name="width">10</param>
+    	<param name="autocolor">true</param>
+    	<param name="reverse">false</param>
+    </drawable>       
+    
+    <drawable class="FloorsTextDrawable">
+    	<param name="x">20</param>
+    	<param name="y">107</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
+    	<param name="font">Graphics.FONT_XTINY</param>
+    	<param name="color">Graphics.COLOR_WHITE</param>
+    	<param name="maxlen">11</param>
+    </drawable>   
+	<drawable class="LineDrawable">
+    	<param name="x1">10</param>
+	   	<param name="y1">"center"</param>
+    	<param name="x2">30</param>
+	   	<param name="y2">"center"</param>	   	
+	   	<param name="color">Graphics.COLOR_WHITE</param>
+    </drawable> 
+    
+    <drawable class="CurrentIconDrawable">
+	   	<param name="x">215</param>
+	   	<param name="y">105</param>
+	</drawable>
+    
+    <drawable class="CurTempDrawable">
+    	<param name="x">"center"</param>
+    	<param name="y">45</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
+    	<param name="font">1</param>
+    	<param name="color">Graphics.COLOR_YELLOW</param>
+    </drawable>
+    <drawable class="CurCityDrawable">
+    	<param name="x">155</param>
+    	<param name="y">49</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
+    	<param name="font">Graphics.FONT_XTINY</param>
+    	<param name="color">Graphics.COLOR_WHITE</param>
+    	<param name="phoneLocColor">Graphics.COLOR_GREEN</param>
+    	<param name="maxwidth">70</param>
+    </drawable>    
+   
+      
+    <drawable class="BatteryTextDrawable">
+    	<param name="x">245</param>
+    	<param name="y">126</param>
+    	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
+    	<param name="font">Graphics.FONT_SYSTEM_XTINY </param>
+    	<param name="color">Graphics.COLOR_WHITE</param>
+    </drawable>      
+
+    <drawable class="FcastRectsDrawable">
+    	<param name="x">40</param>
+    	<param name="y">75</param>
+    	<param name="font">Graphics.FONT_SYSTEM_XTINY </param>
+    	<param name="hwidth">20</param>
+    	<param name="twidth">35</param>
+    </drawable>  
+	<drawable class="WeatherStalenessDrawable">
+	   	<param name="x">205</param>
+	   	<param name="y">75</param>
+	   	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
+	   	<param name="colorback">true</param>
+	   	<param name="font">Graphics.FONT_XTINY </param>
+	   	<param name="color">Graphics.COLOR_BLACK</param>
+	</drawable>      
+        
+    <drawable class="DateDrawable">
+	   	<param name="x">"center"</param>
+	   	<param name="y">150</param>
+	   	<param name="justification">Graphics.TEXT_JUSTIFY_CENTER</param>
+	   	<param name="font">Graphics.FONT_SMALL </param>
+	   	<param name="color">Graphics.COLOR_GREEN</param>
+	</drawable>  
+
+	<drawable class="PressureGraphDrawable">
+	   	<param name="x">30</param>
+	   	<param name="y">50</param>
+	   	<param name="bkcolor">Graphics.COLOR_BLACK</param>
+	   	<param name="linecolor">0xFFFFFF</param>
+	   	<param name="fillcolor">Graphics.COLOR_BLUE</param>
+	   	<param name="width">40</param>
+	   	<param name="height">20</param>
+	</drawable>  
+	
+	<drawable class="PressureDrawable">
+	   	<param name="x">70</param>
+	   	<param name="y">50</param>
+	   	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
+	   	<param name="font">Graphics.FONT_XTINY</param>
+	   	<param name="color">Graphics.COLOR_WHITE</param>
+	   	<param name="maxlen">3</param>
+	</drawable>  
+	<drawable class="BatteryImageDrawable">
+	   	<param name="x">222</param>
+	   	<param name="y">148</param>
+	</drawable>  	
+	<drawable class="StaticIconDrawable">
+	   	<param name="x">18</param>
+	   	<param name="y">157</param>
+	   	<param name="resource">Rez.Drawables.stairs</param>
+	</drawable>  		
+
+	<drawable class="HeartRateGraphDrawable">
+	   	<param name="x">80</param>
+	   	<param name="y">190</param>
+	   	<param name="bkcolor">Graphics.COLOR_BLACK</param>
+	   	<param name="linecolor">0xFFFFFF</param>
+	   	<param name="fillcolor">Graphics.COLOR_ORANGE</param>
+	   	<param name="width">90</param>
+	   	<param name="height">20</param>
+	</drawable>  
+	<drawable class="HeartRateRangeDrawable">
+	   	<param name="x">173</param>
+	   	<param name="y">190</param>
+	   	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
+	   	<param name="font">Graphics.FONT_XTINY </param>
+	   	<param name="color">Graphics.COLOR_ORANGE</param>
+	   	<param name="maxlen">7</param>
+	</drawable>  	
+	<drawable class="HeartRateDrawable">
+	   	<param name="x">70</param>
+	   	<param name="y">190</param>
+	   	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
+	   	<param name="font">Graphics.FONT_XTINY </param>
+	   	<param name="color">0xFFFFFF</param>
+	   	<param name="maxlen">3</param>
+	</drawable>  	
+</layout>

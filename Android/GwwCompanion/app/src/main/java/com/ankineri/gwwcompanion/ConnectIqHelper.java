@@ -1,14 +1,14 @@
 package com.ankineri.gwwcompanion;
 
 import android.Manifest;
+import android.arch.lifecycle.MutableLiveData;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationManager;
-import android.os.Looper;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
-import android.widget.Toast;
+//import android.widget.Toast;
 
 import com.garmin.android.connectiq.ConnectIQ;
 import com.garmin.android.connectiq.IQApp;
@@ -24,6 +24,9 @@ public class ConnectIqHelper {
 
     private final Context context;
     private final LocationManager locationManager;
+    private ConnectIQ mConnectIQ;
+    private IQApp mApp;
+    private IQDevice mDevice;
 
     public ConnectIqHelper(Context context) {
         this.context = context;
@@ -73,49 +76,71 @@ public class ConnectIqHelper {
         t.start();
     }
 
-    void getDataAndRun(final LocationProviderService.ICIQRunner callback) {
-        Log.d("GWW", "Creating ConnectIq connection");
-        final ConnectIQ connectIQ = ConnectIQ.getInstance(context, ConnectIQ.IQConnectType.WIRELESS);
-        //final ConnectIQ connectIQ = ConnectIQ.getInstance(context, ConnectIQ.IQConnectType.TETHERED);
-        connectIQ.initialize(context, true, new ConnectIQ.ConnectIQListener() {
+    MutableLiveData<Boolean> mUpdateStatusTo = null;
+
+    public void registerStatus(MutableLiveData<Boolean> status) {
+        mUpdateStatusTo = status;
+    }
+
+    public void connect(boolean showMessages) {
+        mConnectIQ = ConnectIQ.getInstance(context, ConnectIQ.IQConnectType.WIRELESS);
+        mConnectIQ.initialize(context, showMessages, new ConnectIQ.ConnectIQListener() {
             @Override
             public void onSdkReady() {
                 Log.d("GWW", "SDK ready");
                 List<IQDevice> paired = null;
                 try {
-                    paired = connectIQ.getKnownDevices();
+                    paired = mConnectIQ.getKnownDevices();
                     if (paired != null && paired.size() > 0) {
                         for (final IQDevice device : paired) {
-                            IQApp app = new IQApp(garminAppId);
-                            callback.onGotData(connectIQ, device, app);
+                            mApp = new IQApp(garminAppId);
+                            mDevice = device;
+                            if (mUpdateStatusTo != null) {
+                                mUpdateStatusTo.setValue(true);
+                            }
+                            if (mConnectedCallback != null) {
+                                mConnectedCallback.onGotData(mConnectIQ, device, mApp);
+                            }
                         }
                     }
                 } catch (InvalidStateException e) {
                     e.printStackTrace();
+                    if (mUpdateStatusTo != null) {
+                        mUpdateStatusTo.setValue(false);
+                    }
                 } catch (ServiceUnavailableException e) {
                     e.printStackTrace();
+                    if (mUpdateStatusTo != null) {
+                        mUpdateStatusTo.setValue(false);
+                    }
                 }
             }
 
             @Override
             public void onInitializeError(ConnectIQ.IQSdkErrorStatus iqSdkErrorStatus) {
                 Log.d("GWW", "Init error: " + iqSdkErrorStatus.toString());
-                Toast.makeText(context, "ConnectIQ initialization failed", Toast.LENGTH_SHORT).show();
+                if (mUpdateStatusTo != null) {
+                    mUpdateStatusTo.setValue(false);
+                }
             }
 
             @Override
             public void onSdkShutDown() {
                 Log.d("GWW", "SDK shutdown");
+                if (mUpdateStatusTo != null) {
+                    mUpdateStatusTo.setValue(false);
+                }
             }
         });
     }
-
+    LocationProviderService.ICIQRunner mConnectedCallback = null;
     public void connectAndSend() {
-        getDataAndRun(new LocationProviderService.ICIQRunner() {
+        mConnectedCallback = new LocationProviderService.ICIQRunner() {
             @Override
             public void onGotData(ConnectIQ connectIQ, IQDevice device, IQApp app) {
                 sendLocation(device, app, connectIQ);
             }
-        });
+        };
+        connect(false);
     }
 }

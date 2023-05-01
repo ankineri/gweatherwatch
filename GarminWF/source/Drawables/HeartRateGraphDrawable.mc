@@ -28,7 +28,7 @@ class HeartRateGraphDrawable extends PlotDrawable {
 		if (iter != null) {
 			var piece = null;
 			while (count < tmpAr.size()) {
-				var piece = iter.next();
+				piece = iter.next();
 				
 				if (piece == null || (self.lastMoment != null && self.lastMoment.value == piece.when.value)) {
 					//Sys.println("Terminating search: reached end or known");

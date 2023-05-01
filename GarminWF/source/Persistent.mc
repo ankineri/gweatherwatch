@@ -1,4 +1,5 @@
 using Toybox.Application as App;
+using Toybox.Application.Storage as Storage;
 
 (:background)
 class PersistKeys {
@@ -11,11 +12,13 @@ class PersistKeys {
 (:background)
 class Persistent {
 	public static function Save(key, value) {
-		App.getApp().setProperty(key, value);
+		Storage.setValue(key, value);
+		// App.getApp().setProperty(key, value);
 	}
 	public static function Load(key) {
 		try {
-			return App.getApp().getProperty(key);
+			return Storage.getValue(key);
+			// return App.getApp().getProperty(key);
 		} catch (ex) {
 			return null;
 		}

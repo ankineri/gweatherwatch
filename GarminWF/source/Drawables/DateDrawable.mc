@@ -2,7 +2,7 @@ using Toybox.WatchUi as Ui;
 using Toybox.System as Sys;
 using Toybox.Lang as Lang;
 using Toybox.Time;
-using Time.Gregorian;
+using Toybox.Time.Gregorian;
 class DateDrawable extends CustomTextDrawable {
 	
     function initialize(params) {
@@ -31,7 +31,13 @@ class DateDrawable extends CustomTextDrawable {
     }
 
     function draw(dc) {
-	    var date = Gregorian.info(Time.now(), Time.FORMAT_SHORT);
+		var now = Time.now();
+		var fmt = Time.FORMAT_SHORT;
+		/*if (Gregorian has :info) {
+			System.println("NO INFO?!!");
+			return;
+		}*/
+	    var date = Gregorian.info(now, fmt);
 		var str = Lang.format("$1$.$2$.$3$ $4$", [
 			date.day.format("%02d"),
 			date.month.format("%02d"),

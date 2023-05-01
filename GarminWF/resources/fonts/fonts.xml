@@ -1,4 +1,6 @@
 <fonts>
 	<!-- <font id="Numbers" filename="numbers.fnt" filter="0123456789:"/> -->
 	<font id="Numbers" filename="leco.fnt" filter="0123456789:"/>
+	<font id="NumbersLarge" filename="leco-large.fnt" filter="0123456789:"/>
+	<font id="City280" filename="city_280.fnt" />
 </fonts>

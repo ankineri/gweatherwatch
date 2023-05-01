@@ -4,7 +4,7 @@
     
     <!-- ====================== SUN =================================== -->
     <drawable class="SunTextDrawable">
-    	<param name="x">62</param>
+    	<param name="x">72</param>
     	<param name="y">20</param>
     	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
     	<param name="font">Graphics.FONT_XTINY</param>
@@ -12,7 +12,7 @@
     	<param name="sunrise">true</param>
     </drawable>
     <drawable class="SunTextDrawable">
-    	<param name="x">178</param>
+    	<param name="x">188</param>
     	<param name="y">20</param>
     	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
     	<param name="font">Graphics.FONT_XTINY</param>
@@ -30,9 +30,9 @@
     </drawable>    
     <drawable class="LineDrawable">
     	<param name="x1">0</param>
-	   	<param name="y1">42</param>
+	   	<param name="y1">44</param>
     	<param name="x2">"max"</param>
-	   	<param name="y2">42</param>	   	
+	   	<param name="y2">44</param>	   	
 	   	<param name="color">Graphics.COLOR_YELLOW</param>
     </drawable>
     <drawable class="LineDrawable">

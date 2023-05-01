@@ -3,7 +3,9 @@
         <iq:products>
             <iq:product id="fenix6s"/>
             <iq:product id="fenix6spro"/>
+            <iq:product id="fenix7x"/>
             <iq:product id="fr945"/>
+            <iq:product id="fr955"/>
             <iq:product id="marqathlete"/>
             <iq:product id="marqaviator"/>
             <iq:product id="marqcaptain"/>

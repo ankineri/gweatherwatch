@@ -20,7 +20,7 @@ class PhoneConnectivity {
 		}
 	}
 
-	function phoneMessageCallback(msg) {
+	function phoneMessageCallback(msg as Communications.Message) as Void {
 		Sys.println("Have message: " + msg.data);
 		if (msg != null && msg.data != null) {
 			lastLat = msg.data[0];
