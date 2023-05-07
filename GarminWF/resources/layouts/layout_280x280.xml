@@ -5,18 +5,20 @@
     
     <!-- ====================== SUN =================================== -->
     <drawable class="SunTextDrawable">
-    	<param name="x">82</param>
+    	<param name="x">80</param>
     	<param name="y">23</param>
     	<param name="justification">Graphics.TEXT_JUSTIFY_LEFT</param>
-    	<param name="font">Graphics.FONT_XTINY</param>
+    	<param name="font">Fonts.City280</param>
+		<param name="customFont">true</param>
     	<param name="color">Graphics.COLOR_YELLOW</param>
     	<param name="sunrise">true</param>
     </drawable>
     <drawable class="SunTextDrawable">
-    	<param name="x">198</param>
+    	<param name="x">200</param>
     	<param name="y">23</param>
     	<param name="justification">Graphics.TEXT_JUSTIFY_RIGHT</param>
-    	<param name="font">Graphics.FONT_XTINY</param>
+    	<param name="font">Fonts.City280</param>
+		<param name="customFont">true</param>
     	<param name="color">Graphics.COLOR_ORANGE</param>
     	<param name="sunrise">false</param>
     </drawable>    

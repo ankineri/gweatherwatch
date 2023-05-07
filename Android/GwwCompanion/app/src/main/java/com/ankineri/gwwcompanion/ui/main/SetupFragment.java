@@ -1,5 +1,10 @@
 package com.ankineri.gwwcompanion.ui.main;
 
+import static android.support.v4.content.ContextCompat.getSystemService;
+
+import android.app.ActivityManager;
+import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Build;
@@ -16,7 +21,11 @@ import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProvider;
 import android.widget.Toast;
 
+import com.ankineri.gwwcompanion.ConnectIqHelper;
+import com.ankineri.gwwcompanion.MainActivity;
+import com.ankineri.gwwcompanion.PeriodicService;
 import com.ankineri.gwwcompanion.R;
+import com.ankineri.gwwcompanion.Shared;
 import com.ankineri.gwwcompanion.databinding.FragmentSetupBinding;
 
 import java.util.Arrays;
@@ -24,9 +33,15 @@ import java.util.Arrays;
 public class SetupFragment extends Fragment {
 
     private static final String ARG_SECTION_NUMBER = "section_number";
-
+    private boolean isServiceSetupFromButton = false;
     private SetupViewModel setupViewModel;
     private FragmentSetupBinding binding;
+
+    private ConnectIqHelper connectIqHelper;
+
+    boolean isEverythingSetup() {
+        return Shared.isGarminConnected.getValue() && setupViewModel.hasBkgndLocationPermission.getValue() && setupViewModel.hasLocationPermission.getValue();
+    }
 
     public static SetupFragment newInstance() {
         SetupFragment fragment = new SetupFragment();
@@ -34,17 +49,20 @@ public class SetupFragment extends Fragment {
         fragment.setArguments(bundle);
         return fragment;
     }
+
     boolean shouldRequestBackgroundLocation() {
         return Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q;
     }
+
     String[] getRequiredLocationPermissions() {
         return new String[]{"android.permission.ACCESS_FINE_LOCATION", "android.permission.ACCESS_COARSE_LOCATION"};
     }
+
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         Toast.makeText(this.getContext(), "YES", Toast.LENGTH_LONG);
-        setupViewModel.error.setValue (Arrays.stream(grantResults).anyMatch(x -> x == PackageManager.PERMISSION_DENIED));
+        setupViewModel.error.setValue(Arrays.stream(grantResults).anyMatch(x -> x == PackageManager.PERMISSION_DENIED));
         setupViewModel.hasLocationPermission.setValue(checkPermissions());
         setupViewModel.hasBkgndLocationPermission.setValue(hasBackgroundLocationPermission());
     }
@@ -55,25 +73,30 @@ public class SetupFragment extends Fragment {
                 0
         );
     }
+
     void doRequestBkgndPermissions() {
         requestPermissions(
                 new String[]{"android.permission.ACCESS_BACKGROUND_LOCATION"},
                 1
         );
     }
+
     boolean checkPermissions() {
         String[] permissions = getRequiredLocationPermissions();
-        return Arrays.stream(permissions).map(permission -> ContextCompat.checkSelfPermission(this.getContext(), permission )
+        return Arrays.stream(permissions).map(permission -> ContextCompat.checkSelfPermission(this.getContext(), permission)
                 == PackageManager.PERMISSION_GRANTED).anyMatch(x -> x);
     }
+
     boolean hasBackgroundLocationPermission() {
         return ContextCompat.checkSelfPermission(this.getContext(), "android.permission.ACCESS_BACKGROUND_LOCATION") == PackageManager.PERMISSION_GRANTED;
     }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setupViewModel = new ViewModelProvider(this,
                 new ViewModelProvider.NewInstanceFactory()).get(SetupViewModel.class);
+        connectIqHelper = new ConnectIqHelper(this.getContext());
     }
 
     @Override
@@ -115,6 +138,34 @@ public class SetupFragment extends Fragment {
             }
         });
         setupViewModel.hasBkgndLocationPermission.setValue(hasBackgroundLocationPermission());
+        Observer<Boolean> observer = new Observer<Boolean>() {
+            @Override
+            public void onChanged(@Nullable Boolean hasService) {
+
+                boolean isAllOkay = Shared.isGarminConnected.getValue();
+                if (!isServiceSetupFromButton && isEverythingSetup()) {
+                    ((MainActivity) getActivity()).SwitchToStatus();
+                }
+                binding.btnSetupService.setBackgroundColor(isAllOkay ? Color.GREEN : Color.YELLOW);
+                binding.btnSetupService.setEnabled(!isAllOkay);
+                binding.sectionLabel3.setText(isAllOkay ? R.string.lbl_foreground_service_done : R.string.lbl_foreground_service);
+                binding.btnSetupService.setText(isAllOkay ? R.string.btn_service_given : R.string.btn_service_not_given);
+                if (isServiceSetupFromButton) {
+                    doRestartService();
+                }
+                isServiceSetupFromButton = false;
+            }
+        };
+        Shared.isGarminConnected.observe(getViewLifecycleOwner(), observer);
+        observer.onChanged(Shared.isGarminConnected.getValue());
+//        Shared.isServiceStarted.observe(getViewLifecycleOwner(), observer);
+        binding.btnSetupService.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                isServiceSetupFromButton = true;
+                doCheckService(true);
+            }
+        });
         binding.btnRequestLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -133,9 +184,39 @@ public class SetupFragment extends Fragment {
                 binding.lblError.setVisibility(isError ? View.VISIBLE : View.INVISIBLE);
             }
         });
+
         setupViewModel.error.setValue(false);
-        final TextView textView = binding.sectionLabel;
+//        doCheckService(false);
+        doStartService();
         return root;
+    }
+
+    private void doCheckService(boolean showMessages) {
+        connectIqHelper.connect(showMessages);
+    }
+
+    private void doStartService() {
+        Intent theIntent = new Intent(getActivity(), PeriodicService.class);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            getActivity().startService(theIntent);
+        } else {
+            getActivity().startService(theIntent);
+        }
+    }
+
+    private void doRestartService() {
+        getActivity().stopService(new Intent(getActivity(), PeriodicService.class));
+        doStartService();
+    }
+
+    public boolean isMyServiceRunning(Class<?> serviceClass) {
+        ActivityManager manager = (ActivityManager) getSystemService(getContext(), serviceClass);
+        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if (serviceClass.getName().equals(service.service.getClassName())) {
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override

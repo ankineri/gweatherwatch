@@ -56,15 +56,6 @@
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
             </intent-filter>
         </receiver>
-
-        <service
-            android:name=".LocationProviderService"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.ankineri.gwwcompanion.LocationProviderService" />
-            </intent-filter>
-        </service>
     </application>
 
 </manifest>

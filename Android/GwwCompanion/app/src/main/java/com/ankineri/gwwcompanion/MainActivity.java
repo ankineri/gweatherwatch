@@ -9,10 +9,13 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.ankineri.gwwcompanion.ui.main.SectionsPagerAdapter;
 import com.ankineri.gwwcompanion.databinding.ActivityMainBinding;
+import com.ankineri.gwwcompanion.ui.main.SetupFragment;
 
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
+    private SectionsPagerAdapter sectionsPagerAdapter;
+    private ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +24,13 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
-        ViewPager viewPager = binding.viewPager;
+        sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
+        viewPager = binding.viewPager;
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = binding.tabs;
         tabs.setupWithViewPager(viewPager);
+    }
+    public void SwitchToStatus() {
+        viewPager.setCurrentItem(1);
     }
 }

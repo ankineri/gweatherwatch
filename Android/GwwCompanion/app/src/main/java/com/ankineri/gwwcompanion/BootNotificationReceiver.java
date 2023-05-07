@@ -13,12 +13,7 @@ public class BootNotificationReceiver extends WakefulBroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         Log.d("GWW", "Boot notification!");
 
-        Intent theIntent = new Intent(context, LocationProviderService.class);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            context.startForegroundService(theIntent);
-        }
-        else {
-            context.startService(theIntent);
-        }
+        Intent theIntent = new Intent(context, PeriodicService.class);
+        context.startService(theIntent);
     }
 }

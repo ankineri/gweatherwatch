@@ -16,7 +16,7 @@ import com.ankineri.gwwcompanion.R;
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @StringRes
-    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_1, R.string.tab_text_2};
+    private static final int[] TAB_TITLES = new int[]{R.string.tab_text_2, R.string.tab_text_1};
     private final Context mContext;
 
     public SectionsPagerAdapter(Context context, FragmentManager fm) {
@@ -30,9 +30,9 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         // Return a PlaceholderFragment.
         switch (position) {
             case 0:
-                return StatusFragment.newInstance();
-            case 1:
                 return SetupFragment.newInstance();
+            case 1:
+                return StatusFragment.newInstance();
             default:
                 throw new IndexOutOfBoundsException();
         }

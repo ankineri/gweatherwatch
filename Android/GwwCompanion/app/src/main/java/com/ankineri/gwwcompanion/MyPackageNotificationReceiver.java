@@ -11,12 +11,7 @@ public class MyPackageNotificationReceiver extends WakefulBroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         Log.d("GWW", "My package changed notification!");
-        Intent theIntent = new Intent(context, LocationProviderService.class);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            context.startForegroundService(theIntent);
-        }
-        else {
-            context.startService(theIntent);
-        }
+        Intent theIntent = new Intent(context, PeriodicService.class);
+        context.startService(theIntent);
     }
 }

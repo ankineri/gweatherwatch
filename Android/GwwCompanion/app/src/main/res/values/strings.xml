@@ -13,4 +13,10 @@
     <string name="lbl_bkgnd_location">This app requests location in the background to update the watchface. Please grant background location permission (after granting location access above).</string>
     <string name="lbl_bkgnd_location_given">This app requests location in the background to update the watchface. Background location is given.</string>
     <string name="lbl_error">It appears there was an error setting up permissions. Android does not allow requesting permissions multiple times. To grant permissions please either:\n- Go to app settings and grant location permissions \"all the time\"\n- Uninstall and install the app again and try pressing buttons above again.</string>
+    <string name="lbl_foreground_service">This app interacts with your smartwatch, and it needs to have a connection to ConnectIQ app. Please setup the connection.</string>
+    <string name="lbl_foreground_service_done">This app interacts with your smartwatch, and it needs to have a connection to ConnectIQ app. Setup is complete.</string>
+    <string name="btn_service_given">Done</string>
+    <string name="btn_service_not_given">Setup</string>
+    <string name="lbl_last_run">Time since service last ran (should be below 1 hour).</string>
+    <string name="lbl_last_send">Time since last successful data send (should be below 1 hour).</string>
 </resources>
