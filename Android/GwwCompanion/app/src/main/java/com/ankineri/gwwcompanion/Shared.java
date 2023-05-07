@@ -20,4 +20,6 @@ public class Shared {
     public static MutableLiveData<Date> lastSuccessfulSend = createLiveData(null);
     public static MutableLiveData<Date> lastServiceRun = createLiveData(null);
 
+    public static long serviceNoTouchUntil = 0;
+
 }

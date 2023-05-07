@@ -3,6 +3,8 @@ package com.ankineri.gwwcompanion.ui.main;
 import static android.support.v4.content.ContextCompat.getSystemService;
 
 import android.app.ActivityManager;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -13,7 +15,6 @@ import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import android.support.annotation.Nullable;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -29,6 +30,7 @@ import com.ankineri.gwwcompanion.Shared;
 import com.ankineri.gwwcompanion.databinding.FragmentSetupBinding;
 
 import java.util.Arrays;
+import java.util.Date;
 
 public class SetupFragment extends Fragment {
 
@@ -162,6 +164,7 @@ public class SetupFragment extends Fragment {
         binding.btnSetupService.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Shared.serviceNoTouchUntil = System.currentTimeMillis() + 5000;
                 isServiceSetupFromButton = true;
                 doCheckService(true);
             }
@@ -194,7 +197,15 @@ public class SetupFragment extends Fragment {
     private void doCheckService(boolean showMessages) {
         connectIqHelper.connect(showMessages);
     }
+    private void doStartServiceDelayed() {
+        Intent theIntent = new Intent(getActivity(), PeriodicService.class);
+        PendingIntent pi = PendingIntent.getService(getContext(), 0, theIntent, PendingIntent.FLAG_IMMUTABLE);
+        AlarmManager alarmManager = (AlarmManager) getContext().getSystemService(Context.ALARM_SERVICE);
+        long triggerTime = System.currentTimeMillis() + 5*1000;
 
+        alarmManager.set(AlarmManager.RTC_WAKEUP, triggerTime, pi);
+
+    }
     private void doStartService() {
         Intent theIntent = new Intent(getActivity(), PeriodicService.class);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -205,8 +216,12 @@ public class SetupFragment extends Fragment {
     }
 
     private void doRestartService() {
-        getActivity().stopService(new Intent(getActivity(), PeriodicService.class));
+        doStopService();
         doStartService();
+    }
+
+    private void doStopService() {
+        getActivity().stopService(new Intent(getActivity(), PeriodicService.class));
     }
 
     public boolean isMyServiceRunning(Class<?> serviceClass) {

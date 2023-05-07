@@ -22,6 +22,7 @@ import java.util.Date;
 
 @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 public class PeriodicService extends Service {
+
     public PeriodicService() {
     }
 
@@ -76,31 +77,13 @@ public class PeriodicService extends Service {
         scheduleAlarm(ALARM_INTERVAL);
         Shared.lastServiceRun.postValue(new Date());
         Shared.isServiceStarted.postValue(true);
+        if (System.currentTimeMillis() <= Shared.serviceNoTouchUntil) {
+            Log.d("GWW", "Not touching Garmin from service");
+            return START_STICKY;
+        }
         Log.d("GWW", "In the scheduled job - running send message");
         new ConnectIqHelper(this.getApplicationContext()).connectAndSend();
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            createNotificationChannel("fg", "fg");
-            Notification.Builder builder = new Notification.Builder(this, "fg");
-            builder.setSmallIcon(R.drawable.ic_launcher_foreground)
-                    .setCategory(Notification.CATEGORY_SERVICE)
-                    .setOngoing(true)
-                    .setContentText("Hello");
-            Notification notification = builder.build();
-            NotificationManager nm = (NotificationManager) this.getSystemService(NOTIFICATION_SERVICE);
-            nm.notify(1, notification);
-            startForeground(1, notification);
-        }
         // Service execution logic here
         return START_STICKY;
-    }
-    @RequiresApi(Build.VERSION_CODES.O)
-    private String createNotificationChannel(String channelId, String channelName) {
-        NotificationChannel chan = new NotificationChannel(channelId,
-                channelName, NotificationManager.IMPORTANCE_NONE);
-        chan.setLightColor(Color.BLUE);
-        chan.setLockscreenVisibility(Notification.VISIBILITY_PRIVATE);
-        NotificationManager service = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        service.createNotificationChannel(chan);
-        return channelId;
     }
 }
