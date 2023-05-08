@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.ankineri.gwwcompanion.ConnectIqHelper;
+import com.ankineri.gwwcompanion.PeriodicService;
 import com.ankineri.gwwcompanion.Shared;
 import com.ankineri.gwwcompanion.databinding.FragmentStatusBinding;
 
@@ -51,12 +52,32 @@ public class StatusFragment extends Fragment {
         if (!isNever) {
             long elapsedMinutes = Duration.between(date.toInstant(), new Date().toInstant()).toMinutes();
             text = elapsedMinutes + " minutes";
-            color = elapsedMinutes < 60? Color.GREEN : Color.YELLOW;
+            color = elapsedMinutes < 60 ? Color.GREEN : Color.YELLOW;
         }
         label.setText(text);
         label.setBackgroundColor(color);
 
     }
+
+    private void doStartService() {
+        Intent theIntent = new Intent(getActivity(), PeriodicService.class);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            getActivity().startService(theIntent);
+        } else {
+            getActivity().startService(theIntent);
+        }
+    }
+
+    private void doRestartService() {
+        doStopService();
+        Shared.serviceNoTouchUntil = 0;
+        doStartService();
+    }
+
+    private void doStopService() {
+        getActivity().stopService(new Intent(getActivity(), PeriodicService.class));
+    }
+
     void refreshValues() {
         setLabelFromDate(binding.lblLastRunValue, Shared.lastServiceRun.getValue());
         setLabelFromDate(binding.lblLastSendValue, Shared.lastSuccessfulSend.getValue());
@@ -81,9 +102,16 @@ public class StatusFragment extends Fragment {
                 refreshValues();
             }
         });
+        binding.btnSendNow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                doRestartService();
+            }
+        });
         startUpdates();
         return binding.getRoot();
     }
+
     private Handler mHandler = new Handler();
     private Runnable mRunnable = new Runnable() {
         @Override

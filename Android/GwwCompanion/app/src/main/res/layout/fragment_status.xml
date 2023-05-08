@@ -54,5 +54,11 @@
             tools:layout_constraintLeft_creator="1"
             tools:layout_constraintTop_creator="1"
             tools:text="" />
+
+        <Button
+            android:id="@+id/btnSendNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnSendNowLabel" />
     </LinearLayout>
 </FrameLayout>

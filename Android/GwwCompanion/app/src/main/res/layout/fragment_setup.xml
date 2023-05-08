@@ -28,7 +28,7 @@
             android:id="@+id/btnRequestLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="" />
 
         <TextView
             android:id="@+id/section_label2"
@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:enabled="false"
-            android:text="--" />
+            android:text="" />
 
         <TextView
         android:id="@+id/section_label3"
@@ -65,7 +65,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:enabled="false"
-            android:text="--" />
+            android:text="" />
+        <TextView
+            android:id="@+id/lblGarminStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1"
+            />
+
+
         <TextView
             android:id="@+id/lbl_error"
             android:layout_width="match_parent"

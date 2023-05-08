@@ -11,8 +11,13 @@ import android.app.job.JobService;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+import android.location.LocationRequest;
 import android.os.Build;
 import android.os.IBinder;
+import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
@@ -22,6 +27,8 @@ import java.util.Date;
 
 @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 public class PeriodicService extends Service {
+
+    private LocationManager mLocationManager;
 
     public PeriodicService() {
     }
@@ -47,22 +54,23 @@ public class PeriodicService extends Service {
     }
 
 
-    private static final int ALARM_INTERVAL = 30 * 60 * 1000; // 30 minutes in milliseconds
+    private static final int ALARM_INTERVAL = 1 * 60 * 1000; // 30 minutes in milliseconds
     private PendingIntent alarmIntent;
     private AlarmManager alarmManager;
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-
+        Log.d("GWW", "Service destroy...");
         // Cancel any remaining alarms
-        cancelAlarm();
+        //cancelAlarm();
     }
 
     private void scheduleAlarm(long delay) {
         // Schedule a repeating alarm to run this service every 30 minutes
         long triggerTime = System.currentTimeMillis() + delay;
-        alarmManager.set(AlarmManager.RTC_WAKEUP, triggerTime, alarmIntent);
+//        alarmManager.set(AlarmManager.RTC_WAKEUP, triggerTime, alarmIntent);
+        alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), delay, alarmIntent);
     }
 
     private void cancelAlarm() {
@@ -82,7 +90,7 @@ public class PeriodicService extends Service {
             return START_STICKY;
         }
         Log.d("GWW", "In the scheduled job - running send message");
-        new ConnectIqHelper(this.getApplicationContext()).connectAndSend();
+        new ConnectIqHelper(this.getApplicationContext(), false).connectAndSend();
         // Service execution logic here
         return START_STICKY;
     }

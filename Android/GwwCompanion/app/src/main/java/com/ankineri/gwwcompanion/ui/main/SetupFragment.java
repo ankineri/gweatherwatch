@@ -25,6 +25,7 @@ import android.widget.Toast;
 import com.ankineri.gwwcompanion.ConnectIqHelper;
 import com.ankineri.gwwcompanion.MainActivity;
 import com.ankineri.gwwcompanion.PeriodicService;
+//import com.ankineri.gwwcompanion.PeriodicWorker;
 import com.ankineri.gwwcompanion.R;
 import com.ankineri.gwwcompanion.Shared;
 import com.ankineri.gwwcompanion.databinding.FragmentSetupBinding;
@@ -33,7 +34,7 @@ import java.util.Arrays;
 import java.util.Date;
 
 public class SetupFragment extends Fragment {
-
+    private long canSwitchToStatusUntil = 0;
     private static final String ARG_SECTION_NUMBER = "section_number";
     private boolean isServiceSetupFromButton = false;
     private SetupViewModel setupViewModel;
@@ -98,14 +99,14 @@ public class SetupFragment extends Fragment {
         super.onCreate(savedInstanceState);
         setupViewModel = new ViewModelProvider(this,
                 new ViewModelProvider.NewInstanceFactory()).get(SetupViewModel.class);
-        connectIqHelper = new ConnectIqHelper(this.getContext());
+        connectIqHelper = new ConnectIqHelper(this.getContext(), true);
     }
 
     @Override
     public View onCreateView(
             @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-
+        canSwitchToStatusUntil = System.currentTimeMillis() + 500;
         binding = FragmentSetupBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         setupViewModel.hasLocationPermission.observe(getViewLifecycleOwner(), new Observer<Boolean>() {
@@ -145,16 +146,21 @@ public class SetupFragment extends Fragment {
             public void onChanged(@Nullable Boolean hasService) {
 
                 boolean isAllOkay = Shared.isGarminConnected.getValue();
-                if (!isServiceSetupFromButton && isEverythingSetup()) {
+                if (System.currentTimeMillis() < canSwitchToStatusUntil && isEverythingSetup()) {
                     ((MainActivity) getActivity()).SwitchToStatus();
                 }
                 binding.btnSetupService.setBackgroundColor(isAllOkay ? Color.GREEN : Color.YELLOW);
                 binding.btnSetupService.setEnabled(!isAllOkay);
                 binding.sectionLabel3.setText(isAllOkay ? R.string.lbl_foreground_service_done : R.string.lbl_foreground_service);
                 binding.btnSetupService.setText(isAllOkay ? R.string.btn_service_given : R.string.btn_service_not_given);
-                if (isServiceSetupFromButton) {
-                    doRestartService();
+                if (isAllOkay) {
+                    binding.lblGarminStatus.setBackgroundColor(Color.GREEN);
+                    if (isServiceSetupFromButton) {
+                        Shared.serviceNoTouchUntil = 0;
+                        doRestartService();
+                    }
                 }
+
                 isServiceSetupFromButton = false;
             }
         };
@@ -164,9 +170,9 @@ public class SetupFragment extends Fragment {
         binding.btnSetupService.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Shared.serviceNoTouchUntil = System.currentTimeMillis() + 5000;
+                Shared.serviceNoTouchUntil = System.currentTimeMillis() + 500000;
                 isServiceSetupFromButton = true;
-                doCheckService(true);
+                doCheckService();
             }
         });
         binding.btnRequestLocation.setOnClickListener(new View.OnClickListener() {
@@ -189,13 +195,24 @@ public class SetupFragment extends Fragment {
         });
 
         setupViewModel.error.setValue(false);
-//        doCheckService(false);
+        connectIqHelper.getStatus().observe(getViewLifecycleOwner(), new Observer<String>() {
+            @Override
+            public void onChanged(@Nullable String s) {
+                binding.lblGarminStatus.setText(s);
+            }
+        });
+        connectIqHelper.getIsError().observe(getViewLifecycleOwner(), new Observer<Boolean>() {
+            @Override
+            public void onChanged(@Nullable Boolean isError) {
+                binding.lblGarminStatus.setBackgroundColor(isError ? Color.rgb(255, 128, 64) : Color.TRANSPARENT);
+            }
+        });
         doStartService();
         return root;
     }
 
-    private void doCheckService(boolean showMessages) {
-        connectIqHelper.connect(showMessages);
+    private void doCheckService() {
+        connectIqHelper.connect();
     }
     private void doStartServiceDelayed() {
         Intent theIntent = new Intent(getActivity(), PeriodicService.class);
@@ -207,6 +224,7 @@ public class SetupFragment extends Fragment {
 
     }
     private void doStartService() {
+//        PeriodicWorker.schedule(getContext());
         Intent theIntent = new Intent(getActivity(), PeriodicService.class);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             getActivity().startService(theIntent);
