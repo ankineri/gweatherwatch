@@ -114,9 +114,15 @@ class CustomArcDrawable extends Ui.Drawable {
 		if (from == to) {
 			return;
 		}
-		//Sys.println("Highlight: from " + from + ", to " + to);
 		dc.setColor(colFront, Graphics.COLOR_BLACK);
-		dc.drawArc(self.x, self.y, self.radius, Graphics.ARC_CLOCKWISE, from, to);
+		if (self.frontLow > self.frontHigh) {
+		// Sys.println("Front: " + self.frontLow + " -> " + self.frontHigh);
+		// Sys.println("Highlight: from " + from + ", to " + to);
+			dc.drawArc(self.x, self.y, self.radius, Graphics.ARC_CLOCKWISE, from, self.angTo);
+			dc.drawArc(self.x, self.y, self.radius, Graphics.ARC_CLOCKWISE, self.angFrom, to);
+		} else {
+			dc.drawArc(self.x, self.y, self.radius, Graphics.ARC_CLOCKWISE, from, to);
+		}
 	}
 	
 	function drawArrow(dc) {

@@ -1,15 +1,22 @@
 package com.ankineri.gwwcompanion;
 
 import android.Manifest;
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
+
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
+
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
+
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 //import android.widget.Toast;
 
@@ -21,9 +28,13 @@ import com.garmin.android.connectiq.exception.ServiceUnavailableException;
 
 import java.util.Arrays;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class ConnectIqHelper {
+    static ConnectIqHelper mInstance = null;
+
     MutableLiveData<String> status = new MutableLiveData<>();
     MutableLiveData<Boolean> isError = new MutableLiveData<>();
 
@@ -45,7 +56,6 @@ public class ConnectIqHelper {
 
     private final Context context;
     private final LocationManager locationManager;
-    private ConnectIQ mConnectIQ;
     private IQApp mApp;
     private IQDevice mDevice;
 
@@ -55,11 +65,22 @@ public class ConnectIqHelper {
         this.interactive = interactive;
     }
 
+    synchronized private void freeConnectIq() {
+        if (mConnectIq != null) {
+            try {
+                mConnectIq.shutdown(registrationContext);
+            } catch (InvalidStateException e) {
+                e.printStackTrace();
+            }
+            mConnectIq = null;
+        }
+    }
+
     private Location getLastKnownLocation() {
         List<String> providers = locationManager.getProviders(true);
         Location bestLocation = null;
         for (String provider : providers) {
-            Location l = locationManager.getLastKnownLocation(provider);
+            @SuppressLint("MissingPermission") Location l = locationManager.getLastKnownLocation(provider);
             if (l == null) {
                 continue;
             }
@@ -71,10 +92,10 @@ public class ConnectIqHelper {
         return bestLocation;
     }
 
-    static boolean requestedLocationUpdates = false;
-
     void sendLocation(final IQDevice device, final IQApp app, final ConnectIQ connectIQ) {
         if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED || ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            Shared.releaseWakeLock(context);
+            freeConnectIq();
             return;
         }
         locationManager.requestLocationUpdates(LocationManager.FUSED_PROVIDER, 1000, 1000, new LocationListener() {
@@ -86,10 +107,9 @@ public class ConnectIqHelper {
         Thread t = new Thread(new Runnable() {
             @Override
             public void run() {
-
-
                 Location location = getLastKnownLocation();
                 if (location == null) {
+                    freeConnectIq();
                     return;
                 }
                 Log.d("GWW", "Got location: " + location.toString());
@@ -103,11 +123,8 @@ public class ConnectIqHelper {
                             if (iqMessageStatus == ConnectIQ.IQMessageStatus.SUCCESS) {
                                 Shared.lastSuccessfulSend.postValue(new Date());
                             }
-//                            try {
-//                                connectIQ.shutdown(context);
-//                            } catch (InvalidStateException e) {
-//                                e.printStackTrace();
-//                            }
+                            freeConnectIq();
+                            Shared.releaseWakeLock(context);
                         }
                     });
                 } catch (InvalidStateException e) {
@@ -135,59 +152,70 @@ public class ConnectIqHelper {
     }
 
     public void connect() {
-        mUpdateStatusTo = Shared.isGarminConnected;
-        setStatusIfInteractive("Initializing...");
-        if (mConnectIQ != null) {
+        new Handler(Looper.getMainLooper()).post(new Runnable() {
+            @Override
+            public void run() {
+                connectOnMainThread();
+            }
+        });
+    }
+
+    static Context registrationContext = null;
+
+    synchronized ConnectIQ makeNewConnectIq(Context context) {
+        if (mConnectIq != null) {
             try {
-                mConnectIQ.shutdown(context);
-            } catch (Exception e) {
+                mConnectIq.shutdown(registrationContext);
+            } catch (InvalidStateException e) {
+                throw new RuntimeException(e);
             }
         }
-        mConnectIQ = ConnectIQ.getInstance(context, ConnectIQ.IQConnectType.WIRELESS);
-        try {
-            mConnectIQ.shutdown(context);
-        } catch (Exception e) {
-        }
-        mConnectIQ.initialize(context, interactive, new ConnectIQ.ConnectIQListener() {
+        registrationContext = context;
+        mConnectIq = ConnectIQ.getInstance(context, ConnectIQ.IQConnectType.WIRELESS);
+        return mConnectIq;
+    }
+
+    static ConnectIQ mConnectIq = null;
+
+    public void connectOnMainThread() {
+        final ConnectIQ connectIQ = makeNewConnectIq(context);
+        mUpdateStatusTo = Shared.isGarminConnected;
+        setStatusIfInteractive("Initializing...");
+        connectIQ.initialize(context, interactive, new ConnectIQ.ConnectIQListener() {
             @Override
             public void onSdkReady() {
                 setStatusIfInteractive("Garmin SDK ready");
                 Log.d("GWW", "SDK ready");
                 List<IQDevice> paired = null;
+                Set<Long> processedDevices = new HashSet<Long>();
                 try {
-                    paired = mConnectIQ.getKnownDevices();
+                    paired = connectIQ.getKnownDevices();
                     if (paired != null && paired.size() > 0) {
                         setStatusIfInteractive("Found " + paired.size() + " device(s)");
                         for (final IQDevice device : paired) {
-                            mConnectIQ.registerForDeviceEvents(device, (ConnectIQ.IQDeviceEventListener) (iqDevice, iqDeviceStatus) -> {
+                            connectIQ.registerForDeviceEvents(device, (ConnectIQ.IQDeviceEventListener) (iqDevice, iqDeviceStatus) -> {
                                 Log.d("GWW", "Device " + iqDevice.getFriendlyName() + " is now in status " + iqDeviceStatus.name());
-
                                 if (iqDeviceStatus == IQDevice.IQDeviceStatus.CONNECTED) {
                                     try {
-                                        mConnectIQ.getApplicationInfo(garminAppId, iqDevice, new ConnectIQ.IQApplicationInfoListener() {
+                                        connectIQ.getApplicationInfo(garminAppId, iqDevice, new ConnectIQ.IQApplicationInfoListener() {
                                             @Override
                                             public void onApplicationInfoReceived(IQApp iqApp) {
-                                                Log.d("GWW", "Have app info for " + iqApp.getDisplayName());
-                                                try {
-                                                    mConnectIQ.registerForAppEvents(iqDevice, iqApp, new ConnectIQ.IQApplicationEventListener() {
-                                                        @Override
-                                                        public void onMessageReceived(IQDevice iqDevice, IQApp iqApp, List<Object> list, ConnectIQ.IQMessageStatus iqMessageStatus) {
-                                                            Log.d("GWW", "Have message: " + list.get(0).toString());
-                                                            sendLocation(iqDevice, iqApp, mConnectIQ);
-                                                        }
-                                                    });
-                                                    mApp = iqApp;
-                                                    mDevice = iqDevice;
-                                                    Log.d("GWW", "SDK is fully OK");
-                                                    Shared.isGarminConnected.postValue(true);
-                                                    if (mConnectedCallback != null) {
-                                                        mConnectedCallback.onGotData(mConnectIQ, iqDevice, mApp);
-                                                    }
-                                                    setStatusIfInteractive("Found gWeatherWatch app - all OK");
-                                                } catch (InvalidStateException e) {
-                                                    setStatusIfInteractive("Invalid state", true);
-                                                    e.printStackTrace();
+                                                Log.d("GWW", "Have app info for " + iqApp.getApplicationId());
+                                                if (processedDevices.contains(device.getDeviceIdentifier())) {
+                                                    return;
                                                 }
+                                                processedDevices.add(device.getDeviceIdentifier());
+
+                                                mApp = iqApp;
+                                                mDevice = iqDevice;
+                                                Log.d("GWW", "SDK is fully OK");
+                                                Shared.isGarminConnected.postValue(true);
+                                                if (mConnectedCallback != null) {
+                                                    mConnectedCallback.onGotData(connectIQ, iqDevice, mApp);
+                                                } else {
+                                                    freeConnectIq();
+                                                }
+                                                setStatusIfInteractive("Found gWeatherWatch app - all OK");
                                             }
 
                                             @Override
@@ -196,7 +224,8 @@ public class ConnectIqHelper {
                                                 setStatusIfInteractive("No gWeatherWatch - opening ConnectIq");
                                                 try {
                                                     if (interactive) {
-                                                        mConnectIQ.openStore(garminAppId);
+                                                        connectIQ.openStore(garminAppId);
+                                                        freeConnectIq();
                                                     }
                                                 } catch (InvalidStateException e) {
                                                     setStatusIfInteractive("Invalid state", true);
@@ -210,15 +239,19 @@ public class ConnectIqHelper {
                                     } catch (InvalidStateException e) {
                                         setStatusIfInteractive("Invalid state", true);
                                         e.printStackTrace();
+                                        freeConnectIq();
                                     } catch (ServiceUnavailableException e) {
                                         setStatusIfInteractive("Service unavailable", true);
                                         e.printStackTrace();
+                                        freeConnectIq();
                                     }
+
                                 }
                             });
                         }
                     } else {
                         setStatusIfInteractive("No Garmin devices", true);
+                        freeConnectIq();
                     }
                 } catch (InvalidStateException e) {
                     setStatusIfInteractive("Invalid state", true);
@@ -226,12 +259,14 @@ public class ConnectIqHelper {
                     if (mUpdateStatusTo != null) {
                         mUpdateStatusTo.setValue(false);
                     }
+                    freeConnectIq();
                 } catch (ServiceUnavailableException e) {
                     setStatusIfInteractive("Service unavailable", true);
                     e.printStackTrace();
                     if (mUpdateStatusTo != null) {
                         mUpdateStatusTo.setValue(false);
                     }
+                    freeConnectIq();
                 }
             }
 
@@ -244,6 +279,7 @@ public class ConnectIqHelper {
                 if (mUpdateStatusTo != null) {
                     mUpdateStatusTo.setValue(false);
                 }
+                freeConnectIq();
             }
 
             @Override

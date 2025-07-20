@@ -1,22 +1,22 @@
 package com.ankineri.gwwcompanion.ui.main;
 
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProvider;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.ankineri.gwwcompanion.ConnectIqHelper;
-import com.ankineri.gwwcompanion.PeriodicService;
+import com.ankineri.gwwcompanion.PeriodicWorker;
 import com.ankineri.gwwcompanion.Shared;
 import com.ankineri.gwwcompanion.databinding.FragmentStatusBinding;
 
@@ -60,22 +60,12 @@ public class StatusFragment extends Fragment {
     }
 
     private void doStartService() {
-        Intent theIntent = new Intent(getActivity(), PeriodicService.class);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            getActivity().startService(theIntent);
-        } else {
-            getActivity().startService(theIntent);
-        }
+        PeriodicWorker.runOnce(getContext());
     }
 
     private void doRestartService() {
-        doStopService();
         Shared.serviceNoTouchUntil = 0;
         doStartService();
-    }
-
-    private void doStopService() {
-        getActivity().stopService(new Intent(getActivity(), PeriodicService.class));
     }
 
     void refreshValues() {

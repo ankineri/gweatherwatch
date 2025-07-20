@@ -42,7 +42,6 @@ class BackgroundServiceDelegate extends Sys.ServiceDelegate
 		{
 			Sys.println("get weather error : " + ex.getErrorMessage());
 		}
-		
 		Background.exit(rv);
     }	
 	function loadGoogleData(loc) {
@@ -70,7 +69,7 @@ class BackgroundServiceDelegate extends Sys.ServiceDelegate
     		self.comm.init();
     	}    	
     	self.comm.request();
-    	var loc = locationProvider.getLocation();
+    	var loc = locationProvider.getLocation(self.comm.lastLat, self.comm.lastLng, self.comm.when);
     	/*var loc = Persistent.Load(PersistKeys.Location);
     	if (loc == null) {
     		loc = [55.676470, 37.445434];

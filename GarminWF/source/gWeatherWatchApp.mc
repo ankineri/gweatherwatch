@@ -61,7 +61,7 @@ class gWeatherWatchApp extends Application.AppBase {
 				scheduleAt = allowedAt;
 			}
 		} 
-		
+
 		System.println("Last time weather was requested: " + (lastTime == null ? "NULL" : lastTime.value()));
 		System.println("Requesting weather update at " + scheduleAt.value());
 		Background.registerForTemporalEvent(scheduleAt);

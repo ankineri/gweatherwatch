@@ -7,10 +7,16 @@ using Toybox.Time;
 (:background)
 class LocationProvider {
 	private var lastLat, lastLon;
-	public function getLocation() {
+	public function getLocation(phoneLat, phoneLng, phoneWhen) {
 		var activityInfo = Activity.getActivityInfo(); 
 		var activityLocation = activityInfo.currentLocation;
 		var phoneLocation = Persistent.Load(PersistKeys.LastPhoneLocation);
+		if (phoneLat != null) {
+			Sys.println("Phone location: " + phoneLocation + ", phoneWhen: " + phoneWhen.value());
+			if (phoneLocation == null || phoneLocation[2] < phoneWhen.value()) {
+				phoneLocation = [phoneLat, phoneLng, phoneWhen.value()];
+			}
+		}
 		if (phoneLocation == null && activityLocation == null) {
 			Sys.println("Returning default location!");
 			return [50.063506, 14.445937];

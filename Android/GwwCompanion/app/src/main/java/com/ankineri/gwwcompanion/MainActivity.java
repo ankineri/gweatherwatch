@@ -1,15 +1,12 @@
 package com.ankineri.gwwcompanion;
 
-import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.tabs.TabLayout;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.ankineri.gwwcompanion.ui.main.SectionsPagerAdapter;
 import com.ankineri.gwwcompanion.databinding.ActivityMainBinding;
-import com.ankineri.gwwcompanion.ui.main.SetupFragment;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,25 +1,51 @@
 package com.ankineri.gwwcompanion;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
+import static android.content.Context.POWER_SERVICE;
 
-import java.util.Calendar;
+import android.content.Context;
+import android.os.PowerManager;
+import android.util.Log;
+
+import androidx.lifecycle.MutableLiveData;
+
 import java.util.Date;
 
 public class Shared {
-    static <T> MutableLiveData<T> createLiveData(T value) {
-        MutableLiveData<T> rv = new MutableLiveData<>();
-        rv.setValue(value);
-        return rv;
-    }
-    public static MutableLiveData<Boolean> isServiceStarted = createLiveData(Boolean.FALSE);
-    public static MutableLiveData<Boolean> isGarminConnected = createLiveData(Boolean.FALSE);
+    public static MutableLiveData<Boolean> isServiceStarted = new MutableLiveData<>(Boolean.FALSE);
+    public static MutableLiveData<Boolean> isGarminConnected = new MutableLiveData<>(Boolean.FALSE);
 
-    public static MutableLiveData<Boolean> isSetupComplete = createLiveData(Boolean.FALSE);
+    public static MutableLiveData<Boolean> isSetupComplete = new MutableLiveData<>(Boolean.FALSE);
 
-    public static MutableLiveData<Date> lastSuccessfulSend = createLiveData(null);
-    public static MutableLiveData<Date> lastServiceRun = createLiveData(null);
+    public static MutableLiveData<Date> lastSuccessfulSend = new MutableLiveData<>(null);
+    public static MutableLiveData<Date> lastServiceRun = new MutableLiveData<>(null);
 
     public static long serviceNoTouchUntil = 0;
+    public static PowerManager.WakeLock wakeLock = null;
+
+    synchronized public static void takeWakeLock(Context context) {
+        if (wakeLock == null) {
+            PowerManager powerManager = (PowerManager) context.getSystemService(POWER_SERVICE);
+            wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "GWW::Wake");
+        }
+        if (wakeLock.isHeld()) {
+            return;
+        }
+        wakeLock.acquire(5 * 1000L);
+    }
+
+    synchronized public static void releaseWakeLock(Context context) {
+        Log.d("GWW", "Attempting to release wake lock");
+        if (wakeLock == null) {
+            Log.d("GWW", "No wakelock to release.");
+            return;
+        }
+        if (wakeLock.isHeld()) {
+            Log.d("GWW", "Releasing wakelock");
+            wakeLock.release();
+        } else {
+            Log.d("GWW", "NOT releasing wakelock - not held");
+        }
+        wakeLock = null;
+    }
 
 }

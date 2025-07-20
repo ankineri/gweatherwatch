@@ -1,6 +1,6 @@
 package com.ankineri.gwwcompanion.ui.main;
 
-import static android.support.v4.content.ContextCompat.getSystemService;
+import static androidx.core.content.ContextCompat.getSystemService;
 
 import android.app.ActivityManager;
 import android.app.AlarmManager;
@@ -11,27 +11,25 @@ import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.support.annotation.Nullable;
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProvider;
+import androidx.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
 import android.widget.Toast;
 
 import com.ankineri.gwwcompanion.ConnectIqHelper;
 import com.ankineri.gwwcompanion.MainActivity;
-import com.ankineri.gwwcompanion.PeriodicService;
-//import com.ankineri.gwwcompanion.PeriodicWorker;
+import com.ankineri.gwwcompanion.PeriodicWorker;
 import com.ankineri.gwwcompanion.R;
 import com.ankineri.gwwcompanion.Shared;
 import com.ankineri.gwwcompanion.databinding.FragmentSetupBinding;
 
 import java.util.Arrays;
-import java.util.Date;
 
 public class SetupFragment extends Fragment {
     private long canSwitchToStatusUntil = 0;
@@ -144,7 +142,6 @@ public class SetupFragment extends Fragment {
         Observer<Boolean> observer = new Observer<Boolean>() {
             @Override
             public void onChanged(@Nullable Boolean hasService) {
-
                 boolean isAllOkay = Shared.isGarminConnected.getValue();
                 if (System.currentTimeMillis() < canSwitchToStatusUntil && isEverythingSetup()) {
                     ((MainActivity) getActivity()).SwitchToStatus();
@@ -157,7 +154,7 @@ public class SetupFragment extends Fragment {
                     binding.lblGarminStatus.setBackgroundColor(Color.GREEN);
                     if (isServiceSetupFromButton) {
                         Shared.serviceNoTouchUntil = 0;
-                        doRestartService();
+                        doStartService();
                     }
                 }
 
@@ -208,50 +205,17 @@ public class SetupFragment extends Fragment {
             }
         });
         doStartService();
+        PeriodicWorker.runOnce(getContext());
         return root;
     }
 
     private void doCheckService() {
         connectIqHelper.connect();
     }
-    private void doStartServiceDelayed() {
-        Intent theIntent = new Intent(getActivity(), PeriodicService.class);
-        PendingIntent pi = PendingIntent.getService(getContext(), 0, theIntent, PendingIntent.FLAG_IMMUTABLE);
-        AlarmManager alarmManager = (AlarmManager) getContext().getSystemService(Context.ALARM_SERVICE);
-        long triggerTime = System.currentTimeMillis() + 5*1000;
 
-        alarmManager.set(AlarmManager.RTC_WAKEUP, triggerTime, pi);
-
-    }
     private void doStartService() {
-//        PeriodicWorker.schedule(getContext());
-        Intent theIntent = new Intent(getActivity(), PeriodicService.class);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            getActivity().startService(theIntent);
-        } else {
-            getActivity().startService(theIntent);
-        }
+        PeriodicWorker.schedule(getContext());
     }
-
-    private void doRestartService() {
-        doStopService();
-        doStartService();
-    }
-
-    private void doStopService() {
-        getActivity().stopService(new Intent(getActivity(), PeriodicService.class));
-    }
-
-    public boolean isMyServiceRunning(Class<?> serviceClass) {
-        ActivityManager manager = (ActivityManager) getSystemService(getContext(), serviceClass);
-        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
-            if (serviceClass.getName().equals(service.service.getClassName())) {
-                return true;
-            }
-        }
-        return false;
-    }
-
     @Override
     public void onDestroyView() {
         super.onDestroyView();
