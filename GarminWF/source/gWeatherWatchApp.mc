@@ -67,25 +67,29 @@ class gWeatherWatchApp extends Application.AppBase {
 		Background.registerForTemporalEvent(scheduleAt);
     }
     
-    function onBackgroundData(data as Lang.Dictionary<Lang.String, Lang.String>) 
+    function onBackgroundData(data2 as Application.PersistableType) 
     {
-    	//System.println("Have bckgnd data: " + data);
-    	
+    	System.println("Have bckgnd data: " + data2);
+    	var data = data2 as Lang.Dictionary<Application.PropertyKeyType, Application.PropertyValueType>;
     	if (data["loc"] != null) {
     		Persistent.Save(PersistKeys.LastPhoneLocation, data["loc"]);
     	}
-        if (data["weather"] != null && "true".equals(data["weather"]["success"]))
-        {
-        	//System.println("UI got weather: " + data["weather"]);
-        	Background.registerForTemporalEvent(new Toybox.Time.Duration(60 * 60));
-        	Persistent.Save(PersistKeys.LastBackgroundEvent, Time.now().value());
-        	Persistent.Save(PersistKeys.Weather, data["weather"]);
-        	//System.println("Saved bckgnd data");
-        	WatchUi.requestUpdate();
-        } else {
-        	// Request an update sooner if there is no weather data
-        	System.println("Got no weather - scheduling in 10 minutes");
-        	Background.registerForTemporalEvent(new Toybox.Time.Duration(10 * 60));
-        }
+        if (data["weather"] != null)
+		{
+			var dataWeather = data["weather"] as Lang.Dictionary<Application.PropertyKeyType, Application.PropertyValueType>;
+			if ("true".equals(dataWeather["success"]))
+			{
+				//System.println("UI got weather: " + data["weather"]);
+				Background.registerForTemporalEvent(new Toybox.Time.Duration(60 * 60));
+				Persistent.Save(PersistKeys.LastBackgroundEvent, Time.now().value());
+				Persistent.Save(PersistKeys.Weather, dataWeather);
+				//System.println("Saved bckgnd data");
+				WatchUi.requestUpdate();
+			} else {
+				// Request an update sooner if there is no weather data
+				System.println("Got no weather - scheduling in 10 minutes");
+				Background.registerForTemporalEvent(new Toybox.Time.Duration(10 * 60));
+			}
+		}
     }    
 }

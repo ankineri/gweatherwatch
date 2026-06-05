@@ -46,11 +46,11 @@ class BackgroundServiceDelegate extends Sys.ServiceDelegate
     }	
 	function loadGoogleData(loc) {
 	
-		var url = Lang.format("https://script.google.com/macros/s/AKfycbz8bWDUyTwvfKGar7P2YPEXznjC2G9vGo1XFQXyj46ocF_qGbQv/exec?lat=$1$&lon=$2$&system=metric", [
+		var url = Lang.format("https://script.google.com/macros/s/AKfycbxlNUwKy2Aj7e2JIW68GVPf1DF1HWkz5fUkJyKt7sqk4xWfl1H6yIThGmkWRoaGUUMXjw/exec?lat=$1$&lon=$2$&system=metric", [
 			loc[0],
 			loc[1]]);  
 			
-		//Sys.println(" :: weather request " + url);
+		Sys.println(" :: weather request " + url);
 
         var options = {
           :method => Comm.HTTP_REQUEST_METHOD_GET,
