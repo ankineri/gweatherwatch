@@ -6,7 +6,11 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
 import android.annotation.SuppressLint;
+import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.ContextWrapper;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -15,6 +19,7 @@ import android.location.LocationManager;
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 
+import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
@@ -178,10 +183,20 @@ public class ConnectIqHelper {
     static ConnectIQ mConnectIq = null;
 
     public void connectOnMainThread() {
-        final ConnectIQ connectIQ = makeNewConnectIq(context);
+        Context wrappedContext = new ContextWrapper(context) {
+            @SuppressLint("UnspecifiedRegisterReceiverFlag")
+            @Override
+            public Intent registerReceiver(BroadcastReceiver receiver, IntentFilter filter) {
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                    return super.registerReceiver(receiver, filter, Context.RECEIVER_EXPORTED);
+                }
+                return super.registerReceiver(receiver, filter);
+            }
+        };
+        final ConnectIQ connectIQ = makeNewConnectIq(wrappedContext);
         mUpdateStatusTo = Shared.isGarminConnected;
         setStatusIfInteractive("Initializing...");
-        connectIQ.initialize(context, interactive, new ConnectIQ.ConnectIQListener() {
+        connectIQ.initialize(wrappedContext, interactive, new ConnectIQ.ConnectIQListener() {
             @Override
             public void onSdkReady() {
                 setStatusIfInteractive("Garmin SDK ready");
